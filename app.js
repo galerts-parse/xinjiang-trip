@@ -41,19 +41,40 @@ function wgs84togcj02(lng, lat) {
   return [lng + dlng, lat + dlat]; // Returns [lng, lat]
 }
 
-// --- Map Tiles (GaoDe / AutoNavi for precise Chinese mapping) ---
+// --- Map Tiles (GaoDe / AutoNavi & OSM) ---
 // GaoDe Satellite Imagery
-L.tileLayer('https://webst01.is.autonavi.com/appmaptile?style=6&x={x}&y={y}&z={z}', {
+const gaodeSatellite = L.tileLayer('https://webst01.is.autonavi.com/appmaptile?style=6&x={x}&y={y}&z={z}', {
   attribution: '&copy; AutoNavi (GaoDe) Satellite',
   maxZoom: 18
-}).addTo(map);
+});
 
-// GaoDe Labels (Chinese text)
-L.tileLayer('https://webst01.is.autonavi.com/appmaptile?style=8&x={x}&y={y}&z={z}', {
+// GaoDe Street Map
+const gaodeStreet = L.tileLayer('https://webrd01.is.autonavi.com/appmaptile?lang=zh_cn&size=1&scale=1&style=8&x={x}&y={y}&z={z}', {
+  attribution: '&copy; AutoNavi (GaoDe) Street',
   maxZoom: 18
-}).addTo(map);
+});
 
-L.control.zoom({ position: 'topright' }).addTo(map);
+// OpenStreetMap Standard
+const osmStandard = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  attribution: '&copy; OpenStreetMap contributors',
+  maxZoom: 18
+});
+
+// Add Satellite by default
+gaodeSatellite.addTo(map);
+
+// Add Layer Control
+const baseMaps = {
+  "高德卫星图 (GaoDe Satellite)": gaodeSatellite,
+  "高德街道图 (GaoDe Street)": gaodeStreet,
+  "标准地图 (OpenStreetMap)": osmStandard
+};
+
+L.control.layers(baseMaps).addTo(map);
+
+L.control.zoom({
+  position: 'bottomright'
+}).addTo(map);
 
 // Arrays
 const allSpots = [];
@@ -236,3 +257,16 @@ async function fetchAndDrawRoute() {
 }
 
 fetchAndDrawRoute();
+
+// PWA Service Worker Registration
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('./sw.js')
+      .then(registration => {
+        console.log('ServiceWorker registration successful with scope: ', registration.scope);
+      })
+      .catch(err => {
+        console.log('ServiceWorker registration failed: ', err);
+      });
+  });
+}
