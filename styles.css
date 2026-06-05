@@ -53,16 +53,28 @@ a:hover {
 }
 
 .sidebar-header {
-  padding: 30px 20px;
+  padding: 15px 20px;
   border-bottom: 1px solid var(--glass-border);
   background: rgba(255, 255, 255, 0.5);
+  position: relative;
+}
+
+/* Drag Handle for Mobile */
+.drag-handle {
+  display: none;
+  width: 40px;
+  height: 5px;
+  background-color: #cbd5e1;
+  border-radius: 3px;
+  margin: 0 auto 10px auto;
+  cursor: grab;
 }
 
 .sidebar-header h1 {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 700;
   color: var(--text-primary);
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .sidebar-header p {
@@ -92,8 +104,8 @@ a:hover {
   background: var(--card-bg);
   border: 1px solid #e2e8f0;
   border-radius: 12px;
-  padding: 20px;
-  margin-bottom: 20px;
+  padding: 15px;
+  margin-bottom: 15px;
   cursor: pointer;
   transition: all 0.3s ease;
   box-shadow: 0 2px 4px rgba(0,0,0,0.02);
@@ -128,9 +140,9 @@ a:hover {
 }
 
 .day-title {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 700;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   color: var(--text-primary);
 }
 
@@ -138,7 +150,7 @@ a:hover {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .info-item {
@@ -274,15 +286,20 @@ a:hover {
 
 @media (max-width: 768px) {
   body {
-    flex-direction: column;
+    flex-direction: column-reverse; /* Sidebar on bottom, map on top */
+  }
+  .drag-handle {
+    display: block; /* Show handle on mobile */
   }
   #sidebar {
     width: 100%;
-    height: 50vh;
+    height: 45vh; /* Default bottom sheet height */
     border-right: none;
-    border-bottom: 1px solid var(--glass-border);
+    border-top: 1px solid var(--glass-border);
+    border-radius: 20px 20px 0 0;
+    touch-action: none; /* Prevent browser handling for custom drag */
   }
   #map {
-    height: 50vh;
+    height: 55vh;
   }
 }

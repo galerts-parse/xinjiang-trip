@@ -25,9 +25,14 @@
 
   <!-- Sidebar -->
   <div id="sidebar">
-    <div class="sidebar-header">
+    <div class="sidebar-header" id="sidebar-handle">
+      <div class="drag-handle"></div>
       <h1>新疆自驾探险 <br><span style="font-size: 16px; color: #94a3b8;">Xinjiang Road Trip</span></h1>
-      <p>西安至乌鲁木齐 (Xi'an to Urumqi) <br>2026年6月12日 - 6月27日</p>
+      <p style="margin-bottom: 10px;">2026年6月12日 - 6月27日 (16 Days)</p>
+      <select id="route-selector" style="width: 100%; padding: 8px; border-radius: 8px; border: 1px solid #cbd5e1; font-size: 14px; background: white; outline: none;">
+        <option value="routeA">Route A: Silk Road Classic (with Dunhuang)</option>
+        <option value="routeB">Route B: Northern Nature (Kanas via S21)</option>
+      </select>
     </div>
     <div id="itinerary-list">
       <!-- Generated dynamically by app.js -->
@@ -42,6 +47,7 @@
   
   <!-- Data & App Logic -->
   <script src="data.js"></script>
+  <script src="data_alt.js"></script>
   <script src="app.js"></script>
 </body>
 </html>
