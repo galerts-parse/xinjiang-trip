@@ -127,6 +127,12 @@ function renderItinerary(data) {
         <div class="info-item"><i class="fa-regular fa-clock"></i> ${dayData.time}</div>
       </div>
       <div class="day-details">
+        ${dayData.schedule ? `
+        <div class="detail-section schedule-section" style="background:#f8fafc; padding:15px; border-radius:8px; border-left:4px solid #3b82f6; margin-bottom:15px;">
+          <h4 style="color:#1e293b; margin-top:0;"><i class="fa-regular fa-clock"></i> 今日时刻表 (Schedule)</h4>
+          <div style="font-size:13px; line-height:1.8; color:#334155;">${dayData.schedule}</div>
+        </div>
+        ` : ''}
         <div class="detail-section">
           <h4><i class="fa-solid fa-camera"></i> 行程景点与历史 (Sights & History)</h4>
           <p>${dayData.sights}</p>
