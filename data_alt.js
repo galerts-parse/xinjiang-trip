@@ -119,24 +119,38 @@ const itineraryDataAlt = [
     ]
   },
   {
+  {
     day: 8,
     date: "2026-06-19",
-    title: "乌鲁木齐 (Urumqi) → S21阿乌高速 → 喀纳斯/贾登峪 (Kanas/Jiadenyu)",
-    distance: "600km",
-    time: "7h",
-    sights: "S21沙漠高速公路 (S21 Awu Desert Expressway). <br><br><b>奇观与自驾体验:</b> 这是中国首条横穿古尔班通古特沙漠的高速公路。以前去阿勒泰需要绕行8个多小时，如今这条笔直的沙漠高速将时间缩短到了6小时。沿途是一望无际的沙海和戈壁，你甚至能看到野骆驼在远处漫步。我们在这一天将直杀新疆的最北端：阿尔泰山脉。<br><br><b>安全与门票:</b> 免费高速。<b>警告：沙漠高速横风极大，容易引起疲劳驾驶，请务必两人轮换开车！</b>",
-    accommodation: "喀纳斯老村特色木屋 (Kanas Old Village Wooden Cabin). <b>(住景区需二进+70元)</b>",
-    food: "<b>午餐 (Lunch):</b> 克拉美丽服务区简餐 (Kelameili Service Area).<br><b>晚餐 (Dinner):</b> 贾登峪美食广场狗鱼 (Local Pike Fish in Jiadenyu).",
-    practical: "提示：<b>极其重要：在乌鲁木齐上高速前务必加满油！</b> S21全程服务区稀少，一旦错过加油站后果不堪设想。由于阿勒泰海拔较高，晚间气温剧降，请准备保暖衣物。",
+    title: "乌鲁木齐 (Urumqi) → S21阿乌高速 → 可可托海 (Keketuohai)",
+    distance: "500km",
+    time: "6h",
+    sights: "S21沙漠高速公路, 可可托海国家地质公园 (Keketuohai Geopark). <br><br><b>历史与奇观:</b> S21是中国首条横穿古尔班通古特沙漠的高速公路。可可托海的额尔齐斯大峡谷有着震撼的花岗岩地貌，还有神秘的“三号矿坑”——这里曾为中国偿还了苏联巨额债务，并为“两弹一星”提供了稀有金属。<br><br><b>安全与门票:</b> 可可托海门票+区间车约126元，微信小程序购票。<b>警告：沙漠高速横风极大，容易引起疲劳驾驶，请务必两人轮换开车！</b>",
+    accommodation: "富蕴可可托海镇特色酒店 (Keketuohai Town Hotel).",
+    food: "<b>午餐 (Lunch):</b> 克拉美丽服务区简餐.<br><b>晚餐 (Dinner):</b> 可可托海镇额河烤鱼 (Ertix River Roasted Fish). <a href='https://uri.amap.com/search?keyword=%E5%8F%AF%E5%8F%AF%E6%89%98%E6%B5%B7%E9%95%87%E7%83%A4%E9%B1%BC' target='_blank'>高德地图</a>",
+    practical: "提示：可可托海早晚温差极大，即使在6月也可能需要薄羽绒服。",
     spots: [
-      { name: "S21沙漠高速起点", type: "waypoint", lat: 44.1200, lng: 87.5000 },
-      { name: "古尔班通古特沙漠 (Desert)", type: "sight", lat: 45.2000, lng: 87.8000 },
-      { name: "贾登峪 (Jiadenyu Hub)", type: "hotel", lat: 48.4900, lng: 87.1500 }
+      { name: "S21沙漠高速", type: "waypoint", lat: 44.1200, lng: 87.5000 },
+      { name: "可可托海国家地质公园", type: "sight", lat: 47.1990, lng: 89.8140 },
+      { name: "可可托海镇酒店", type: "hotel", lat: 47.1900, lng: 89.8000 }
     ]
   },
   {
     day: 9,
     date: "2026-06-20",
+    title: "可可托海 (Keketuohai) → 喀纳斯 (Kanas)",
+    distance: "320km",
+    time: "5h",
+    sights: "阿勒泰山脉风光. <br><br><b>路线:</b> 离开可可托海，沿着阿尔泰山脉向西北方向驶入喀纳斯腹地。这趟行程省去了第一天直接从乌鲁木齐狂奔到喀纳斯的疲惫。<br><br><b>门票与提示:</b> 喀纳斯景区实行实名预约。",
+    accommodation: "喀纳斯老村特色木屋 (Kanas Old Village Wooden Cabin). <b>(住景区需二进+70元)</b>",
+    food: "<b>午餐 (Lunch):</b> 沿途北屯或布尔津简餐.<br><b>晚餐 (Dinner):</b> 喀纳斯老村土火锅.",
+    practical: "提示：阿勒泰地区区间测速极多，请务必遵守限速。由于阿勒泰海拔较高，晚间气温剧降，请准备保暖衣物。",
+    spots: [
+      { name: "喀纳斯老村 (Kanas Old Village)", type: "hotel", lat: 48.7050, lng: 87.0100 }
+    ]
+  },
+    day: 10,
+    date: "2026-06-21",
     title: "喀纳斯 (Kanas) → 禾木 (Hemu)",
     distance: "70km",
     time: "2h",
@@ -151,8 +165,8 @@ const itineraryDataAlt = [
     ]
   },
   {
-    day: 10,
-    date: "2026-06-21",
+    day: 11,
+    date: "2026-06-22",
     title: "禾木 (Hemu) → 五彩滩 (Wucaitan) → 魔鬼城 (Ghost City) → 克拉玛依",
     distance: "450km",
     time: "7h",
@@ -168,8 +182,8 @@ const itineraryDataAlt = [
     ]
   },
   {
-    day: 11,
-    date: "2026-06-22",
+    day: 12,
+    date: "2026-06-23",
     title: "克拉玛依 (Karamay) → 赛里木湖 (Sayram Lake)",
     distance: "450km",
     time: "5.5h",
@@ -185,8 +199,8 @@ const itineraryDataAlt = [
     ]
   },
   {
-    day: 12,
-    date: "2026-06-23",
+    day: 13,
+    date: "2026-06-24",
     title: "赛里木湖 (Sayram Lake) → 伊宁 (Yining) → 昭苏 (Zhaosu)",
     distance: "240km",
     time: "5h",
@@ -201,8 +215,8 @@ const itineraryDataAlt = [
     ]
   },
   {
-    day: 13,
-    date: "2026-06-24",
+    day: 14,
+    date: "2026-06-25",
     title: "昭苏 (Zhaosu) → 特克斯 (Tekes)",
     distance: "60km",
     time: "1.5h",
@@ -216,8 +230,8 @@ const itineraryDataAlt = [
     ]
   },
   {
-    day: 14,
-    date: "2026-06-25",
+    day: 15,
+    date: "2026-06-26",
     title: "特克斯 (Tekes) → 喀拉峻 (Kalajun) → 那拉提 (Nalati)",
     distance: "250km",
     time: "4.5h",
@@ -231,8 +245,8 @@ const itineraryDataAlt = [
     ]
   },
   {
-    day: 15,
-    date: "2026-06-26",
+    day: 16,
+    date: "2026-06-27",
     title: "那拉提 (Nalati) → 独库公路 (Duku) → 乌鲁木齐 (Urumqi)",
     distance: "400km",
     time: "7.5h",
@@ -246,8 +260,8 @@ const itineraryDataAlt = [
     ]
   },
   {
-    day: 16,
-    date: "2026-06-27",
+    day: 17,
+    date: "2026-06-28",
     title: "乌鲁木齐 (Urumqi) → 天山天池 (Tianchi) → 机场",
     distance: "120km",
     time: "2.5h",
