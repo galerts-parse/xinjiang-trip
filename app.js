@@ -249,11 +249,22 @@ async function fetchAndDrawRoute() {
 }
 
 // Initial Render
-renderItinerary(itineraryData);
+const initialRoute = routeSelector.value;
+if (initialRoute === 'routeD') {
+  renderItinerary(itineraryDataD);
+} else if (initialRoute === 'routeB') {
+  renderItinerary(itineraryDataAlt);
+} else if (initialRoute === 'routeC') {
+  renderItinerary(itineraryDataRouteC);
+} else {
+  renderItinerary(itineraryData);
+}
 
 // Route Switcher Event
 routeSelector.addEventListener('change', (e) => {
-  if (e.target.value === 'routeB') {
+  if (e.target.value === 'routeD') {
+    renderItinerary(itineraryDataD);
+  } else if (e.target.value === 'routeB') {
     renderItinerary(itineraryDataAlt);
   } else if (e.target.value === 'routeC') {
     renderItinerary(itineraryDataRouteC);
