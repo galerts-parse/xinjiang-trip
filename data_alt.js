@@ -7,7 +7,7 @@ const itineraryDataAlt = [
     time: "4.5h - 5h",
     sights: "麦积山石窟 (Maijishan Grottoes). <br><br><b>历史与奇观 (Why it's fascinating):</b> 麦积山石窟并非普通的地面建筑，而是在高达142米的垂直麦垛状孤峰绝壁上，硬生生开凿出来的。最令人震撼的是它那层层叠叠、凌空盘旋在悬崖上的“凌空栈道”。<br><br><b>门票与预订 (CRITICAL PERMIT INFO):</b> 约90元。<b>必须提前7天</b>在微信搜索小程序“麦积山石窟”预约A类票。否则无法登上悬崖栈道！<a href='https://baike.baidu.com/item/%E9%BA%A6%E7%A7%AF%E5%B1%B1%E7%9F%B3%E7%AA%9F' target='_blank'>百度百科: 麦积山</a>",
     accommodation: "天水万豪福朋喜来登酒店 (Four Points Tianshui). <a href='https://www.marriott.com/en-us/hotels/tian-four-points-tianshui/overview/' target='_blank'>Marriott Booking</a>",
-    food: "<b>午餐 (Lunch):</b> 宝鸡周礼大食堂 (Baoji Zhouli Canteen). <a href='https://map.baidu.com/search/%E5%AE%9D%E9%B8%A1%E5%91%A8%E7%A4%BC%E5%A4%A7%E9%A3%9F%E5%A0%82' target='_blank'>百度地图 (Baidu Maps)</a><br><b>晚餐 (Dinner):</b> 天水常记呱呱 (Changji Guagua). <a href='https://map.baidu.com/search/%E5%A4%A9%E6%B0%B4%E5%B8%B8%E8%AE%B0%E5%91%B1%E5%91%B1' target='_blank'>百度地图 (Baidu Maps)</a>",
+    food: "<b>午餐 (Lunch):</b> 宝鸡周礼大食堂 (Baoji Zhouli Canteen). <a href='https://uri.amap.com/search?keyword=%E5%AE%9D%E9%B8%A1%E5%91%A8%E7%A4%BC%E5%A4%A7%E9%A3%9F%E5%A0%82' target='_blank'>高德地图 (Baidu Maps)</a><br><b>晚餐 (Dinner):</b> 天水常记呱呱 (Changji Guagua). <a href='https://uri.amap.com/search?keyword=%E5%A4%A9%E6%B0%B4%E5%B8%B8%E8%AE%B0%E5%91%B1%E5%91%B1' target='_blank'>高德地图 (Baidu Maps)</a>",
     practical: "提示：麦积山绝壁栈道非常陡峭，恐高者需做好心理准备。",
     spots: [
       { name: "西安出发 (Depart Xi'an)", type: "waypoint", lat: 34.3416, lng: 108.9398 },
@@ -25,7 +25,7 @@ const itineraryDataAlt = [
     time: "4.5h",
     sights: "甘肃省博物馆 (Gansu Provincial Museum). <br><br><b>历史与奇观:</b> 收藏着著名的“马踏飞燕”（铜奔马），不仅造型优美，更是巧妙地将马全身的重量集中在超越飞燕的一足之上。<br><br><b>门票与预订:</b> 免费。微信搜索“甘肃省博物馆”提前1-3天预约。<a href='https://baike.baidu.com/item/%E7%94%98%E8%82%83%E7%9C%81%E5%8D%9A%E7%89%A9%E9%A6%86' target='_blank'>百度百科: 博物馆</a>",
     accommodation: "兰州安宁喜来登酒店 (Sheraton Lanzhou Anning). <a href='https://www.marriott.com/en-us/hotels/lhwsi-sheraton-lanzhou-anning/overview/' target='_blank'>Marriott Booking</a>",
-    food: "<b>午餐 (Lunch):</b> 马子禄牛肉面. <a href='https://map.baidu.com/search/%E5%85%B0%E5%B7%9E%E9%A9%AC%E5%AD%90%E7%A6%84%E7%89%9B%E8%82%89%E9%9D%A2' target='_blank'>百度地图</a><br><b>晚餐 (Dinner):</b> 正宁路夜市老马家. <a href='https://map.baidu.com/search/%E5%85%B0%E5%B7%9E%E6%AD%A3%E5%AE%81%E8%B7%AF%E5%A4%9C%E5%B8%82' target='_blank'>百度地图</a>",
+    food: "<b>午餐 (Lunch):</b> 马子禄牛肉面. <a href='https://uri.amap.com/search?keyword=%E5%85%B0%E5%B7%9E%E9%A9%AC%E5%AD%90%E7%A6%84%E7%89%9B%E8%82%89%E9%9D%A2' target='_blank'>高德地图</a><br><b>晚餐 (Dinner):</b> 正宁路夜市老马家. <a href='https://uri.amap.com/search?keyword=%E5%85%B0%E5%B7%9E%E6%AD%A3%E5%AE%81%E8%B7%AF%E5%A4%9C%E5%B8%82' target='_blank'>高德地图</a>",
     practical: "提示：黄河穿城而过，晚上可前往中山桥（黄河第一铁桥）欣赏夜景。",
     spots: [
       { name: "甘肃省博物馆", type: "sight", lat: 36.0664, lng: 103.7744 },
@@ -42,7 +42,7 @@ const itineraryDataAlt = [
     time: "7h",
     sights: "张掖七彩丹霞 (Zhangye Danxia). <br><br><b>历史与奇观:</b> 数百万年地质运动的杰作，富含铁的岩层在氧化后呈现出如油画般绚烂的红、黄、橙色调，在夕阳下仿佛燃烧起来。<br><br><b>活动与门票:</b> 丹霞热气球体验。微信小程序“张掖七彩丹霞旅游景区”提前1-3天购票。<a href='https://baike.baidu.com/item/%E5%BC%A0%E6%8E%96%E4%B8%83%E5%BD%A9%E4%B8%B9%E9%9C%9E%E6%97%85%E6%B8%B8%E6%99%AF%E5%8C%BA/19597288' target='_blank'>百度百科: 丹霞</a>",
     accommodation: "张掖金阳国际饭店 (Zhangye Jinyang International Hotel). <a href='https://www.trip.com/hotels/zhangye-hotel-detail-7607770/zhangye-jinyang-international-hotel/' target='_blank'>Trip.com Booking</a>",
-    food: "<b>午餐 (Lunch):</b> 武威北关市场三套车. <a href='https://map.baidu.com/search/%E6%AD%A6%E5%A8%81%E5%8C%97%E5%85%B3%E5%B8%82%E5%9C%BA%E4%B8%89%E5%A5%97%E8%BD%A6' target='_blank'>百度地图</a><br><b>晚餐 (Dinner):</b> 孙记炒炮. <a href='https://map.baidu.com/search/%E5%BC%A0%E6%8E%96%E5%AD%99%E8%AE%B0%E7%82%92%E7%82%AE' target='_blank'>百度地图</a>",
+    food: "<b>午餐 (Lunch):</b> 武威北关市场三套车. <a href='https://uri.amap.com/search?keyword=%E6%AD%A6%E5%A8%81%E5%8C%97%E5%85%B3%E5%B8%82%E5%9C%BA%E4%B8%89%E5%A5%97%E8%BD%A6' target='_blank'>高德地图</a><br><b>晚餐 (Dinner):</b> 孙记炒炮. <a href='https://uri.amap.com/search?keyword=%E5%BC%A0%E6%8E%96%E5%AD%99%E8%AE%B0%E7%82%92%E7%82%AE' target='_blank'>高德地图</a>",
     practical: "提示：河西走廊紫外线极强，丹霞景区全露天，务必做好硬核防晒。",
     spots: [
       { name: "武威北关市场", type: "restaurant", lat: 37.9331, lng: 102.6310 },
@@ -59,7 +59,7 @@ const itineraryDataAlt = [
     time: "4.5h",
     sights: "马蹄寺, 嘉峪关. <br><br><b>历史与奇观:</b> 嘉峪关是明代万里长城的最西端。站在高达十余米的城墙上，看着关外苍茫的戈壁，你能深刻体会古人“西出阳关无故人”的苍凉与悲壮。<br><br><b>门票与预订:</b> 嘉峪关约110元。可提前1天美团购票。<a href='https://baike.baidu.com/item/%E5%98%89%E5%B3%AA%E5%85%B3' target='_blank'>百度百科: 嘉峪关</a>",
     accommodation: "嘉峪关广场假日酒店 (Plaza Holiday Hotel Jiayuguan). <a href='https://www.trip.com/hotels/jiayuguan-hotel-detail-1234909/plaza-holiday-hotel/' target='_blank'>Trip.com Booking</a>",
-    food: "<b>午餐 (Lunch):</b> 马蹄寺裕固族帐篷餐厅. <a href='https://map.baidu.com/search/%E9%A9%AC%E8%B9%84%E5%AF%BA%E9%A4%90%E9%A5%AE' target='_blank'>百度地图</a><br><b>晚餐 (Dinner):</b> 大唐美食街-眼镜烤肉. <a href='https://map.baidu.com/search/%E5%98%89%E5%B3%AA%E5%85%B3%E7%9C%BC%E9%95%9C%E7%83%A4%E8%82%89' target='_blank'>百度地图</a>",
+    food: "<b>午餐 (Lunch):</b> 马蹄寺裕固族帐篷餐厅. <a href='https://uri.amap.com/search?keyword=%E9%A9%AC%E8%B9%84%E5%AF%BA%E9%A4%90%E9%A5%AE' target='_blank'>高德地图</a><br><b>晚餐 (Dinner):</b> 大唐美食街-眼镜烤肉. <a href='https://uri.amap.com/search?keyword=%E5%98%89%E5%B3%AA%E5%85%B3%E7%9C%BC%E9%95%9C%E7%83%A4%E8%82%89' target='_blank'>高德地图</a>",
     practical: "提示：嘉峪关城楼风极大。",
     spots: [
       { name: "马蹄寺", type: "sight", lat: 38.4831, lng: 100.4192 },
@@ -76,7 +76,7 @@ const itineraryDataAlt = [
     time: "7h",
     sights: "星星峡 (Xingxingxia). <br><br><b>历史与奇观 (Why it's fascinating):</b> 星星峡不仅是一个地理概念，更是心理上的“新疆大门”。晚清时期，左宗棠抬棺出征收复新疆，大军便是从此入疆。这条路线我们直接越过敦煌，直奔新疆腹地，以节省时间去更北方的阿勒泰森林。<br><br><b>门票与预订:</b> 自然风光与检查站，无需门票。<a href='https://baike.baidu.com/item/%E6%98%9F%E6%98%9F%E5%B3%A1' target='_blank'>百度百科: 星星峡</a>",
     accommodation: "哈密建国酒店 (Jianguo Hotel Hami). <a href='https://www.trip.com/hotels/hami-hotel-detail-1237956/jianguo-hotel/' target='_blank'>Trip.com Booking</a>",
-    food: "<b>午餐 (Lunch):</b> 柳园服务区简餐 (Liuyuan Rest Stop).<br><b>晚餐 (Dinner):</b> 大营盘羊肉焖饼 (Dayingpan Mutton Pancakes) - 哈密当地不可错过的非遗美食。 <a href='https://map.baidu.com/search/%E5%93%88%E5%AF%86%E5%A4%A7%E8%90%A5%E7%9B%98%E7%BE%8A%E8%82%89%E7%84%96%E9%A5%BC' target='_blank'>百度地图 (Baidu Maps)</a>",
+    food: "<b>午餐 (Lunch):</b> 柳园服务区简餐 (Liuyuan Rest Stop).<br><b>晚餐 (Dinner):</b> 大营盘羊肉焖饼 (Dayingpan Mutton Pancakes) - 哈密当地不可错过的非遗美食。 <a href='https://uri.amap.com/search?keyword=%E5%93%88%E5%AF%86%E5%A4%A7%E8%90%A5%E7%9B%98%E7%BE%8A%E8%82%89%E7%84%96%E9%A5%BC' target='_blank'>高德地图 (Baidu Maps)</a>",
     practical: "提示：<b>极其严格的边防安检：</b>星星峡检查站要求所有乘员下车查验护照。可能会耗时1-2小时，请保持耐心。",
     spots: [
       { name: "星星峡检查站", type: "sight", lat: 41.8021, lng: 95.2155 },
@@ -92,7 +92,7 @@ const itineraryDataAlt = [
     time: "5.5h",
     sights: "交河故城 (Jiaohe Ruins), 坎儿井. <br><br><b>历史与奇观:</b> 交河故城是世界上最大、最古老、保存最完好的生土建筑城市。古人硬生生从高30米的黄土台地上“向下雕刻”出来的。坎儿井则是干旱沙漠中创造的伟大水利奇迹。<br><br><b>门票与预订:</b> 提前1天在微信搜索“交河故城”小程序购票。<a href='https://baike.baidu.com/item/%E4%BA%A4%E6%B2%B3%E6%95%85%E5%9F%8E' target='_blank'>百度百科: 交河故城</a>",
     accommodation: "吐鲁番美居酒店 (Mercure Turpan Downtown). <a href='https://all.accor.com/hotel/B9G7/index.en.shtml' target='_blank'>Accor Booking</a>",
-    food: "<b>午餐 (Lunch):</b> 吐鲁番市区拌面.<br><b>晚餐 (Dinner):</b> 海尔巴格 (Herembagh) - 吐鲁番极具异域风情的高端维吾尔族餐厅，碎肉抓饭极佳。 <a href='https://map.baidu.com/search/%E5%90%90%E9%B2%81%E7%95%AA%E6%B5%B7%E5%B0%94%E5%B7%B4%E6%A0%BC' target='_blank'>百度地图</a>",
+    food: "<b>午餐 (Lunch):</b> 吐鲁番市区拌面.<br><b>晚餐 (Dinner):</b> 海尔巴格 (Herembagh) - 吐鲁番极具异域风情的高端维吾尔族餐厅，碎肉抓饭极佳。 <a href='https://uri.amap.com/search?keyword=%E5%90%90%E9%B2%81%E7%95%AA%E6%B5%B7%E5%B0%94%E5%B7%B4%E6%A0%BC' target='_blank'>高德地图</a>",
     practical: "提示：吐鲁番素有“火州”之称，6月气温可能高达45°C。交河故城全露天，强烈建议傍晚游览以免中暑。",
     spots: [
       { name: "坎儿井", type: "sight", lat: 42.9431, lng: 89.1415 },
@@ -109,7 +109,7 @@ const itineraryDataAlt = [
     time: "3.5h",
     sights: "新疆博物馆, 新疆国际大巴扎. <br><br><b>历史与奇观:</b> 博物馆藏有震惊世界的距今3800年的“楼兰美女”干尸。大巴扎则是世界上规模最大的大巴扎，重现了古代丝路集市的繁华景象。<br><br><b>门票与预订:</b> 博物馆免费，需提前1-3天在微信搜索“新疆维吾尔自治区博物馆”预约。<a href='https://baike.baidu.com/item/%E6%96%B0%E7%96%86%E7%BB%B4%E5%90%BE%E5%B0%94%E8%87%AA%E6%B2%BB%E5%8C%BA%E5%8D%9A%E7%89%A9%E9%A6%86' target='_blank'>百度百科: 新疆博物馆</a>",
     accommodation: "乌鲁木齐万怡酒店 (Fairfield by Marriott Urumqi). <a href='https://www.marriott.com/en-us/hotels/urcfi-fairfield-by-marriott-urumqi-beijing-road/overview/' target='_blank'>Marriott Booking</a>",
-    food: "<b>午餐 (Lunch):</b> 丝路有约 - 大巴扎附近的高端新疆菜。 <a href='https://map.baidu.com/search/%E4%B9%8C%E9%B2%81%E6%9C%A8%E9%BD%90%E4%B8%9D%E8%B7%AF%E6%9C%89%E7%BA%A6' target='_blank'>百度地图</a><br><b>晚餐 (Dinner):</b> 血站大盘鸡 - 乌鲁木齐大盘鸡的泰斗。 <a href='https://map.baidu.com/search/%E4%B9%8C%E9%B2%81%E6%9C%A8%E9%BD%90%E8%A1%80%E7%AB%99%E5%A4%A7%E7%9B%98%E9%B8%A1' target='_blank'>百度地图</a>",
+    food: "<b>午餐 (Lunch):</b> 丝路有约 - 大巴扎附近的高端新疆菜。 <a href='https://uri.amap.com/search?keyword=%E4%B9%8C%E9%B2%81%E6%9C%A8%E9%BD%90%E4%B8%9D%E8%B7%AF%E6%9C%89%E7%BA%A6' target='_blank'>高德地图</a><br><b>晚餐 (Dinner):</b> 血站大盘鸡 - 乌鲁木齐大盘鸡的泰斗。 <a href='https://uri.amap.com/search?keyword=%E4%B9%8C%E9%B2%81%E6%9C%A8%E9%BD%90%E8%A1%80%E7%AB%99%E5%A4%A7%E7%9B%98%E9%B8%A1' target='_blank'>高德地图</a>",
     practical: "提示：达坂城风区横风极强，请双手紧握方向盘。",
     spots: [
       { name: "新疆博物馆", type: "sight", lat: 43.8166, lng: 87.5752 },
@@ -142,7 +142,7 @@ const itineraryDataAlt = [
     time: "2h",
     sights: "喀纳斯湖 (Kanas Lake), 禾木村 (Hemu Village). <br><br><b>历史与奇观 (Why it's fascinating):</b> 喀纳斯被称为“东方瑞士”，这里有着如同调色板一样的西伯利亚泰加林和变色湖泊。观鱼台是俯瞰喀纳斯湖水怪传说的最佳地点。下午前往禾木村，这是图瓦人的保留地，一排排原木搭建的小木屋散布在白桦林中，晨雾缭绕时宛如仙境。<br><br><b>活动与门票:</b> 喀纳斯一进门票+区间车 230元/人 (住景区需二进+70元)。微信小程序“喀纳斯景区”购票。<a href='https://baike.baidu.com/item/%E5%96%80%E7%BA%B3%E6%96%AF%E6%B9%96' target='_blank'>百度百科: 喀纳斯</a>",
     accommodation: "禾木村特色木屋民宿 (Hemu Village Wooden Cabin).",
-    food: "<b>午餐 (Lunch):</b> 喀纳斯换乘中心简餐.<br><b>晚餐 (Dinner):</b> 禾木村土火锅 (Hemu Local Hotpot) - 在木屋里吃着热腾腾的火锅，感受山林寒夜。 <a href='https://map.baidu.com/search/%E7%A6%BE%E6%9C%A8%E6%9D%91%E5%9C%9F%E7%81%AB%E9%94%85' target='_blank'>百度地图</a>",
+    food: "<b>午餐 (Lunch):</b> 喀纳斯换乘中心简餐.<br><b>晚餐 (Dinner):</b> 禾木村土火锅 (Hemu Local Hotpot) - 在木屋里吃着热腾腾的火锅，感受山林寒夜。 <a href='https://uri.amap.com/search?keyword=%E7%A6%BE%E6%9C%A8%E6%9D%91%E5%9C%9F%E7%81%AB%E9%94%85' target='_blank'>高德地图</a>",
     practical: "提示：禾木村清晨极为寒冷，观赏晨雾需要穿冲锋衣或羽绒服。",
     spots: [
       { name: "喀纳斯湖 (Kanas Lake)", type: "sight", lat: 48.7166, lng: 87.0333 },
@@ -158,7 +158,7 @@ const itineraryDataAlt = [
     time: "7h",
     sights: "五彩滩 (Five-color Beach), 世界魔鬼城 (World Ghost City). <br><br><b>历史与奇观:</b> 下午先前往五彩滩看日落(门票50元/人)，这里是典型的雅丹地貌，一河隔两岸，南北两重天。随后驶入苍茫的准噶尔盆地，到达魔鬼城。魔鬼城千万年的风蚀形成了无数如同古堡般的土丘，风穿过缝隙时发出令人毛骨悚然的嘶吼声。<br><br><b>门票与预订:</b> 魔鬼城门票+小火车 62元/人，微信小程序购票。<a href='https://baike.baidu.com/item/%E4%B9%8C%E5%B0%94%E7%A6%BE%E9%AD%94%E9%AC%BC%E5%9F%8E' target='_blank'>百度百科: 魔鬼城</a>",
     accommodation: "克拉玛依玛依塔柯酒店 (Mayitake Hotel Karamay).",
-    food: "<b>午餐 (Lunch):</b> 乌尔禾镇阿吾斯奇羊肉 (Urho Mutton).<br><b>晚餐 (Dinner):</b> 克拉玛依市区烤鱼 (Karamay Roasted Fish). <a href='https://map.baidu.com/search/%E5%85%8B%E6%8B%89%E7%8E%9B%E4%BE%9D%E7%83%A4%E9%B1%BC' target='_blank'>百度地图</a>",
+    food: "<b>午餐 (Lunch):</b> 乌尔禾镇阿吾斯奇羊肉 (Urho Mutton).<br><b>晚餐 (Dinner):</b> 克拉玛依市区烤鱼 (Karamay Roasted Fish). <a href='https://uri.amap.com/search?keyword=%E5%85%8B%E6%8B%89%E7%8E%9B%E4%BE%9D%E7%83%A4%E9%B1%BC' target='_blank'>高德地图</a>",
     practical: "提示：魔鬼城全露天，紫外线极强且极度干热。克拉玛依是中国最富裕的石油城之一，夜晚城市景观非常现代。",
     spots: [
       { name: "五彩滩 (Wucaitan)", type: "sight", lat: 47.8220, lng: 86.8110 },
@@ -208,7 +208,7 @@ const itineraryDataAlt = [
     time: "1.5h",
     sights: "特克斯八卦城 (Tekes Bagua City). <br><br><b>历史与奇观:</b> 特克斯是世界上唯一保存完整、建筑正规的“八卦城”。传说最早由南宋道教全真七子之一的丘处机在此定下风水。特克斯在20世纪90年代取消了红绿灯，成为中国唯一没有红绿灯的城市。<br><br><b>活动:</b> 乘坐摩天轮或太极眼热气球俯瞰八卦城全貌。<a href='https://baike.baidu.com/item/%E7%89%B9%E5%85%8B%E6%96%AF%E5%85%AB%E5%8D%A6%E5%9F%8E' target='_blank'>百度百科: 八卦城</a>",
     accommodation: "特克斯天麓酒店 (Tianlu Hotel).",
-    food: "<b>午餐 (Lunch):</b> 特克斯八卦城内羊排揪片子.<br><b>晚餐 (Dinner):</b> 离街特色民宿区烧烤. <a href='https://map.baidu.com/search/%E7%89%B9%E5%85%8B%E6%96%AF%E7%A6%BB%E8%A1%97' target='_blank'>百度地图</a>",
+    food: "<b>午餐 (Lunch):</b> 特克斯八卦城内羊排揪片子.<br><b>晚餐 (Dinner):</b> 离街特色民宿区烧烤. <a href='https://uri.amap.com/search?keyword=%E7%89%B9%E5%85%8B%E6%96%AF%E7%A6%BB%E8%A1%97' target='_blank'>高德地图</a>",
     practical: "提示：特克斯是前往喀拉峻的唯一大本营，物资补充请在此完成。",
     spots: [
       { name: "特克斯八卦城", type: "sight", lat: 43.2185, lng: 81.8385 },
@@ -223,7 +223,7 @@ const itineraryDataAlt = [
     time: "4.5h",
     sights: "喀拉峻大草原 (Kalajun Grassland) / 那拉提 (Nalati). <br><br><b>历史与奇观:</b> 相较于平坦草原，喀拉峻保留了最原始的立体高山草甸地貌，沟壑纵横，在光影下如同人体曲线，被称为“人体草原”。这里曾是古代乌孙国的夏牧场。<br><br><b>门票与预订:</b> 喀拉峻提前在小程序购票。<b>如果前往那拉提景区游玩，那拉提自驾票 300元/人/天。</b>",
     accommodation: "那拉提文旅度假酒店 (Nalati Wenlu Resort).",
-    food: "<b>午餐 (Lunch):</b> 喀拉峻景区内毡房简餐.<br><b>晚餐 (Dinner):</b> 那拉提镇哈萨克正宗烤全羊. <a href='https://map.baidu.com/search/%E9%82%A3%E6%8B%89%E6%8F%90%E9%95%87%E7%83%A4%E5%85%A8%E7%BE%8A' target='_blank'>百度地图</a>",
+    food: "<b>午餐 (Lunch):</b> 喀拉峻景区内毡房简餐.<br><b>晚餐 (Dinner):</b> 那拉提镇哈萨克正宗烤全羊. <a href='https://uri.amap.com/search?keyword=%E9%82%A3%E6%8B%89%E6%8F%90%E9%95%87%E7%83%A4%E5%85%A8%E7%BE%8A' target='_blank'>高德地图</a>",
     practical: "提示：喀拉峻面积巨大，游览需大量步行，请带好防雨外套。",
     spots: [
       { name: "喀拉峻草原", type: "sight", lat: 43.0450, lng: 82.0160 },

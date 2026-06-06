@@ -7,7 +7,7 @@ const itineraryDataRouteC = [
     time: "4.5h",
     sights: "麦积山石窟 (Maijishan Grottoes). 早发可顺路看西安城墙/大雁塔。<br><br><b>历史与奇观:</b> 麦积山石窟并非普通的地面建筑，而是在绝壁上开凿出来的。<br><br><b>门票与预订 (CRITICAL PERMIT INFO):</b> 约100元。<b>必须提前7天</b>在微信搜索小程序预约A类票。否则无法登上悬崖栈道！<a href='https://baike.baidu.com/item/%E9%BA%A6%E7%A7%AF%E5%B1%B1%E7%9F%B3%E7%AA%9F' target='_blank'>百度百科: 麦积山</a>",
     accommodation: "天水万豪福朋喜来登酒店 (Four Points Tianshui). <a href='https://www.marriott.com/en-us/hotels/tian-four-points-tianshui/overview/' target='_blank'>Marriott Booking</a>",
-    food: "<b>午餐 (Lunch):</b> 宝鸡周礼大食堂. <a href='https://map.baidu.com/search/%E5%AE%9D%E9%B8%A1%E5%91%A8%E7%A4%BC%E5%A4%A7%E9%A3%9F%E5%A0%82' target='_blank'>百度地图 (Baidu Maps)</a><br><b>晚餐 (Dinner):</b> 天水常记呱呱. <a href='https://map.baidu.com/search/%E5%A4%A9%E6%B0%B4%E5%B8%B8%E8%AE%B0%E5%91%B1%E5%91%B1' target='_blank'>百度地图 (Baidu Maps)</a>",
+    food: "<b>午餐 (Lunch):</b> 宝鸡周礼大食堂. <a href='https://uri.amap.com/search?keyword=%E5%AE%9D%E9%B8%A1%E5%91%A8%E7%A4%BC%E5%A4%A7%E9%A3%9F%E5%A0%82' target='_blank'>高德地图 (Baidu Maps)</a><br><b>晚餐 (Dinner):</b> 天水常记呱呱. <a href='https://uri.amap.com/search?keyword=%E5%A4%A9%E6%B0%B4%E5%B8%B8%E8%AE%B0%E5%91%B1%E5%91%B1' target='_blank'>高德地图 (Baidu Maps)</a>",
     practical: "提示：麦积山绝壁栈道非常陡峭，恐高者需做好心理准备。海拔↑1100m。",
     spots: [
       { name: "西安出发 (Depart Xi'an)", type: "waypoint", lat: 34.3416, lng: 108.9398 },
@@ -23,7 +23,7 @@ const itineraryDataRouteC = [
     time: "4h",
     sights: "甘肃省博物馆 (Gansu Provincial Museum), 黄河中山桥, 正宁路夜市.<br><br><b>历史与奇观:</b> 省博收藏着著名的“马踏飞燕”（铜奔马）。<br><br><b>门票与预订:</b> 免费。微信搜索“甘肃省博物馆”提前1-3天预约。<a href='https://baike.baidu.com/item/%E7%94%98%E8%82%83%E7%9C%81%E5%8D%9A%E7%89%A9%E9%A6%86' target='_blank'>百度百科: 博物馆</a>",
     accommodation: "兰州安宁喜来登酒店 (Sheraton Lanzhou Anning). <a href='https://www.marriott.com/en-us/hotels/lhwsi-sheraton-lanzhou-anning/overview/' target='_blank'>Marriott Booking</a>",
-    food: "<b>晚餐 (Dinner):</b> 正宁路夜市老马家. <a href='https://map.baidu.com/search/%E5%85%B0%E5%B7%9E%E6%AD%A3%E5%AE%81%E8%B7%AF%E5%A4%9C%E5%B8%82' target='_blank'>百度地图</a>",
+    food: "<b>晚餐 (Dinner):</b> 正宁路夜市老马家. <a href='https://uri.amap.com/search?keyword=%E5%85%B0%E5%B7%9E%E6%AD%A3%E5%AE%81%E8%B7%AF%E5%A4%9C%E5%B8%82' target='_blank'>高德地图</a>",
     practical: "提示：黄河穿城而过，晚上可前往中山桥（黄河第一铁桥）欣赏夜景。海拔↑1520m。",
     spots: [
       { name: "甘肃省博物馆", type: "sight", lat: 36.0664, lng: 103.7744 },
@@ -39,7 +39,7 @@ const itineraryDataRouteC = [
     time: "6~6.5h",
     sights: "武威雷台汉墓, 张掖七彩丹霞. <br><br><b>历史与奇观:</b> 傍晚看七彩丹霞日落。数百万年地质运动的杰作，在夕阳下仿佛燃烧起来。<br><br><b>活动与门票:</b> 微信小程序“张掖七彩丹霞旅游景区”提前1-3天购票。<a href='https://baike.baidu.com/item/%E5%BC%A0%E6%8E%96%E4%B8%83%E5%BD%A9%E4%B8%B9%E9%9C%9E%E6%97%85%E6%B8%B8%E6%99%AF%E5%8C%BA/19597288' target='_blank'>百度百科: 丹霞</a>",
     accommodation: "张掖御景国际 (Zhangye Yujing International Hotel). <a href='https://www.trip.com/hotels/zhangye-hotel-detail-6478954/zhangye-yujing-international-hotel/' target='_blank'>Trip.com Booking</a>",
-    food: "<b>午餐 (Lunch):</b> 武威北关市场三套车. <a href='https://map.baidu.com/search/%E6%AD%A6%E5%A8%81%E5%8C%97%E5%85%B3%E5%B8%82%E5%9C%BA%E4%B8%89%E5%A5%97%E8%BD%A6' target='_blank'>百度地图</a><br><b>晚餐 (Dinner):</b> 孙记炒炮. <a href='https://map.baidu.com/search/%E5%BC%A0%E6%8E%96%E5%AD%99%E8%AE%B0%E7%82%92%E7%82%AE' target='_blank'>百度地图</a>",
+    food: "<b>午餐 (Lunch):</b> 武威北关市场三套车. <a href='https://uri.amap.com/search?keyword=%E6%AD%A6%E5%A8%81%E5%8C%97%E5%85%B3%E5%B8%82%E5%9C%BA%E4%B8%89%E5%A5%97%E8%BD%A6' target='_blank'>高德地图</a><br><b>晚餐 (Dinner):</b> 孙记炒炮. <a href='https://uri.amap.com/search?keyword=%E5%BC%A0%E6%8E%96%E5%AD%99%E8%AE%B0%E7%82%92%E7%82%AE' target='_blank'>高德地图</a>",
     practical: "提示：丹霞景区全露天，务必做好硬核防晒。海拔↑1480m (丹霞↑1850m)。",
     spots: [
       { name: "武威雷台汉墓", type: "sight", lat: 37.9405, lng: 102.6415 },
@@ -55,7 +55,7 @@ const itineraryDataRouteC = [
     time: "3h",
     sights: "嘉峪关关城, 悬臂长城, 长城博物馆. <br><br><b>历史与奇观:</b> 嘉峪关是明代万里长城的最西端。站在城墙上，看着关外苍茫的戈壁，感受“西出阳关无故人”的苍凉。<br><br><b>门票与预订:</b> 约110元。可提前1天美团购票。<a href='https://baike.baidu.com/item/%E5%98%89%E5%B3%AA%E5%85%B3' target='_blank'>百度百科: 嘉峪关</a>",
     accommodation: "嘉峪关远东华伦酒店 (Yuandong Hualun Hotel). <a href='https://www.trip.com/hotels/jiayuguan-hotel-detail-7607759/yuandong-hualun-hotel/' target='_blank'>Trip.com Booking</a>",
-    food: "<b>晚餐 (Dinner):</b> 大唐美食街-眼镜烤肉. <a href='https://map.baidu.com/search/%E5%98%89%E5%B3%AA%E5%85%B3%E7%9C%BC%E9%95%9C%E7%83%A4%E8%82%89' target='_blank'>百度地图</a>",
+    food: "<b>晚餐 (Dinner):</b> 大唐美食街-眼镜烤肉. <a href='https://uri.amap.com/search?keyword=%E5%98%89%E5%B3%AA%E5%85%B3%E7%9C%BC%E9%95%9C%E7%83%A4%E8%82%89' target='_blank'>高德地图</a>",
     practical: "提示：嘉峪关城楼风极大。海拔↑1610m。",
     spots: [
       { name: "嘉峪关关城", type: "sight", lat: 39.8037, lng: 98.2140 },
@@ -71,7 +71,7 @@ const itineraryDataRouteC = [
     time: "4.5h",
     sights: "莫高窟 (Mogao Caves), 鸣沙山月牙泉看日落. <br><br><b>历史与奇观:</b> 莫高窟是人类历史上最伟大的文化遗址之一。鸣沙山月牙泉则是世界地质奇观。<br><br><b>门票与预订 (CRITICAL PERMIT INFO):</b> 莫高窟A类票(260元)<b>必须提前7~15天官网预约！</b><a href='https://www.mgk.org.cn/' target='_blank'>莫高窟官网</a>",
     accommodation: "敦煌万豪福朋喜来登酒店 (Four Points by Sheraton Dunhuang). <a href='https://www.marriott.com/en-us/hotels/dhqfp-four-points-by-sheraton-dunhuang/overview/' target='_blank'>Marriott Booking</a>",
-    food: "<b>晚餐 (Dinner):</b> 靖远尕六羊羔肉. <a href='https://map.baidu.com/search/%E6%95%A6%E7%85%8C%E9%9D%96%E8%BF%9C%E5%B0%95%E5%85%AD%E7%BE%8A%E7%BE%94%E8%82%89' target='_blank'>百度地图</a>",
+    food: "<b>晚餐 (Dinner):</b> 靖远尕六羊羔肉. <a href='https://uri.amap.com/search?keyword=%E6%95%A6%E7%85%8C%E9%9D%96%E8%BF%9C%E5%B0%95%E5%85%AD%E7%BE%8A%E7%BE%94%E8%82%89' target='_blank'>高德地图</a>",
     practical: "提示：鸣沙山的沙子极细，会损坏相机的机械结构。海拔↑1140m。",
     spots: [
       { name: "莫高窟", type: "sight", lat: 40.0381, lng: 94.8159 },
@@ -103,7 +103,7 @@ const itineraryDataRouteC = [
     time: "6h",
     sights: "星星峡入疆. <br><br><b>路线说明:</b> 这天不会途径当金山口（如果去当金山口会折返多几百公里，不可能实现）。配合检查站查验，见站加油。<br><br><b>历史与奇观:</b> 星星峡不仅是一个地理概念，更是心理上的“新疆大门”。",
     accommodation: "哈密宾馆 (Hami Hotel). <a href='https://www.trip.com/hotels/hami-hotel-detail-1234910/hami-hotel/' target='_blank'>Trip.com Booking</a>",
-    food: "<b>晚餐 (Dinner):</b> 大营盘羊肉焖饼. <a href='https://map.baidu.com/search/%E5%93%88%E5%AF%86%E5%A4%A7%E8%90%A5%E7%9B%98%E7%BE%8A%E8%82%89%E7%84%96%E9%A5%BC' target='_blank'>百度地图</a>",
+    food: "<b>晚餐 (Dinner):</b> 大营盘羊肉焖饼. <a href='https://uri.amap.com/search?keyword=%E5%93%88%E5%AF%86%E5%A4%A7%E8%90%A5%E7%9B%98%E7%BE%8A%E8%82%89%E7%84%96%E9%A5%BC' target='_blank'>高德地图</a>",
     practical: "提示：<b>极其严格的边防安检：</b>星星峡检查站要求所有乘员下车查验护照。可能会耗时1-2小时，请保持耐心。海拔↑760m。",
     spots: [
       { name: "星星峡检查站", type: "sight", lat: 41.8021, lng: 95.2155 },
@@ -118,7 +118,7 @@ const itineraryDataRouteC = [
     time: "7.5h",
     sights: "火焰山 (Flaming Mountains), 坎儿井. <br><br><b>历史与奇观:</b> 坎儿井是新疆人民在干旱沙漠中创造的伟大水利奇迹，利用地下暗渠将天山雪水引入绿洲。",
     accommodation: "吐鲁番火洲美居酒店 (Mercure Turpan Downtown). <a href='https://all.accor.com/hotel/B9G7/index.en.shtml' target='_blank'>Accor Booking</a>",
-    food: "<b>晚餐 (Dinner):</b> 海尔巴格 (Herembagh) - 吐鲁番极具异域风情的高端维吾尔族餐厅。 <a href='https://map.baidu.com/search/%E5%90%90%E9%B2%81%E7%95%AA%E6%B5%B7%E5%B0%94%E5%B7%B4%E6%A0%BC' target='_blank'>百度地图</a>",
+    food: "<b>晚餐 (Dinner):</b> 海尔巴格 (Herembagh) - 吐鲁番极具异域风情的高端维吾尔族餐厅。 <a href='https://uri.amap.com/search?keyword=%E5%90%90%E9%B2%81%E7%95%AA%E6%B5%B7%E5%B0%94%E5%B7%B4%E6%A0%BC' target='_blank'>高德地图</a>",
     practical: "提示：吐鲁番素有“火州”之称，6月气温极高。火焰山区域海拔盆地-154m，吐鲁番市区↑30m。",
     spots: [
       { name: "火焰山", type: "sight", lat: 42.9818, lng: 89.5936 },
@@ -134,7 +134,7 @@ const itineraryDataRouteC = [
     time: "3h",
     sights: "苏公塔, 交河故城, 国际大巴扎. <br><br><b>历史与奇观:</b> 交河故城是世界上最大、最古老、保存最完好的生土建筑城市。晚间到达乌鲁木齐国际大巴扎，体验丝路市集的繁华。",
     accommodation: "乌鲁木齐国际大巴扎亚朵酒店 (Atour Hotel Grand Bazaar). <a href='https://www.trip.com/hotels/urumqi-hotel-detail-35926510/atour-hotel/' target='_blank'>Trip.com Booking</a>",
-    food: "<b>晚餐 (Dinner):</b> 丝路有约 (Silu Youyue) - 大巴扎附近的高端新疆菜。 <a href='https://map.baidu.com/search/%E4%B9%8C%E9%B2%81%E6%9C%A8%E9%BD%90%E4%B8%9D%E8%B7%AF%E6%9C%89%E7%BA%A6' target='_blank'>百度地图</a>",
+    food: "<b>晚餐 (Dinner):</b> 丝路有约 (Silu Youyue) - 大巴扎附近的高端新疆菜。 <a href='https://uri.amap.com/search?keyword=%E4%B9%8C%E9%B2%81%E6%9C%A8%E9%BD%90%E4%B8%9D%E8%B7%AF%E6%9C%89%E7%BA%A6' target='_blank'>高德地图</a>",
     practical: "提示：交河故城全露天，强烈建议傍晚游览以免中暑。乌鲁木齐海拔↑900m。",
     spots: [
       { name: "苏公塔", type: "sight", lat: 42.9333, lng: 89.2000 },
@@ -182,7 +182,7 @@ const itineraryDataRouteC = [
     time: "4-5h",
     sights: "特克斯八卦城离街, 那拉提空中草原. <br><br><b>历史与奇观:</b> 特克斯是世界上唯一保存完整的“八卦城”。随后前往那拉提空中草原（建议次日早进景区）。<br><br><b>门票与提示 (CRITICAL PERMIT INFO):</b> <b>那拉提景区目前实行动态二维码，需要本人自行预约自驾票！</b>",
     accommodation: "那拉提万森度假酒店 (Nalati Wansen Resort Hotel). <a href='https://www.trip.com/hotels/xinyuan-hotel-detail-7607788/nalati-wansen-resort-hotel/' target='_blank'>Trip.com Booking</a>",
-    food: "<b>晚餐 (Dinner):</b> 特克斯离街特色烧烤 或 那拉提镇哈萨克正宗烤全羊. <a href='https://map.baidu.com/search/%E9%82%A3%E6%8B%89%E6%8F%90%E9%95%87%E7%83%A4%E5%85%A8%E7%BE%8A' target='_blank'>百度地图</a>",
+    food: "<b>晚餐 (Dinner):</b> 特克斯离街特色烧烤 或 那拉提镇哈萨克正宗烤全羊. <a href='https://uri.amap.com/search?keyword=%E9%82%A3%E6%8B%89%E6%8F%90%E9%95%87%E7%83%A4%E5%85%A8%E7%BE%8A' target='_blank'>高德地图</a>",
     practical: "提示：那拉提镇海拔↑1980m。",
     spots: [
       { name: "特克斯离街", type: "sight", lat: 43.2150, lng: 81.8350 },
@@ -229,7 +229,7 @@ const itineraryDataRouteC = [
     time: "7h",
     sights: "沿途戈壁风光. <br><br><b>路线:</b> 走乌若高速+吐和高速，一路向南直奔南疆重镇库车。",
     accommodation: "库车饭店 (Kuqa Hotel). <a href='https://www.trip.com/hotels/kuqa-hotel-detail-7607801/kuqa-hotel/' target='_blank'>Trip.com Booking</a>",
-    food: "<b>晚餐 (Dinner):</b> 库车大馕城附近烤肉 (Kuqa Naan City BBQ). <a href='https://map.baidu.com/search/%E5%BA%93%E8%BD%A6%E5%A4%A7%E9%A6%95%E5%9F%8E' target='_blank'>百度地图</a>",
+    food: "<b>晚餐 (Dinner):</b> 库车大馕城附近烤肉 (Kuqa Naan City BBQ). <a href='https://uri.amap.com/search?keyword=%E5%BA%93%E8%BD%A6%E5%A4%A7%E9%A6%95%E5%9F%8E' target='_blank'>高德地图</a>",
     practical: "提示：长时间的高速驾驶，请两人轮换。库车海拔↑1200m。",
     spots: [
       { name: "库车饭店", type: "hotel", lat: 41.7250, lng: 82.9350 }
