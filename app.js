@@ -255,6 +255,8 @@ renderItinerary(itineraryData);
 routeSelector.addEventListener('change', (e) => {
   if (e.target.value === 'routeB') {
     renderItinerary(itineraryDataAlt);
+  } else if (e.target.value === 'routeC') {
+    renderItinerary(itineraryDataRouteC);
   } else {
     renderItinerary(itineraryData);
   }
