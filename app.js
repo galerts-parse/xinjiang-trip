@@ -262,6 +262,8 @@ if (initialRoute === 'routeD') {
   renderItinerary(itineraryDataAlt);
 } else if (initialRoute === 'routeC') {
   renderItinerary(itineraryDataRouteC);
+} else if (initialRoute === 'routeE') {
+  renderItinerary(itineraryDataE);
 } else {
   renderItinerary(itineraryData);
 }
@@ -274,6 +276,8 @@ routeSelector.addEventListener('change', (e) => {
     renderItinerary(itineraryDataAlt);
   } else if (e.target.value === 'routeC') {
     renderItinerary(itineraryDataRouteC);
+  } else if (e.target.value === 'routeE') {
+    renderItinerary(itineraryDataE);
   } else {
     renderItinerary(itineraryData);
   }
@@ -320,28 +324,4 @@ sidebarHandle.addEventListener('touchend', (e) => {
     currentHeightVh = 85;
   } else if (finalHeightVh < 30) {
     currentHeightVh = 20;
-  } else {
-    currentHeightVh = 45;
-  }
   
-  sidebar.style.transition = 'height 0.3s ease-out';
-  mapContainer.style.transition = 'height 0.3s ease-out';
-  
-  sidebar.style.height = `${currentHeightVh}vh`;
-  mapContainer.style.height = `${100 - currentHeightVh}vh`;
-  
-  setTimeout(() => {
-    map.invalidateSize();
-    sidebar.style.transition = '';
-    mapContainer.style.transition = '';
-  }, 300);
-});
-
-// PWA Service Worker Registration
-if ('serviceWorker' in navigator) {
-  window.addEventListener('load', () => {
-    navigator.serviceWorker.register('./sw.js')
-      .then(registration => console.log('ServiceWorker registered'))
-      .catch(err => console.log('ServiceWorker failed: ', err));
-  });
-}
