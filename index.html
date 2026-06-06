@@ -50,11 +50,16 @@
   <!-- Leaflet JS -->
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
   
-  <!-- Data & App Logic -->
-  <script src="data.js"></script>
-  <script src="data_alt.js"></script>
-  <script src="data_route_c.js"></script>
-  <script src="data_route_d.js"></script>
-  <script src="app.js" defer></script>
+  <!-- Data & App Logic (Dynamic Cache Busting) -->
+  <script>
+    const version = new Date().getTime();
+    const scripts = ['data.js', 'data_alt.js', 'data_route_c.js', 'data_route_d.js', 'app.js'];
+    scripts.forEach(src => {
+      const script = document.createElement('script');
+      script.src = src + '?v=' + version;
+      script.async = false; // Ensures scripts execute in order
+      document.body.appendChild(script);
+    });
+  </script>
 </body>
 </html>

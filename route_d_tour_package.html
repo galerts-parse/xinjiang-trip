@@ -82,11 +82,23 @@
     </div>
   </div>
 
-  <script src="data_route_d.js"></script>
+  <!-- Dynamic Cache Busting Script Loader -->
   <script>
-    const container = document.getElementById('itinerary-container');
-    
-    itineraryDataD.forEach(day => {
+    const version = new Date().getTime();
+    const script = document.createElement('script');
+    script.src = 'data_route_d.js?v=' + version;
+    script.async = false;
+    document.body.appendChild(script);
+
+    script.onload = () => {
+      const container = document.getElementById('itinerary-container');
+      
+      if (typeof itineraryDataD === 'undefined') {
+        container.innerHTML = '<p>Error loading itinerary data.</p>';
+        return;
+      }
+      
+      itineraryDataD.forEach(day => {
       const card = document.createElement('div');
       card.className = 'day-card';
       
@@ -124,6 +136,7 @@
       
       container.appendChild(card);
     });
+    };
   </script>
 </body>
 </html>
