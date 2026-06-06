@@ -296,8 +296,8 @@ const itineraryDataD = [
     sights: "独库公路北段 (Duku Highway North). <br><br><b>历史与奇观:</b> 踏上被誉为中国最美公路的“独库公路”（G217）。<br><br><b>夜间航班:</b> 今晚从乌鲁木齐机场飞回。<a href='https://baike.baidu.com/item/%E7%8B%AC%E5%BA%93%E5%85%AC%E8%B7%AF' target='_blank'>百度百科: 独库公路</a>",
     accommodation: "无 (N/A - Fly out)",
     food: "<b>午餐 (Lunch):</b> 独山子市区内快餐或简餐 (Late Lunch in Dushanzi).<br><b>晚餐 (Dinner):</b> 乌鲁木齐机场候机楼内就餐 (Airport Dinner)。",
-    practical: "提示：【极高风险警告】独库公路夏季极度拥堵，走走停停 250 公里通常需要 7-8 小时。另外独库极易因落石下雪突发封路。请务必预订 22:30 以后的深夜航班！并关注“新疆交警”公众号，随时准备改走 G218 备用路线。",
-    schedule: "<ul><li><b>07:30 - 15:30</b>: 穿越独库公路北段 (Cross Duku Highway North, approx 8h due to traffic)</li><li><b>15:30 - 16:30</b>: 独山子市区午晚餐或简餐 (Late Lunch)</li><li><b>16:30 - 19:30</b>: 驱车前往乌鲁木齐机场 (Drive to Urumqi Airport, 3h)</li><li><b>19:30 - 21:00</b>: 机场还车及候机 (Car Return & Airport Wait)</li><li><b>22:30</b>: 乘深夜航班返回温暖的家 (Late Night Flight Home)</li></ul>",
+    practical: "提示：【极限赶机警告】因为您的航班是 21:40 起飞，今天绝对没有任何容错率。必须在清晨 **6:30** 天刚亮时就出发进入独库公路，这样才能避开庞大的房车大军并预留出还车的时间。随时关注“新疆交警”公众号，如有封路立刻改道 G218。",
+    schedule: "<ul><li><b>06:30 - 14:30</b>: 极限早起避开拥堵，穿越独库公路北段 (Cross Duku Highway North, approx 8h due to traffic)</li><li><b>14:30 - 15:30</b>: 独山子市区快速简餐 (Quick Lunch)</li><li><b>15:30 - 18:30</b>: 高速直奔乌鲁木齐机场 (Drive to Urumqi Airport, 3h)</li><li><b>18:30 - 19:40</b>: 机场还车及安检 (Car Return & Airport Security)</li><li><b>21:40</b>: 乘机返回温暖的家 (Flight Home)</li></ul>",
     spots: [
       { name: "独库公路北段", type: "sight", lat: 44.0720, lng: 84.4530 },
       { name: "乌鲁木齐天山国际机场", type: "waypoint", lat: 43.9036, lng: 87.4735 }
