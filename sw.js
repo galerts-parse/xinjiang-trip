@@ -1,4 +1,4 @@
-const CACHE_NAME = 'xinjiang-trip-v16';
+const CACHE_NAME = 'xinjiang-trip-v18';
 const urlsToCache = [
   './',
   './index.html',
@@ -8,6 +8,7 @@ const urlsToCache = [
   './data_alt.js',
   './data_route_c.js',
   './data_route_d.js',
+  './data_route_e.js',
   './icon.png',
   'https://unpkg.com/leaflet@1.9.4/dist/leaflet.css',
   'https://unpkg.com/leaflet@1.9.4/dist/leaflet.js',
@@ -38,15 +39,29 @@ self.addEventListener('activate', event => {
   );
 });
 
+// Network First strategy to ensure users always see the latest updates when online
 self.addEventListener('fetch', event => {
+  // Skip cross-origin requests like API calls or dynamically injected leaflet map tiles to prevent CORS issues with cache.put
+  if (!event.request.url.startsWith(self.location.origin)) {
+    event.respondWith(
+      caches.match(event.request).then(response => response || fetch(event.request))
+    );
+    return;
+  }
+
   event.respondWith(
-    caches.match(event.request)
+    fetch(event.request)
       .then(response => {
-        // Cache hit - return response
-        if (response) {
-          return response;
-        }
-        return fetch(event.request);
+        // If successful, update the cache with the new version
+        const responseClone = response.clone();
+        caches.open(CACHE_NAME).then(cache => {
+          cache.put(event.request, responseClone);
+        });
+        return response;
+      })
+      .catch(() => {
+        // If network fails (offline), fallback to cache
+        return caches.match(event.request);
       })
   );
 });
