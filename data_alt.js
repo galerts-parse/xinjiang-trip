@@ -119,13 +119,12 @@ const itineraryDataAlt = [
     ]
   },
   {
-  {
     day: 8,
     date: "2026-06-19",
     title: "乌鲁木齐 (Urumqi) → S21阿乌高速 → 可可托海 (Keketuohai)",
     distance: "500km",
     time: "6h",
-    sights: "S21沙漠高速公路, 可可托海国家地质公园 (Keketuohai Geopark). <br><br><b>历史与奇观:</b> S21是中国首条横穿古尔班通古特沙漠的高速公路。可可托海的额尔齐斯大峡谷有着震撼的花岗岩地貌，还有神秘的“三号矿坑”——这里曾为中国偿还了苏联巨额债务，并为“两弹一星”提供了稀有金属。<br><br><b>安全与门票:</b> 可可托海门票+区间车约126元，微信小程序购票。<b>警告：沙漠高速横风极大，容易引起疲劳驾驶，请务必两人轮换开车！</b>",
+    sights: "S21沙漠高速公路, 可可托海国家地质公园 (Keketuohai Geopark). <br><br><b>历史与奇观:</b> S21是中国首条横穿古尔班通古特沙漠的高速公路。可可托海的额尔齐斯大峡谷有着震撼的花岗岩地貌，还有神秘的“三号矿坑”——这里曾为中国偿还了苏联巨额债务，并为“两弹一星”提供了稀有金属。<br><br><b>安全与门票:</b> 可可托海门票+区间车约126元，微信小程序购票。<b>警告：沙漠高速横风极大，请务必两人轮换开车！</b>",
     accommodation: "富蕴可可托海镇特色酒店 (Keketuohai Town Hotel).",
     food: "<b>午餐 (Lunch):</b> 克拉美丽服务区简餐.<br><b>晚餐 (Dinner):</b> 可可托海镇额河烤鱼 (Ertix River Roasted Fish). <a href='https://uri.amap.com/search?keyword=%E5%8F%AF%E5%8F%AF%E6%89%98%E6%B5%B7%E9%95%87%E7%83%A4%E9%B1%BC' target='_blank'>高德地图</a>",
     practical: "提示：可可托海早晚温差极大，即使在6月也可能需要薄羽绒服。",
@@ -141,7 +140,7 @@ const itineraryDataAlt = [
     title: "可可托海 (Keketuohai) → 喀纳斯 (Kanas)",
     distance: "320km",
     time: "5h",
-    sights: "阿勒泰山脉风光. <br><br><b>路线:</b> 离开可可托海，沿着阿尔泰山脉向西北方向驶入喀纳斯腹地。这趟行程省去了第一天直接从乌鲁木齐狂奔到喀纳斯的疲惫。<br><br><b>门票与提示:</b> 喀纳斯景区实行实名预约。",
+    sights: "阿勒泰山脉风光. <br><br><b>路线:</b> 离开可可托海，沿着阿尔泰山脉向西北方向驶入喀纳斯腹地。<br><br><b>门票与提示:</b> 喀纳斯景区实行实名预约。",
     accommodation: "喀纳斯老村特色木屋 (Kanas Old Village Wooden Cabin). <b>(住景区需二进+70元)</b>",
     food: "<b>午餐 (Lunch):</b> 沿途北屯或布尔津简餐.<br><b>晚餐 (Dinner):</b> 喀纳斯老村土火锅.",
     practical: "提示：阿勒泰地区区间测速极多，请务必遵守限速。由于阿勒泰海拔较高，晚间气温剧降，请准备保暖衣物。",
@@ -149,6 +148,7 @@ const itineraryDataAlt = [
       { name: "喀纳斯老村 (Kanas Old Village)", type: "hotel", lat: 48.7050, lng: 87.0100 }
     ]
   },
+  {
     day: 10,
     date: "2026-06-21",
     title: "喀纳斯 (Kanas) → 禾木 (Hemu)",
