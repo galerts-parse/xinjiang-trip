@@ -56,36 +56,36 @@ const itineraryDataD = [
   {
     day: 4,
     date: "2026-06-15",
-    title: "张掖 (Zhangye) → 嘉峪关 (Jiayuguan)",
-    distance: "230km",
-    time: "3.5h",
-    sights: "嘉峪关城楼 (Jiayuguan Fort), 悬壁长城 (Overhanging Great Wall). <br><br><b>历史与奇观:</b> 探访明代万里长城的最西端起点“天下第一雄关”嘉峪关。登上几乎垂直的悬壁长城，俯瞰苍茫的大漠戈壁，感受古人戍边之艰辛。<br><br><b>门票:</b> 嘉峪关景区联票（含城楼、悬壁、第一墩）。<a href='https://baike.baidu.com/item/%E5%98%89%E5%B3%AA%E5%85%B3' target='_blank'>百度百科: 嘉峪关</a>",
-    accommodation: "嘉峪关诺金大酒店 (Nuo Jin Hotel). <a href='https://www.trip.com/hotels/jiayuguan-hotel-detail-70535316/nuo-jin-hotel/' target='_blank'>Trip.com Booking</a>",
-    food: "<b>午餐 (Lunch):</b> 嘉峪关马保子烤肉店 (Ma Baozi Barbecue) - 抵达嘉峪关的午餐。 <a href='https://uri.amap.com/search?keyword=%E5%98%89%E5%B3%AA%E5%85%B3%E9%A9%AC%E4%BF%9D%E5%AD%90%E7%83%A4%E8%82%89' target='_blank'>高德地图</a><br><b>晚餐 (Dinner):</b> 大唐美食街眼镜烤肉 (Glasses Barbecue) - 游览完古城后的夜宵绝佳选择。 <a href='https://uri.amap.com/search?keyword=%E5%98%89%E5%B3%AA%E5%85%B3%E7%9C%BC%E9%95%9C%E7%83%A4%E8%82%89' target='_blank'>高德地图</a>",
-    practical: "提示：嘉峪关风极大，建议佩戴墨镜和防风沙的面罩。",
+    title: "张掖 (Zhangye) → 嘉峪关 (Jiayuguan) → 敦煌 (Dunhuang)",
+    distance: "600km",
+    time: "8h",
+    sights: "嘉峪关城楼 (Jiayuguan Fort), 悬壁长城 (Overhanging Great Wall). <br><br><b>历史与奇观:</b> 上午探访明代万里长城的最西端起点“天下第一雄关”嘉峪关。下午驱车跨越茫茫戈壁直奔敦煌。<br><br><b>门票:</b> 嘉峪关景区联票（含城楼、悬壁、第一墩）。<a href='https://baike.baidu.com/item/%E5%98%89%E5%B3%AA%E5%85%B3' target='_blank'>百度百科: 嘉峪关</a>",
+    accommodation: "敦煌山庄 (Dunhuang Villa). <a href='https://www.trip.com/hotels/dunhuang-hotel-detail-715758/dunhuang-villa/' target='_blank'>Trip.com Booking</a>",
+    food: "<b>午餐 (Lunch):</b> 嘉峪关马保子烤肉店 (Ma Baozi Barbecue) - 中午游览完嘉峪关后补充体力。 <a href='https://uri.amap.com/search?keyword=%E5%98%89%E5%B3%AA%E5%85%B3%E9%A9%AC%E4%BF%9D%E5%AD%90%E7%83%A4%E8%82%89' target='_blank'>高德地图</a><br><b>晚餐 (Dinner):</b> 敦煌沙洲夜市烤红柳羊肉及杏皮水 (Shazhou Night Market) - 抵达敦煌后的深夜慰藉。 <a href='https://uri.amap.com/search?keyword=%E6%95%A6%E7%85%8C%E6%B2%99%E6%B4%B2%E5%A4%9C%E5%B8%82' target='_blank'>高德地图</a>",
+    practical: "提示：今日行车距离极长，下午需驱车近400公里前往敦煌，请务必两人轮流驾驶，避免疲劳。",
     spots: [
-      { name: "马保子烤肉 (Lunch)", type: "restaurant", lat: 39.7910, lng: 98.2800 },
       { name: "嘉峪关城楼", type: "sight", lat: 39.8037, lng: 98.2140 },
+      { name: "马保子烤肉 (Lunch)", type: "restaurant", lat: 39.7910, lng: 98.2800 },
       { name: "悬壁长城", type: "sight", lat: 39.8600, lng: 98.1500 },
-      { name: "眼镜烤肉 (Dinner)", type: "restaurant", lat: 39.7750, lng: 98.2710 },
-      { name: "诺金大酒店", type: "hotel", lat: 39.7800, lng: 98.2800 }
+      { name: "沙洲夜市 (Dinner)", type: "restaurant", lat: 40.1450, lng: 94.6650 },
+      { name: "敦煌山庄", type: "hotel", lat: 40.1200, lng: 94.6700 }
     ]
   },
   {
     day: 5,
     date: "2026-06-16",
-    title: "嘉峪关 (Jiayuguan) → 敦煌 (Dunhuang)",
-    distance: "370km",
-    time: "4.5h",
-    sights: "莫高窟 (Mogao Caves), 鸣沙山月牙泉 (Mingsha Mountain). <br><br><b>历史与奇观:</b> 莫高窟是世界上现存规模最大、内容最丰富的佛教艺术地。傍晚前往鸣沙山，骑着骆驼在起伏的沙丘上前行，等待月牙泉边的壮美日落。<br><br><b>门票与预订 (CRITICAL):</b> 莫高窟 A 类票必须提前整整 **30天** 抢票！必须定好闹钟！<a href='https://baike.baidu.com/item/%E8%8E%AB%E9%AB%98%E7%AA%9F/122474' target='_blank'>百度百科: 莫高窟</a>",
+    title: "敦煌全天游览 (Dunhuang City Tour)",
+    distance: "30km",
+    time: "1h",
+    sights: "莫高窟 (Mogao Caves), 鸣沙山月牙泉 (Mingsha Mountain). <br><br><b>历史与奇观:</b> 昨晚已抵达敦煌，今天可以从容地起早先游览世界上现存规模最大、内容最丰富的佛教艺术地莫高窟。傍晚前往鸣沙山，骑着骆驼在起伏的沙丘上前行，等待月牙泉边的壮美日落。<br><br><b>门票与预订 (CRITICAL):</b> 莫高窟 A 类票必须提前整整 **30天** 抢票！必须定好闹钟！<a href='https://baike.baidu.com/item/%E8%8E%AB%E9%AB%98%E7%AA%9F/122474' target='_blank'>百度百科: 莫高窟</a>",
     accommodation: "敦煌山庄 (Dunhuang Villa). <a href='https://www.trip.com/hotels/dunhuang-hotel-detail-715758/dunhuang-villa/' target='_blank'>Trip.com Booking</a>",
-    food: "<b>午餐 (Lunch):</b> 敦煌达记驴肉黄面 (Daji Donkey Meat Noodles) - 抵达敦煌必吃。 <a href='https://uri.amap.com/search?keyword=%E6%95%A6%E7%85%8C%E8%BE%BE%E8%AE%B0%E9%A9%B4%E8%82%89%E9%BB%84%E9%9D%A2' target='_blank'>高德地图</a><br><b>晚餐 (Dinner):</b> 敦煌沙洲夜市烤红柳羊肉及杏皮水 (Shazhou Night Market) - 晚上的热闹市集。 <a href='https://uri.amap.com/search?keyword=%E6%95%A6%E7%85%8C%E6%B2%99%E6%B4%B2%E5%A4%9C%E5%B8%82' target='_blank'>高德地图</a>",
+    food: "<b>午餐 (Lunch):</b> 敦煌达记驴肉黄面 (Daji Donkey Meat Noodles) - 参观完莫高窟后的午餐首选。 <a href='https://uri.amap.com/search?keyword=%E6%95%A6%E7%85%8C%E8%BE%BE%E8%AE%B0%E9%A9%B4%E8%82%89%E9%BB%84%E9%9D%A2' target='_blank'>高德地图</a><br><b>晚餐 (Dinner):</b> 靖远尕六羊羔肉 (Jingyuan Galiu Lamb) - 享用手抓羊肉大餐。 <a href='https://uri.amap.com/search?keyword=%E6%95%A6%E7%85%8C%E9%9D%96%E8%BF%9C%E5%B0%95%E5%85%AD%E7%BE%8A%E7%BE%94%E8%82%89' target='_blank'>高德地图</a>",
     practical: "提示：沙漠沙子极细，千万不要在沙丘上换镜头，手机孔也要贴好防尘贴。",
     spots: [
-      { name: "达记驴肉黄面 (Lunch)", type: "restaurant", lat: 40.1420, lng: 94.6620 },
       { name: "莫高窟", type: "sight", lat: 40.0381, lng: 94.8152 },
+      { name: "达记驴肉黄面 (Lunch)", type: "restaurant", lat: 40.1420, lng: 94.6620 },
       { name: "鸣沙山月牙泉", type: "sight", lat: 40.0880, lng: 94.6680 },
-      { name: "沙洲夜市 (Dinner)", type: "restaurant", lat: 40.1450, lng: 94.6650 },
+      { name: "靖远尕六羊羔肉 (Dinner)", type: "restaurant", lat: 40.1410, lng: 94.6610 },
       { name: "敦煌山庄", type: "hotel", lat: 40.1200, lng: 94.6700 }
     ]
   },
@@ -97,12 +97,12 @@ const itineraryDataD = [
     time: "3h",
     sights: "玉门关 (Yumen Pass), 汉代长城遗址 (Han Great Wall Ruins), 敦煌雅丹国家地质公园 (Yadan Geopark). <br><br><b>历史与奇观:</b> 深入戈壁无人区，探寻“春风不度玉门关”的遗迹。傍晚在雅丹魔鬼城欣赏最壮观的黑戈壁落日，感受风蚀地貌的神秘。<br><br><b>安排:</b> 西线为一条直线，先经过玉门关，终点是雅丹地质公园。<a href='https://baike.baidu.com/item/%E7%8E%89%E9%97%A8%E5%85%B3' target='_blank'>百度百科: 玉门关</a>",
     accommodation: "敦煌山庄 (Dunhuang Villa). <a href='https://www.trip.com/hotels/dunhuang-hotel-detail-715758/dunhuang-villa/' target='_blank'>Trip.com Booking</a>",
-    food: "<b>午餐 (Lunch):</b> 强烈建议自带干粮，西线沿途几乎没有任何像样的餐厅。<br><b>晚餐 (Dinner):</b> 靖远尕六羊羔肉 (Jingyuan Galiu Lamb) - 返回市区享用手抓羊肉。 <a href='https://uri.amap.com/search?keyword=%E6%95%A6%E7%85%8C%E9%9D%96%E8%BF%9C%E5%B0%95%E5%85%AD%E7%BE%8A%E7%BE%94%E8%82%89' target='_blank'>高德地图</a>",
+    food: "<b>午餐 (Lunch):</b> 强烈建议自带干粮，西线沿途几乎没有任何像样的餐厅。<br><b>晚餐 (Dinner):</b> 敦煌夏家合汁 (Xiajia Hezhi) - 喝一碗热腾腾的羊肉粉汤驱除戈壁寒气。 <a href='https://uri.amap.com/search?keyword=%E6%95%A6%E7%85%8C%E5%A4%8F%E5%AE%B6%E5%90%88%E6%B1%81' target='_blank'>高德地图</a>",
     practical: "提示：西线后半段经常没有手机信号，请提前下载好离线地图！",
     spots: [
       { name: "玉门关", type: "sight", lat: 40.3540, lng: 93.8640 },
       { name: "雅丹地质公园", type: "sight", lat: 40.5000, lng: 93.0000 },
-      { name: "靖远尕六羊羔肉 (Dinner)", type: "restaurant", lat: 40.1410, lng: 94.6610 },
+      { name: "夏家合汁 (Dinner)", type: "restaurant", lat: 40.1460, lng: 94.6630 },
       { name: "敦煌山庄", type: "hotel", lat: 40.1200, lng: 94.6700 }
     ]
   },
