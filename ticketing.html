@@ -184,13 +184,13 @@
     <div class="checklist-box">
       <h2><i class="fa-solid fa-clipboard-check"></i> 提前预订清单</h2>
       <p>为确保顺利入园并避开限流瓶颈，请务必提前预订以下项目：</p>
-      <ul>
+      <ul id="booking-checklist">
         <li><strong>莫高窟 (Day 3)</strong> <span class="status-booked"><i class="fa-solid fa-check"></i> 已预订！</span></li>
-        <li><strong>甘肃省博物馆 (Day 1)</strong> - 通过微信小程序（甘肃省博物馆）预约。 <span class="status-pending">待处理</span></li>
-        <li><strong>《又见敦煌》演出 (Day 3)</strong> - 通过携程预订或联系酒店管家代订。 <span class="status-pending">待处理</span></li>
-        <li><strong>新疆维吾尔自治区博物馆 (Day 17)</strong> - 通过微信小程序（新疆维吾尔自治区博物馆）预约。 <span class="status-pending">待处理</span></li>
-        <li><strong>喀纳斯景区 & 禾木 (Day 14-15)</strong> - 高峰拥堵点。请通过携程提前预订以跳过购票排队。 <span class="status-pending">待处理</span></li>
-        <li><strong>那拉提 & 天山天池 (Day 7, Day 8)</strong> - 通过携程提前预订以加快入园速度。 <span class="status-pending">待处理</span></li>
+        <li><label><input type="checkbox" style="margin-right:8px;"> <strong>甘肃省博物馆 (Day 1)</strong> - 通过微信小程序（甘肃省博物馆）预约。 <span class="status-pending">待处理</span></label></li>
+        <li><label><input type="checkbox" style="margin-right:8px;"> <strong>《又见敦煌》演出 (Day 3)</strong> - 通过携程预订或联系酒店管家代订。 <span class="status-pending">待处理</span></label></li>
+        <li><label><input type="checkbox" style="margin-right:8px;"> <strong>新疆维吾尔自治区博物馆 (Day 17)</strong> - 通过微信小程序（新疆维吾尔自治区博物馆）预约。 <span class="status-pending">待处理</span></label></li>
+        <li><label><input type="checkbox" style="margin-right:8px;"> <strong>喀纳斯景区 & 禾木 (Day 14-15)</strong> - 高峰拥堵点。请通过携程提前预订以跳过购票排队。 <span class="status-pending">待处理</span></label></li>
+        <li><label><input type="checkbox" style="margin-right:8px;"> <strong>那拉提 & 天山天池 (Day 7, Day 8)</strong> - 通过携程提前预订以加快入园速度。 <span class="status-pending">待处理</span></label></li>
       </ul>
     </div>
 
@@ -441,6 +441,29 @@
     </div>
 
   </div>
-
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const checkboxes = document.querySelectorAll('#booking-checklist input[type="checkbox"]');
+      checkboxes.forEach((cb, index) => {
+        const saved = localStorage.getItem('booking_cb_' + index);
+        if(saved === 'true') {
+          cb.checked = true;
+          cb.parentElement.querySelector('.status-pending').textContent = '已完成';
+          cb.parentElement.querySelector('.status-pending').style.color = '#10b981';
+        }
+        cb.addEventListener('change', () => {
+          localStorage.setItem('booking_cb_' + index, cb.checked);
+          const status = cb.parentElement.querySelector('.status-pending');
+          if (cb.checked) {
+            status.textContent = '已完成';
+            status.style.color = '#10b981';
+          } else {
+            status.textContent = '待处理';
+            status.style.color = '#e11d48';
+          }
+        });
+      });
+    });
+  </script>
 </body>
 </html>
