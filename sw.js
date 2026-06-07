@@ -1,4 +1,4 @@
-const CACHE_NAME = 'xinjiang-trip-v31';
+const CACHE_NAME = 'xinjiang-trip-v32';
 const urlsToCache = [
   './',
   './index.html',
