@@ -6,7 +6,7 @@ const itineraryDataX = [
     "distance": "350km",
     "time": "约4.5小时",
     "sights": "🌟 <a href='deep_dives.html#maijishan' target='_blank'>麦积山石窟</a>",
-    "accommodation": "⚠️ [需新订] 天水万豪福朋喜来登酒店 (靠G30高速)",
+    "accommodation": "✅ Four Points by Sheraton Tianshui (已预订)",
     "food": "天水常记呱呱",
     "practical": "提取车辆并完成初始跨省转移",
     "schedule": "<ul><li><b>09:00 - 11:00</b>: 在西安市区提取预订的自驾车辆，并前往车管所/服务点完成临时驾驶许可（如有需要）及车辆交接。</li><li><b>11:00 - 15:30</b>: 驶上连霍高速 (G30)，驱车前往天水（包含午餐与服务区休息时间）。</li><li><b>15:30 - 18:30</b>: 游览🌟 <a href='deep_dives.html#maijishan' target='_blank'>麦积山石窟</a>（体验142米绝壁栈道，此时光线柔和，避开正午烈日）。</li><li><b>19:00</b>: 入住酒店，为正式开启的新疆大环线养精蓄锐。</li></ul>",
@@ -24,7 +24,7 @@ const itineraryDataX = [
         "lng": 106.0002
       },
       {
-        "name": "天水万豪福朋喜来登酒店",
+        "name": "Four Points by Sheraton Tianshui",
         "type": "hotel",
         "lat": 34.5612,
         "lng": 105.7483
@@ -40,10 +40,10 @@ const itineraryDataX = [
     "distance": "600km",
     "time": "约7.5小时",
     "sights": "🌟 甘肃省博物馆、🌟 中山桥",
-    "accommodation": "⚠️ [需新订] 武威建隆大酒店",
+    "accommodation": "✅ 武威兴隆饭店(雷台景区店) (已预订)",
     "food": "马子禄牛肉面、七一河手抓",
     "practical": "武威大润发物资采购",
-    "schedule": "<ul><li><b>08:30 - 13:00</b>: 离开天水，沿连霍高速直奔兰州。</li><li><b>14:00 - 15:00</b>: 抵达兰州，午餐享用正宗🌟 <a href='https://m.dianping.com' target='_blank'>马子禄牛肉面(大众巷店)</a>。</li><li><b>15:30 - 17:30</b>: 参观🌟 甘肃省博物馆（重点参观青铜馆：马踏飞燕）。</li><li><b>18:00 - 19:30</b>: 漫步🌟 中山桥，晚餐于黄河边的🌟 <a href='https://m.dianping.com' target='_blank'>七一河手抓</a> 享用顶级手抓羊肉。</li><li><b>19:30 - 23:00</b>: 夜驾驶往武威。</li><li><b>23:00 - 23:30</b>: 抵达武威后，前往🌟 大润发(武威店) 采购初始车载物资（矿泉水及零食），随后入住酒店。</li></ul>",
+    "schedule": "<ul><li><b>08:30 - 13:00</b>: 离开天水，沿连霍高速直奔兰州。</li><li><b>14:00 - 15:00</b>: 抵达兰州，午餐享用正宗🌟 马子禄牛肉面(大众巷店)。</li><li><b>15:30 - 17:30</b>: 参观🌟 甘肃省博物馆（重点参观青铜馆：马踏飞燕）。</li><li><b>18:00 - 19:30</b>: 漫步🌟 中山桥，晚餐于黄河边的🌟 七一河手抓 享用顶级手抓羊肉。</li><li><b>19:30 - 23:00</b>: 夜驾驶往武威。</li><li><b>23:00 - 23:30</b>: 抵达武威后，前往🌟 大润发(武威店) 采购初始车载物资（矿泉水及零食），随后入住酒店。</li></ul>",
     "spots": [
       {
         "name": "马子禄牛肉面(大众巷店) (Lunch)",
@@ -76,7 +76,7 @@ const itineraryDataX = [
         "lng": 102.64
       },
       {
-        "name": "武威建隆大酒店",
+        "name": "武威兴隆饭店(雷台景区店)",
         "type": "hotel",
         "lat": 37.935,
         "lng": 102.635
@@ -92,10 +92,10 @@ const itineraryDataX = [
     "distance": "650km",
     "time": "约8小时",
     "sights": "🌟 雷台汉墓、🌟 张掖大佛寺、🌟 <a href='deep_dives.html#danxia' target='_blank'>张掖七彩丹霞</a>、🌟 嘉峪关城楼",
-    "accommodation": "⚠️ [需新订] 瓜州国风大酒店",
+    "accommodation": "✅ 瓜州希顿国风酒店(新洲里夜市店) (已预订)",
     "food": "孙记炒炮",
     "practical": "利用极长日照狂奔",
-    "schedule": "<ul><li><b>08:00 - 09:30</b>: 🌟 雷台汉墓（马踏飞燕出土地）。</li><li><b>09:30 - 12:00</b>: 驱车前往张掖。</li><li><b>12:00 - 13:30</b>: 🌟 张掖大佛寺，午餐享用🌟 <a href='https://m.dianping.com' target='_blank'>孙记炒炮(明清街店)</a> (建议在大众点评购买套餐)。</li><li><b>14:30 - 17:00</b>: 🌟 <a href='deep_dives.html#danxia' target='_blank'>张掖七彩丹霞</a>。</li><li><b>17:00 - 19:30</b>: 驱车前往嘉峪关。</li><li><b>19:30 - 21:00</b>: 🌟 嘉峪关城楼（夕阳下的大漠雄关）。</li><li><b>21:00 - 23:30</b>: 伴着落日余晖驶往瓜州。</li></ul>",
+    "schedule": "<ul><li><b>08:00 - 09:30</b>: 🌟 雷台汉墓（马踏飞燕出土地）。</li><li><b>09:30 - 12:00</b>: 驱车前往张掖。</li><li><b>12:00 - 13:30</b>: 🌟 张掖大佛寺，午餐享用🌟 孙记炒炮(明清街店) (建议在大众点评购买套餐)。</li><li><b>14:30 - 17:00</b>: 🌟 <a href='deep_dives.html#danxia' target='_blank'>张掖七彩丹霞</a>。</li><li><b>17:00 - 19:30</b>: 驱车前往嘉峪关。</li><li><b>19:30 - 21:00</b>: 🌟 嘉峪关城楼（夕阳下的大漠雄关）。</li><li><b>21:00 - 23:30</b>: 伴着落日余晖驶往瓜州。</li></ul>",
     "spots": [
       {
         "name": "雷台汉墓",
@@ -122,7 +122,7 @@ const itineraryDataX = [
         "lng": 98.214
       },
       {
-        "name": "瓜州国风大酒店",
+        "name": "瓜州希顿国风酒店(新洲里夜市店)",
         "type": "hotel",
         "lat": 40.52,
         "lng": 95.78
@@ -138,10 +138,10 @@ const itineraryDataX = [
     "distance": "120km",
     "time": "约1.5小时",
     "sights": "🌟 <a href='deep_dives.html#mogao' target='_blank'>莫高窟</a>、🌟 鸣沙山月牙泉、🌟 《又见敦煌》",
-    "accommodation": "⚠️ [需新订] 敦煌山庄 (强烈建议重订)",
+    "accommodation": "✅ 敦煌猎户星座旅馆 (已预订)",
     "food": "顺张黄面馆",
     "practical": "百佳超市战备物资补给",
-    "schedule": "<ul><li><b>08:30 - 09:30</b>: 瓜州路边品尝极甜蜜瓜。</li><li><b>09:30 - 11:00</b>: 驱车前往<a href='deep_dives.html#mogao' target='_blank'>莫高窟</a>数字展示中心。</li><li><b>11:30 - 15:30</b>: 🌟 <a href='deep_dives.html#mogao' target='_blank'>莫高窟</a>（完美踩准11:30场次门票）。</li><li><b>16:00 - 18:30</b>: 日落前游览🌟 鸣沙山月牙泉（气温适宜，骑骆驼）。</li><li><b>18:30 - 20:00</b>: 晚餐前往🌟 <a href='https://m.dianping.com' target='_blank'>顺张黄面馆(总店)</a> 享用驴肉黄面，为稍后的演出留出充裕时间。</li><li><b>21:00 - 22:30</b>: 观看🌟 《又见敦煌》演出。</li><li><b>22:30 - 23:00</b>: 演出结束后，就近在🌟 百佳超市 (Dunhuang Century Mart) 采购未来两日沙漠路段的“战术干粮”（大饼、真空肉、饮用水）。</li></ul>",
+    "schedule": "<ul><li><b>08:30 - 09:30</b>: 瓜州路边品尝极甜蜜瓜。</li><li><b>09:30 - 11:00</b>: 驱车前往<a href='deep_dives.html#mogao' target='_blank'>莫高窟</a>数字展示中心。</li><li><b>11:30 - 15:30</b>: 🌟 <a href='deep_dives.html#mogao' target='_blank'>莫高窟</a>（完美踩准11:30场次门票）。</li><li><b>16:00 - 18:30</b>: 日落前游览🌟 鸣沙山月牙泉（气温适宜，骑骆驼）。</li><li><b>18:30 - 20:00</b>: 晚餐前往🌟 顺张黄面馆(总店) 享用驴肉黄面，为稍后的演出留出充裕时间。</li><li><b>21:00 - 22:30</b>: 观看🌟 《又见敦煌》演出。</li><li><b>22:30 - 23:00</b>: 演出结束后，就近在🌟 百佳超市 (Dunhuang Century Mart) 采购未来两日沙漠路段的“战术干粮”（大饼、真空肉、饮用水）。</li></ul>",
     "spots": [
       {
         "name": "莫高窟",
@@ -174,7 +174,7 @@ const itineraryDataX = [
         "lng": 94.662
       },
       {
-        "name": "敦煌山庄",
+        "name": "敦煌猎户星座旅馆",
         "type": "hotel",
         "lat": 40.12,
         "lng": 94.67
@@ -190,7 +190,7 @@ const itineraryDataX = [
     "distance": "180km",
     "time": "约3小时",
     "sights": "🌟 玉门关、🌟 汉代长城遗址、🌟 阳关、🌟 雅丹魔鬼城",
-    "accommodation": "⚠️ [需新订] 敦煌山庄",
+    "accommodation": "✅ 敦煌猎户星座旅馆 (已预订)",
     "food": "战术干粮",
     "practical": "魔鬼城末班车",
     "schedule": "<ul><li><b>09:00 - 14:00</b>: 探访大漠边关🌟 玉门关、🌟 汉代长城遗址与🌟 阳关。午餐在景区食用预备的自热食品或战术干粮。</li><li><b>14:00 - 17:00</b>: 驱车前往雅丹魔鬼城。</li><li><b>17:30 - 20:30</b>: 🌟 雅丹魔鬼城（乘坐末班越野车深入黑戈壁，守候极品日落）。</li></ul>",
@@ -214,7 +214,7 @@ const itineraryDataX = [
         "lng": 93.0
       },
       {
-        "name": "敦煌山庄",
+        "name": "敦煌猎户星座旅馆",
         "type": "hotel",
         "lat": 40.12,
         "lng": 94.67
@@ -233,7 +233,7 @@ const itineraryDataX = [
     "accommodation": "✅ 哈密伊州区七一夜市亚朵酒店 (已预订)",
     "food": "高胡子羊肉焖饼",
     "practical": "预留护照查验时间",
-    "schedule": "<ul><li><b>08:00 - 10:00</b>: 驱车前往榆林窟。</li><li><b>10:00 - 12:30</b>: 游览被称为<a href='deep_dives.html#mogao' target='_blank'>莫高窟</a>“姊妹窟”的🌟 榆林窟（人少、壁画精美）。午餐享用战术干粮。</li><li><b>12:30 - 17:30</b>: 跨越省界，于星星峡检查站预留时间完成外宾护照查验。</li><li><b>18:00 - 19:30</b>: 抵达哈密，参观🌟 哈密回王陵。</li><li><b>20:00</b>: 晚餐前往🌟 <a href='https://m.dianping.com' target='_blank'>高胡子羊肉焖饼</a>，大快朵颐。</li></ul>",
+    "schedule": "<ul><li><b>08:00 - 10:00</b>: 驱车前往榆林窟。</li><li><b>10:00 - 12:30</b>: 游览被称为<a href='deep_dives.html#mogao' target='_blank'>莫高窟</a>“姊妹窟”的🌟 榆林窟（人少、壁画精美）。午餐享用战术干粮。</li><li><b>12:30 - 17:30</b>: 跨越省界，于星星峡检查站预留时间完成外宾护照查验。</li><li><b>18:00 - 19:30</b>: 抵达哈密，参观🌟 哈密回王陵。</li><li><b>20:00</b>: 晚餐前往🌟 高胡子羊肉焖饼，大快朵颐。</li></ul>",
     "spots": [
       {
         "name": "榆林窟",
@@ -260,7 +260,7 @@ const itineraryDataX = [
         "lng": 93.518
       },
       {
-        "name": "哈密亚朵酒店",
+        "name": "哈密伊州区七一夜市亚朵酒店",
         "type": "hotel",
         "lat": 42.8252,
         "lng": 93.523
@@ -279,7 +279,7 @@ const itineraryDataX = [
     "accommodation": "✅ 吐鲁番火洲美居酒店 (已预订)",
     "food": "海尔巴格",
     "practical": "Astana Tombs Integrated",
-    "schedule": "<ul><li><b>08:00 - 12:00</b>: 穿越百里风区抵达吐鲁番。</li><li><b>12:00 - 14:00</b>: 午餐前往吐鲁番最著名的维吾尔餐厅🌟 <a href='https://m.dianping.com' target='_blank'>海尔巴格(吐鲁番店)</a> (建议在大众点评购买代金券/下午茶套餐)，随后游览🌟 坎儿井避暑。</li><li><b>14:00 - 17:00</b>: 🌟 阿斯塔那古墓群 (Astana Tombs)。古墓内部深入地下阴凉，探索千年干尸与壁画。</li><li><b>17:00 - 19:00</b>: 气温稍降后前往🌟 柏孜克里克千佛洞与🌟 火焰山。</li><li><b>19:00 - 21:00</b>: 🌟 <a href='deep_dives.html#turpan' target='_blank'>交河故城</a>（落日余晖下漫步两千年悬崖古城）。</li></ul>",
+    "schedule": "<ul><li><b>08:00 - 12:00</b>: 穿越百里风区抵达吐鲁番。</li><li><b>12:00 - 14:00</b>: 午餐前往吐鲁番最著名的维吾尔餐厅🌟 海尔巴格(吐鲁番店) (建议在大众点评购买代金券/下午茶套餐)，随后游览🌟 坎儿井避暑。</li><li><b>14:00 - 17:00</b>: 🌟 阿斯塔那古墓群 (Astana Tombs)。古墓内部深入地下阴凉，探索千年干尸与壁画。</li><li><b>17:00 - 19:00</b>: 气温稍降后前往🌟 柏孜克里克千佛洞与🌟 火焰山。</li><li><b>19:00 - 21:00</b>: 🌟 <a href='deep_dives.html#turpan' target='_blank'>交河故城</a>（落日余晖下漫步两千年悬崖古城）。</li></ul>",
     "spots": [
       {
         "name": "海尔巴格(吐鲁番店) (Lunch)",
@@ -328,10 +328,10 @@ const itineraryDataX = [
     "distance": "450km",
     "time": "约6小时",
     "sights": "🌟 天山天池",
-    "accommodation": "⚠️ [需新订] 独山子市区优质酒店",
+    "accommodation": "✅ 奎屯友好购物中心团结南街亚朵酒店 (已预订)",
     "food": "沙湾大盘鸡",
     "practical": "独库公路前置补给",
-    "schedule": "<ul><li><b>07:30 - 10:30</b>: 驱车前往天池。</li><li><b>10:30 - 15:00</b>: 游览🌟 天山天池。</li><li><b>15:00 - 19:00</b>: 绕开拥堵的乌鲁木齐市区，全程高速直插独山子。</li><li><b>19:30 - 20:00</b>: 抵达独山子后，立即前往🌟 友好超市(独山子店) 补给水、咖啡因饮料及自热米饭，为明日独库穿越做最后准备。</li><li><b>20:00</b>: 晚餐在🌟 <a href='https://m.dianping.com' target='_blank'>独山子沙湾大盘鸡</a> 饱餐一顿，碳水拉满。</li></ul>",
+    "schedule": "<ul><li><b>07:30 - 10:30</b>: 驱车前往天池。</li><li><b>10:30 - 15:00</b>: 游览🌟 天山天池。</li><li><b>15:00 - 19:00</b>: 绕开拥堵的乌鲁木齐市区，全程高速直插独山子。</li><li><b>19:30 - 20:00</b>: 抵达独山子后，立即前往🌟 友好超市(独山子店) 补给水、咖啡因饮料及自热米饭，为明日独库穿越做最后准备。</li><li><b>20:00</b>: 晚餐在🌟 独山子沙湾大盘鸡 饱餐一顿，碳水拉满。</li></ul>",
     "spots": [
       {
         "name": "天山天池",
@@ -352,7 +352,7 @@ const itineraryDataX = [
         "lng": 84.882
       },
       {
-        "name": "独山子市区酒店",
+        "name": "奎屯友好购物中心团结南街亚朵酒店",
         "type": "hotel",
         "lat": 44.335,
         "lng": 84.885
@@ -392,7 +392,7 @@ const itineraryDataX = [
         "lng": 84.28
       },
       {
-        "name": "那悦里民宿",
+        "name": "那悦里民宿（那拉提景区店）",
         "type": "hotel",
         "lat": 43.26,
         "lng": 84.29
@@ -408,7 +408,7 @@ const itineraryDataX = [
     "distance": "300km",
     "time": "约5小时",
     "sights": "🌟 特克斯八卦城、🌟 喀拉峻大草原",
-    "accommodation": "⚠️ [需新订] 昭苏万豪福朋喜来登酒店",
+    "accommodation": "✅ 昭苏县晴雨阁民宿 (已预订)",
     "food": "原生态手抓羊肉",
     "practical": "",
     "schedule": "<ul><li><b>08:30 - 11:30</b>: 驱车前往喀拉峻，沿途车览🌟 特克斯八卦城。</li><li><b>11:30 - 16:30</b>: 深度游览🌟 喀拉峻大草原（震撼的3D“人体草原”）。</li><li><b>16:30 - 18:30</b>: 驱车前往昭苏。</li><li><b>18:30</b>: 抵达入住，享用原生态手抓羊肉。</li></ul>",
@@ -426,7 +426,7 @@ const itineraryDataX = [
         "lng": 82.0
       },
       {
-        "name": "昭苏万豪福朋喜来登",
+        "name": "昭苏县晴雨阁民宿",
         "type": "hotel",
         "lat": 43.15,
         "lng": 81.12
@@ -442,10 +442,10 @@ const itineraryDataX = [
     "distance": "250km",
     "time": "约4.5小时",
     "sights": "🌟 <a href='deep_dives.html#xiata' target='_blank'>夏塔古道</a>、🌟 喀赞其民俗村",
-    "accommodation": "✅ 双樱桃民宿(喀赞其民俗旅游区店) (已预订)",
+    "accommodation": "✅ 双樱桃民宿(喀赞其民俗旅游区店） (已预订)",
     "food": "百年手工冰淇淋",
     "practical": "伊宁天百超市购烤包子与馕",
-    "schedule": "<ul><li><b>08:00 - 14:00</b>: 深入🌟 <a href='deep_dives.html#xiata' target='_blank'>夏塔古道</a>徒步。午餐享用战术干粮。</li><li><b>14:00 - 17:30</b>: 翻越天山抵达伊宁市。</li><li><b>17:30 - 20:30</b>: 游览🌟 喀赞其民俗村。19:00前往🌟 <a href='https://m.dianping.com' target='_blank'>蓝派格</a> 享用当地顶级的百年手工冰淇淋及甜点。</li><li><b>20:30</b>: 前往🌟 天百超市(伊宁店) 大量采购新鲜出炉的维吾尔族大馕，这是后续山区极致续航的核心干粮。</li></ul>",
+    "schedule": "<ul><li><b>08:00 - 14:00</b>: 深入🌟 <a href='deep_dives.html#xiata' target='_blank'>夏塔古道</a>徒步。午餐享用战术干粮。</li><li><b>14:00 - 17:30</b>: 翻越天山抵达伊宁市。</li><li><b>17:30 - 20:30</b>: 游览🌟 喀赞其民俗村。19:00前往🌟 蓝派格 享用当地顶级的百年手工冰淇淋及甜点。</li><li><b>20:30</b>: 前往🌟 天百超市(伊宁店) 大量采购新鲜出炉的维吾尔族大馕，这是后续山区极致续航的核心干粮。</li></ul>",
     "spots": [
       {
         "name": "夏塔古道",
@@ -472,7 +472,7 @@ const itineraryDataX = [
         "lng": 81.32
       },
       {
-        "name": "双樱桃民宿",
+        "name": "双樱桃民宿(喀赞其民俗旅游区店）",
         "type": "hotel",
         "lat": 43.915,
         "lng": 81.335
@@ -488,7 +488,7 @@ const itineraryDataX = [
     "distance": "150km",
     "time": "约2小时",
     "sights": "🌟 果子沟大桥、🌟 <a href='deep_dives.html#sayram' target='_blank'>赛里木湖</a>",
-    "accommodation": "⚠️ [需新订] 新疆赛里木湖万豪AC酒店",
+    "accommodation": "✅ AC Hotel Xinjiang Sayram Lake (已预订)",
     "food": "赛湖高白鲑",
     "practical": "无压力自驾环湖",
     "schedule": "<ul><li><b>09:00 - 11:00</b>: 穿越巍峨的🌟 果子沟大桥。</li><li><b>11:00 - 17:00</b>: 🌟 <a href='deep_dives.html#sayram' target='_blank'>赛里木湖</a>（享受长达6小时的深度时光，无压力自驾360度环湖）。中午在湖边车内享用昨日购买的新鲜大馕。</li><li><b>18:30</b>: 酒店入住。强烈建议直接在🌟 万豪AC酒店餐厅 内享用稳定可靠的“赛湖冷水高白鲑”晚餐。</li></ul>",
@@ -506,7 +506,7 @@ const itineraryDataX = [
         "lng": 81.15
       },
       {
-        "name": "赛里木湖万豪AC酒店 (Dinner/Hotel)",
+        "name": "AC Hotel Xinjiang Sayram Lake",
         "type": "hotel",
         "lat": 44.59,
         "lng": 81.15
@@ -522,7 +522,7 @@ const itineraryDataX = [
     "distance": "450km",
     "time": "约5小时",
     "sights": "🌟 世界魔鬼城",
-    "accommodation": "⚠️ [需新订] 克拉玛依西部乌镇酒店",
+    "accommodation": "✅ 达尼尔酒店 (已预订)",
     "food": "简餐",
     "practical": "赶末班小火车",
     "schedule": "<ul><li><b>09:00 - 15:00</b>: 离开<a href='deep_dives.html#sayram' target='_blank'>赛里木湖</a>，长途奔袭克拉玛依乌尔禾区（全程高速450km）。</li><li><b>15:00 - 17:30</b>: 抵达入住休整。</li><li><b>18:00 - 21:00</b>: 🌟 世界魔鬼城（乘坐无轨小火车穿梭风蚀雅丹群，守候落日）。</li></ul>",
@@ -534,7 +534,7 @@ const itineraryDataX = [
         "lng": 85.3
       },
       {
-        "name": "克拉玛依西部乌镇酒店",
+        "name": "达尼尔酒店",
         "type": "hotel",
         "lat": 46.08,
         "lng": 85.32
@@ -550,7 +550,7 @@ const itineraryDataX = [
     "distance": "250km",
     "time": "约4.5小时",
     "sights": "🌟 阿尔泰山脉",
-    "accommodation": "⚠️ [需新订] 贾登峪城堡酒店 (连住第1晚)",
+    "accommodation": "✅ 喀納斯回家·悠山雅居 (已预订)",
     "food": "布尔津冷水鱼",
     "practical": "布尔津县中心最后补给",
     "schedule": "<ul><li><b>08:30 - 12:30</b>: 驱车前往布尔津。</li><li><b>12:30 - 13:00</b>: 抵达布尔津享用午餐。</li><li><b>13:00 - 13:30</b>: 在🌟 布尔津县中心超市 紧急停留，扫货高热量巧克力、士力架、能量棒，这是<a href='deep_dives.html#kanas' target='_blank'>喀纳斯</a>及禾木重度徒步的核心能量源。</li><li><b>14:00 - 17:30</b>: 挺进阿尔泰山脉深处的贾登峪，彻底解除明日区间车排队的物流瓶颈。</li></ul>",
@@ -568,7 +568,7 @@ const itineraryDataX = [
         "lng": 87.14
       },
       {
-        "name": "贾登峪城堡酒店",
+        "name": "喀納斯回家·悠山雅居",
         "type": "hotel",
         "lat": 48.4965,
         "lng": 87.1423
@@ -584,7 +584,7 @@ const itineraryDataX = [
     "distance": "60km",
     "time": "约1.5小时",
     "sights": "🌟 <a href='deep_dives.html#kanas' target='_blank'>喀纳斯</a>湖、🌟 观鱼台、🌟 神仙湾、🌟 月亮湾、🌟 卧龙湾",
-    "accommodation": "⚠️ [需新订] 贾登峪城堡酒店 (连住第2晚) -> 原禾木订单需取消或改期",
+    "accommodation": "✅ 喀納斯回家·悠山雅居 (已预订)",
     "food": "战术干粮",
     "practical": "De-bottlenecked",
     "schedule": "<ul><li><b>08:00 - 17:30</b>: 全天沉浸式游览🌟 <a href='deep_dives.html#kanas' target='_blank'>喀纳斯</a>景区。午餐在徒步栈道上享用昨日采购的高能战术干粮。攀登1068级台阶上观鱼台，随后沿木栈道徒步深度穿越三湾。</li><li><b>17:30 - 18:30</b>: 乘坐区间车返回贾登峪。</li></ul>",
@@ -596,7 +596,7 @@ const itineraryDataX = [
         "lng": 87.0175
       },
       {
-        "name": "贾登峪城堡酒店",
+        "name": "喀納斯回家·悠山雅居",
         "type": "hotel",
         "lat": 48.4965,
         "lng": 87.1423
@@ -612,7 +612,7 @@ const itineraryDataX = [
     "distance": "70km",
     "time": "约2小时",
     "sights": "🌟 <a href='deep_dives.html#kanas' target='_blank'>禾木</a>村、🌟 白桦林",
-    "accommodation": "⚠️ [需改期订] 禾木草原度假山庄 或 禾木祐禾山居",
+    "accommodation": "✅ 禾木祐禾山居 (已预订)",
     "food": "禾木土火锅",
     "practical": "享受绝美黄昏",
     "schedule": "<ul><li><b>08:30 - 11:30</b>: 驱车前往<a href='deep_dives.html#kanas' target='_blank'>禾木</a>门票站。</li><li><b>11:30 - 12:30</b>: 大件行李留车内，仅带双肩包乘区间车进入🌟 <a href='deep_dives.html#kanas' target='_blank'>禾木</a>村。</li><li><b>12:30 - 21:00</b>: 办理入住。享受完整的半天与绝美黄昏，漫步白桦林与古村落。晚餐享用当地特色的土火锅。</li></ul>",
@@ -624,7 +624,7 @@ const itineraryDataX = [
         "lng": 87.435
       },
       {
-        "name": "禾木住宿",
+        "name": "禾木祐禾山居",
         "type": "hotel",
         "lat": 48.571,
         "lng": 87.436
@@ -640,10 +640,10 @@ const itineraryDataX = [
     "distance": "200km",
     "time": "约4小时",
     "sights": "🌟 <a href='deep_dives.html#kanas' target='_blank'>禾木</a>观景台、🌟 五彩滩",
-    "accommodation": "⚠️ [需新订] 布尔津驿龙大酒店",
+    "accommodation": "✅ 布爾津布·沽裏BGULI設計度假民宿（額爾齊斯河店） (已预订)",
     "food": "河堤夜市烧烤与格瓦斯",
     "practical": "感受北疆夜生活",
-    "schedule": "<ul><li><b>06:30 - 09:30</b>: 徒步至🌟 <a href='deep_dives.html#kanas' target='_blank'>禾木</a>观景台，俯瞰绝美晨雾与日出。</li><li><b>09:30 - 12:00</b>: 乘坐区间车出村，取车。</li><li><b>12:00 - 16:30</b>: 驱车返回布尔津。</li><li><b>18:00 - 21:30</b>: 稳稳赶在日落时分抵达🌟 五彩滩，欣赏夕阳。</li><li><b>21:30</b>: 晚餐前往著名的🌟 <a href='https://m.dianping.com' target='_blank'>河堤夜市</a>，畅享新疆烧烤与冰镇格瓦斯。</li></ul>",
+    "schedule": "<ul><li><b>06:30 - 09:30</b>: 徒步至🌟 <a href='deep_dives.html#kanas' target='_blank'>禾木</a>观景台，俯瞰绝美晨雾与日出。</li><li><b>09:30 - 12:00</b>: 乘坐区间车出村，取车。</li><li><b>12:00 - 16:30</b>: 驱车返回布尔津。</li><li><b>18:00 - 21:30</b>: 稳稳赶在日落时分抵达🌟 五彩滩，欣赏夕阳。</li><li><b>21:30</b>: 晚餐前往著名的🌟 河堤夜市，畅享新疆烧烤与冰镇格瓦斯。</li></ul>",
     "spots": [
       {
         "name": "禾木观景台",
@@ -664,7 +664,7 @@ const itineraryDataX = [
         "lng": 86.85
       },
       {
-        "name": "布尔津驿龙大酒店",
+        "name": "布爾津布·沽裏BGULI設計度假民宿（額爾齊斯河店）",
         "type": "hotel",
         "lat": 47.7025,
         "lng": 86.8778
@@ -683,7 +683,7 @@ const itineraryDataX = [
     "accommodation": "无",
     "food": "小尕子/丝路有约",
     "practical": "在线排队免等位",
-    "schedule": "<ul><li><b>08:30 - 13:30</b>: 沿🌟 S21沙漠高速公路高效直插乌鲁木齐市区。</li><li><b>13:30 - 15:00</b>: 午餐选择网红地标餐厅🌟 <a href='https://m.dianping.com' target='_blank'>小尕子(明德路店)</a> 或 🌟 <a href='https://m.dianping.com' target='_blank'>丝路有约(大巴扎店)</a>。</li><li><b>15:00 - 17:00</b>: 参观🌟 新疆维吾尔自治区博物馆。<span style='color:#e11d48; font-weight:bold;'><br>【战略提示】：在看干尸时，立刻打开大众点评APP操作“在线排队”晚饭/下午茶，避开排号地狱！</span></li><li><b>17:00 - 18:00</b>: 前往🌟 新疆国际大巴扎采购伴手礼。</li><li><b>18:30</b>: 于地窝堡机场 (URC) 归还车辆。</li><li><b>21:40</b>: 搭乘航班圆满离境。</li></ul>",
+    "schedule": "<ul><li><b>08:30 - 13:30</b>: 沿🌟 S21沙漠高速公路高效直插乌鲁木齐市区。</li><li><b>13:30 - 15:00</b>: 午餐选择网红地标餐厅🌟 小尕子(明德路店) 或 🌟 丝路有约(大巴扎店)。</li><li><b>15:00 - 17:00</b>: 参观🌟 新疆维吾尔自治区博物馆。<span style='color:#e11d48; font-weight:bold;'><br>【战略提示】：在看干尸时，立刻打开大众点评APP操作“在线排队”晚饭/下午茶，避开排号地狱！</span></li><li><b>17:00 - 18:00</b>: 前往🌟 新疆国际大巴扎采购伴手礼。</li><li><b>18:30</b>: 于地窝堡机场 (URC) 归还车辆。</li><li><b>21:40</b>: 搭乘航班圆满离境。</li></ul>",
     "spots": [
       {
         "name": "S21沙漠高速公路",
