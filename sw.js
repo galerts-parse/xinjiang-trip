@@ -1,4 +1,4 @@
-const CACHE_NAME = 'xinjiang-trip-v32';
+const CACHE_NAME = 'xinjiang-trip-v33';
 const urlsToCache = [
   './',
   './index.html',
@@ -55,7 +55,7 @@ self.addEventListener('fetch', event => {
   }
 
   event.respondWith(
-    fetch(event.request)
+    fetch(event.request, { cache: 'no-store' }) // Force fetch to ignore browser cache
       .then(response => {
         // If successful, update the cache with the new version
         const responseClone = response.clone();

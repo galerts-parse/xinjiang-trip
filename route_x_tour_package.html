@@ -20,7 +20,7 @@
       padding: 60px 20px;
       text-align: center;
     }
-    .header h1 { margin: 0 0 10px 0; font-size: 2.5rem; }
+    .header h1 { margin: 0 0 10px 0; font-size: clamp(1.5rem, 5vw, 2.5rem); }
     .header p { margin: 0; font-size: 1.1rem; opacity: 0.9; }
     
     .layout {
@@ -287,10 +287,10 @@
         <h2><i class="fa-solid fa-map"></i> 行程概览</h2>
         <p>本次行程将带您领略从河西走廊的悠久历史到北疆的绝美自然风光。精选住宿，合理安排每日车程，既有沉浸式的历史人文探索，也有深入大自然的从容放松。</p>
         
-        <div class="actions" style="margin-top: 20px;">
-          <button onclick="window.print()" style="padding: 10px 20px; background: #2563eb; color: white; border-radius: 8px; border: none; cursor: pointer; font-weight: bold;"><i class="fa-solid fa-print"></i> 打印行程单 (Print PDF)</button>
-          <button onclick="window.close()" style="padding: 10px 20px; background: #e2e8f0; color: #475569; border-radius: 8px; border: none; cursor: pointer; font-weight: bold; margin-left: 10px;"><i class="fa-solid fa-xmark"></i> 关闭 (Close)</button>
-          <a href="deep_dives.html" target="_blank" style="display: inline-block; padding: 10px 20px; background: #f59e0b; color: white; border-radius: 8px; text-decoration: none; font-weight: bold; margin-left: 10px; border: none; cursor: pointer;"><i class="fa-solid fa-book-open"></i> 核心景点深度攻略 (Deep Dives)</a>
+        <div class="actions" style="margin-top: 20px; display: flex; flex-wrap: wrap; gap: 10px;">
+          <button onclick="window.print()" style="padding: 12px 20px; background: #2563eb; color: white; border-radius: 8px; border: none; cursor: pointer; font-weight: bold; flex: 1; min-width: 200px; font-size: 1rem;"><i class="fa-solid fa-print"></i> 打印行程单 (Print PDF)</button>
+          <button onclick="window.close()" style="padding: 12px 20px; background: #e2e8f0; color: #475569; border-radius: 8px; border: none; cursor: pointer; font-weight: bold; flex: 1; min-width: 150px; font-size: 1rem;"><i class="fa-solid fa-xmark"></i> 关闭 (Close)</button>
+          <a href="deep_dives.html" target="_blank" style="display: inline-block; padding: 12px 20px; background: #f59e0b; color: white; border-radius: 8px; text-decoration: none; font-weight: bold; text-align: center; border: none; cursor: pointer; flex: 2; min-width: 250px; font-size: 1rem;"><i class="fa-solid fa-book-open"></i> 核心景点深度攻略 (Deep Dives)</a>
         </div>
       </div>
 
