@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Attraction Deep Dives & Strategies</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    :root {
+      --primary: #2563eb;
+      --secondary: #3b82f6;
+      --text: #334155;
+      --bg: #f8fafc;
+      --sidebar-w: 260px;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    .header {
+      background: #0f172a;
+      color: white;
+      padding: 20px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .header h1 { margin: 0; font-size: 1.5rem; }
+    .back-btn {
+      color: white;
+      text-decoration: none;
+      padding: 8px 16px;
+      background: rgba(255,255,255,0.1);
+      border-radius: 6px;
+      transition: background 0.3s;
+    }
+    .back-btn:hover { background: rgba(255,255,255,0.2); }
+    
+    .layout {
+      display: flex;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 30px 20px;
+      gap: 30px;
+    }
+    
+    .sidebar {
+      width: var(--sidebar-w);
+      flex-shrink: 0;
+    }
+    .sidebar-nav {
+      position: sticky;
+      top: 90px;
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    }
+    .sidebar-nav h3 { margin-top: 0; border-bottom: 2px solid #e2e8f0; padding-bottom: 10px; color: #1e293b; }
+    .sidebar-nav ul { list-style: none; padding: 0; margin: 0; }
+    .sidebar-nav li { margin-bottom: 8px; }
+    .sidebar-nav a {
+      display: block;
+      text-decoration: none;
+      color: #475569;
+      padding: 8px 12px;
+      border-radius: 6px;
+      transition: all 0.2s;
+    }
+    .sidebar-nav a:hover, .sidebar-nav a.active {
+      background: #eff6ff;
+      color: var(--primary);
+      font-weight: 500;
+    }
+
+    .content {
+      flex-grow: 1;
+      min-width: 0;
+    }
+    .deep-dive-card {
+      background: white;
+      border-radius: 12px;
+      padding: 30px;
+      margin-bottom: 40px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    }
+    .deep-dive-card h2 {
+      margin-top: 0;
+      color: #0f172a;
+      font-size: 2rem;
+      border-bottom: 3px solid var(--secondary);
+      padding-bottom: 10px;
+      display: inline-block;
+    }
+    .section-title {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 25px;
+      color: #1e293b;
+      font-size: 1.25rem;
+    }
+    .section-title i { color: var(--secondary); }
+    
+    .highlight-box {
+      background: #fefce8;
+      border-left: 4px solid #eab308;
+      padding: 15px;
+      margin: 15px 0;
+      border-radius: 0 8px 8px 0;
+    }
+    .warning-box {
+      background: #fef2f2;
+      border-left: 4px solid #ef4444;
+      padding: 15px;
+      margin: 15px 0;
+      border-radius: 0 8px 8px 0;
+    }
+    .strategy-box {
+      background: #eff6ff;
+      border: 1px solid #bfdbfe;
+      padding: 15px;
+      border-radius: 8px;
+      margin: 15px 0;
+    }
+    
+    /* Responsive */
+    @media (max-width: 768px) {
+      .layout { flex-direction: column; }
+      .sidebar { width: 100%; }
+      .sidebar-nav { position: static; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h1><i class="fa-solid fa-book-open"></i> Attraction Deep Dives (核心景点深度攻略)</h1>
+    <a href="index.html" class="back-btn"><i class="fa-solid fa-arrow-left"></i> 返回主页</a>
+  </div>
+
+  <div class="layout">
+    <!-- Sidebar Navigation -->
+    <div class="sidebar">
+      <div class="sidebar-nav">
+        <h3>导航目录</h3>
+        <ul>
+          <li><a href="#maijishan">麦积山石窟 (Day 0)</a></li>
+          <li><a href="#danxia">张掖七彩丹霞 (Day 2)</a></li>
+          <li><a href="#mogao">莫高窟 & 鸣沙山 (Day 3)</a></li>
+          <li><a href="#turpan">吐鲁番全线 (Day 6)</a></li>
+          <li><a href="#duku">独库公路北段 (Day 8)</a></li>
+          <li><a href="#xiata">夏塔古道 (Day 10)</a></li>
+          <li><a href="#sayram">赛里木湖 (Day 11)</a></li>
+          <li><a href="#kanas">喀纳斯 & 禾木 (Day 14-16)</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content">
+
+      <!-- Maijishan -->
+      <div id="maijishan" class="deep-dive-card">
+        <h2>麦积山石窟 (Maijishan Grottoes)</h2>
+        
+        <div class="section-title"><i class="fa-solid fa-scroll"></i> 历史与文化背景</div>
+        <p>麦积山石窟是中国四大石窟之一，因其形似麦垛而得名。始建于后秦（公元384-417年），历经十多个朝代不断开凿，以其精美的泥塑艺术闻名于世，被称为“东方雕塑陈列馆”。</p>
+
+        <div class="section-title"><i class="fa-solid fa-star"></i> 核心看点</div>
+        <div class="highlight-box">
+          <ul style="margin:0; padding-left:20px;">
+            <li><strong>绝壁栈道：</strong> 体验修建在142米垂直崖壁上的悬空木栈道，极具视觉冲击力。</li>
+            <li><strong>第44窟：</strong> 被誉为“东方蒙娜丽莎”的西魏造像。</li>
+            <li><strong>东崖大佛：</strong> 高达16米的隋代摩崖大佛（第13窟），是麦积山的标志。</li>
+          </ul>
+        </div>
+
+        <div class="section-title"><i class="fa-solid fa-map-location-dot"></i> 游览策略</div>
+        <div class="strategy-box">
+          <p><strong>最佳时间：</strong> 下午15:00之后。此时太阳西斜，光线柔和地打在东崖的大佛上，非常适合拍照，且避开了正午的烈日。这也是为什么我们将它安排在 Day 0 的下午。</p>
+          <p><strong>游览路线：</strong> 乘坐区间车直达山脚，按顺时针方向攀登栈道。体力较好者可登顶俯瞰陇东林海。</p>
+        </div>
+
+        <div class="section-title"><i class="fa-solid fa-triangle-exclamation"></i> 避坑与注意事项</div>
+        <div class="warning-box">
+          <ul style="margin:0; padding-left:20px;">
+            <li>栈道非常狭窄陡峭，恐高症患者需谨慎；必须穿着防滑运动鞋。</li>
+            <li>景区严禁使用无人机。洞窟内禁止闪光灯拍照以保护壁画。</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Zhangye Danxia -->
+      <div id="danxia" class="deep-dive-card">
+        <h2>张掖七彩丹霞 (Zhangye Danxia)</h2>
+        
+        <div class="section-title"><i class="fa-solid fa-scroll"></i> 历史与地理背景</div>
+        <p>形成于200万年前的白垩纪时代。由于铁元素氧化和地壳运动，形成了色彩斑斓的丘陵地貌，被《中国国家地理》评为中国最美的七大丹霞之一。</p>
+
+        <div class="section-title"><i class="fa-solid fa-star"></i> 核心看点</div>
+        <div class="highlight-box">
+          <ul style="margin:0; padding-left:20px;">
+            <li><strong>七彩虹霞台 (4号观景台)：</strong> 色彩最丰富、最鲜艳的观景台，看日落的绝佳地点。</li>
+            <li><strong>七彩仙缘台 (1号观景台)：</strong> 规模最大，视野最开阔。</li>
+          </ul>
+        </div>
+
+        <div class="section-title"><i class="fa-solid fa-map-location-dot"></i> 游览策略</div>
+        <div class="strategy-box">
+          <p><strong>最佳时间：</strong> 傍晚日落前 1-2 小时（约 17:00 - 19:00）。夕阳的金光会使得丹霞的红色与黄色达到极度的饱和与绚丽。</p>
+          <p><strong>路线选择：</strong> 建议从<strong>西门</strong>或<strong>北门</strong>进入。乘坐区间车顺序游览 1号 -> 5号 -> 4号观景台，最后在4号观景台守候日落。</p>
+        </div>
+
+        <div class="section-title"><i class="fa-solid fa-triangle-exclamation"></i> 避坑与注意事项</div>
+        <div class="warning-box">
+          <ul style="margin:0; padding-left:20px;">
+            <li>如果是阴天或雨天，丹霞颜色会非常暗淡，如同普通土包。雨后初晴是最佳观赏时机。</li>
+            <li>景区内风沙大，务必戴好帽子和墨镜，并做好相机的防沙保护。</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Mogao Grottoes -->
+      <div id="mogao" class="deep-dive-card">
+        <h2>莫高窟 & 鸣沙山 (Mogao Grottoes)</h2>
+        
+        <div class="section-title"><i class="fa-solid fa-scroll"></i> 历史与文化背景</div>
+        <p>莫高窟，俗称千佛洞，始建于前秦宣昭帝苻坚时期（公元366年）。它是世界上现存规模最大、内容最丰富的佛教艺术地。这里不仅有壁画、泥塑，还有藏经洞（第17窟）中出土的五万多件古代文献。</p>
+
+        <div class="section-title"><i class="fa-solid fa-star"></i> 核心看点</div>
+        <div class="highlight-box">
+          <ul style="margin:0; padding-left:20px;">
+            <li><strong>九层楼 (第96窟)：</strong> 莫高窟的标志性建筑，内有高达35.6米的弥勒大佛。</li>
+            <li><strong>藏经洞 (第17窟)：</strong> 震惊世界的古代文献发掘地。</li>
+            <li><strong>鸣沙山月牙泉：</strong> 沙泉共生，千年不涸的沙漠奇观。</li>
+          </ul>
+        </div>
+
+        <div class="section-title"><i class="fa-solid fa-map-location-dot"></i> 游览策略</div>
+        <div class="strategy-box">
+          <p><strong>A类票：</strong> 必须提前30天抢A类票！A类票可看8个窟，包含2部数字电影；B类票只能看4个窟，体验大打折扣。</p>
+          <p><strong>外宾取票：</strong> 外宾无法直接刷护照入园，必须提前至少30分钟到人工窗口核验原件并换取纸质票。</p>
+          <p><strong>鸣沙山：</strong> 下午18:30之后再进入鸣沙山，避开40度的高温。骑骆驼看日落是经典体验。</p>
+        </div>
+
+        <div class="section-title"><i class="fa-solid fa-triangle-exclamation"></i> 避坑与注意事项</div>
+        <div class="warning-box">
+          <ul style="margin:0; padding-left:20px;">
+            <li>洞窟内绝对禁止拍照，二氧化碳和闪光灯会对壁画造成不可逆的损害。导游手电筒是唯一冷光源。</li>
+            <li>鸣沙山风沙极细，如果携带单反相机，必须套上专业的防沙罩，否则镜头马达会进沙报废。</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Turpan -->
+      <div id="turpan" class="deep-dive-card">
+        <h2>吐鲁番全线 (Turpan Cluster)</h2>
+        
+        <div class="section-title"><i class="fa-solid fa-scroll"></i> 历史与文化背景</div>
+        <p>吐鲁番是古丝绸之路上的重镇，古代车师国、高昌国的所在地。这里气候极度干旱炎热，但也孕育了独特的坎儿井农业文明和大量保存极好的地下文物（干尸、文书）。</p>
+
+        <div class="section-title"><i class="fa-solid fa-star"></i> 核心看点</div>
+        <div class="highlight-box">
+          <ul style="margin:0; padding-left:20px;">
+            <li><strong>阿斯塔那古墓群：</strong> 被称为“地下博物馆”，出土了大量伏羲女娲图、丝织品以及千年不腐的干尸。</li>
+            <li><strong>交河故城：</strong> 世界上最大、最古老、保存最完好的生土建筑城市，建于两河交汇的30米高崖上。</li>
+            <li><strong>坎儿井：</strong> 与万里长城、京杭大运河并称为中国古代三大工程的地下水利奇迹。</li>
+          </ul>
+        </div>
+
+        <div class="section-title"><i class="fa-solid fa-map-location-dot"></i> 游览策略 (高温作战)</div>
+        <div class="strategy-box">
+          <p><strong>避暑时间表：</strong> 吐鲁番夏季地表温度可达 70°C。中午最热的时段（13:00 - 17:00）必须安排地下景点（坎儿井、古墓群）或室内博物馆。绝不能在这个时段去交河故城或火焰山。</p>
+          <p><strong>交河故城：</strong> 安排在19:30之后游览，伴随夕阳走在残垣断壁中，极具历史沧桑感。</p>
+        </div>
+
+        <div class="section-title"><i class="fa-solid fa-triangle-exclamation"></i> 避坑与注意事项</div>
+        <div class="warning-box">
+          <ul style="margin:0; padding-left:20px;">
+            <li>极度脱水风险！每人每天需准备至少 3L 饮用水。</li>
+            <li>阿斯塔那古墓群内有干尸展出，如对遗骸有心理不适，请谨慎下墓。</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Duku Highway -->
+      <div id="duku" class="deep-dive-card">
+        <h2>独库公路北段 (Duku Highway)</h2>
+        
+        <div class="section-title"><i class="fa-solid fa-scroll"></i> 概况</div>
+        <p>G217国道独山子至库车段，全长561公里，连接南北疆。北段（独山子-那拉提）是地势最险峻、景观最震撼的一段，需要翻越海拔3400多米的哈希勒根达坂。</p>
+
+        <div class="section-title"><i class="fa-solid fa-star"></i> 核心看点</div>
+        <div class="highlight-box">
+          <ul style="margin:0; padding-left:20px;">
+            <li><strong>防雪长廊：</strong> 穿行于百米长的半开放式隧道，旁边就是万丈深渊。</li>
+            <li><strong>哈希勒根达坂：</strong> 体验“一天过四季”，即使在7月也可能遇到大雪。</li>
+            <li><strong>乔尔玛烈士陵园：</strong> 纪念为修建独库公路牺牲的168名解放军官兵。</li>
+          </ul>
+        </div>
+
+        <div class="section-title"><i class="fa-solid fa-map-location-dot"></i> 穿越策略</div>
+        <div class="strategy-box">
+          <p><strong>时间管理：</strong> 强烈建议在早上 07:00 前到达独山子零公里起点排队进山。一旦遇到旅游团大巴或房车，速度将降至20km/h。</p>
+          <p><strong>战术补给：</strong> 山上没有任何像样的餐厅。必须在独山子提前买好自热米饭、咖啡和红牛。在观景台吃午餐是最明智的选择。</p>
+        </div>
+
+        <div class="section-title"><i class="fa-solid fa-triangle-exclamation"></i> 避坑与驾驶警告</div>
+        <div class="warning-box">
+          <ul style="margin:0; padding-left:20px;">
+            <li><strong>严禁空挡滑行：</strong> 长下坡必须使用低档位（L档或手动2档）利用引擎制动，否则刹车片过热会导致刹车失灵。</li>
+            <li>随时关注天气预报，独库公路极易因泥石流或降雪临时交通管制（封路）。</li>
+            <li>沿途厕所极度恶劣且稀缺，随时备好湿厕纸和垃圾袋。</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Xiata Trail -->
+      <div id="xiata" class="deep-dive-card">
+        <h2>夏塔古道 (Xiata Trail)</h2>
+        
+        <div class="section-title"><i class="fa-solid fa-scroll"></i> 历史与地理背景</div>
+        <p>夏塔古道是古代丝绸之路上最为险峻的连通南北疆的通道（玄奘西行曾途经此地）。这是一条直指天山主脉——木扎尔特冰川的极致徒步路线。</p>
+
+        <div class="section-title"><i class="fa-solid fa-star"></i> 核心看点</div>
+        <div class="highlight-box">
+          <ul style="margin:0; padding-left:20px;">
+            <li><strong>木扎尔特雪峰：</strong> 在山谷中徒步，巨大的雪峰始终在正前方压迫式地展现。</li>
+            <li><strong>原始松林与旱獭：</strong> 沿途草甸上有大量的土拨鼠（旱獭）出没。</li>
+          </ul>
+        </div>
+
+        <div class="section-title"><i class="fa-solid fa-map-location-dot"></i> 游览策略</div>
+        <div class="strategy-box">
+          <p><strong>区间车接力：</strong> 夏塔景区很大。首先乘坐第一段大巴到温泉（约1小时），然后换乘电瓶车（约20分钟）到达将军桥。将军桥是徒步的真正起点。</p>
+          <p><strong>徒步建议：</strong> 从将军桥走到冰川脚下（卡拉房子附近）约需徒步往返 8-10 公里。沿途没有商铺，必须携带好水和干粮。</p>
+        </div>
+
+        <div class="section-title"><i class="fa-solid fa-triangle-exclamation"></i> 避坑与注意事项</div>
+        <div class="warning-box">
+          <ul style="margin:0; padding-left:20px;">
+            <li><strong>不要接触旱獭：</strong> 旱獭是鼠疫（黑死病）的主要宿主。绝不可以用手喂食或抚摸土拨鼠！</li>
+            <li>山区气候多变，即便山下是晴天，走到冰川附近也可能突降冰雹，必须随身携带冲锋衣。</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Sayram Lake -->
+      <div id="sayram" class="deep-dive-card">
+        <h2>赛里木湖 (Sayram Lake)</h2>
+        
+        <div class="section-title"><i class="fa-solid fa-scroll"></i> 背景介绍</div>
+        <p>被称为“大西洋最后一滴眼泪”，是新疆海拔最高、面积最大、风光最秀丽的高山冷水湖。湖水清澈透底，透明度极高。</p>
+
+        <div class="section-title"><i class="fa-solid fa-star"></i> 核心看点</div>
+        <div class="highlight-box">
+          <ul style="margin:0; padding-left:20px;">
+            <li><strong>S弯公路与雪山：</strong> 东门附近的S弯公路，背后是巍峨的雪山，是出大片的绝佳机位。</li>
+            <li><strong>点将台：</strong> 俯瞰赛里木湖全景的高点，挂满了祈福的经幡。</li>
+            <li><strong>天鹅：</strong> 在湖的西侧（靠近南门）的湿地，经常可以近距离看到野生天鹅。</li>
+          </ul>
+        </div>
+
+        <div class="section-title"><i class="fa-solid fa-map-location-dot"></i> 自驾环湖策略</div>
+        <div class="strategy-box">
+          <p><strong>顺时针环湖：</strong> 强烈建议从东门进入，逆时针方向（即靠湖一侧）行驶。这样停车拍照无需跨越对向车道，安全性更高。</p>
+          <p><strong>深度体验：</strong> 赛里木湖值得留足 5-6 小时。我们在行程中安排了酒店直接在东门外，因此您可以毫不留遗憾地玩到日落再出景区。</p>
+        </div>
+
+        <div class="section-title"><i class="fa-solid fa-triangle-exclamation"></i> 避坑与注意事项</div>
+        <div class="warning-box">
+          <ul style="margin:0; padding-left:20px;">
+            <li>湖边紫外线极强且妖风极大，请务必穿上防风外套（冲锋衣）并做好硬防晒。</li>
+            <li>不要将车开下铺装路面碾压草场，会被处以数千元的巨额罚款。</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Kanas & Hemu -->
+      <div id="kanas" class="deep-dive-card">
+        <h2>喀纳斯 & 禾木 (Kanas & Hemu)</h2>
+        
+        <div class="section-title"><i class="fa-solid fa-scroll"></i> 背景介绍</div>
+        <p>位于阿尔泰山脉深处，中国与哈萨克斯坦、俄罗斯、蒙古国接壤地带。以其神秘的湖怪传说、变色湖泊和图瓦人木屋村落被誉为“神的自留地”。</p>
+
+        <div class="section-title"><i class="fa-solid fa-star"></i> 核心看点</div>
+        <div class="highlight-box">
+          <ul style="margin:0; padding-left:20px;">
+            <li><strong>喀纳斯三湾：</strong> 神仙湾（晨雾）、月亮湾（最美曲线，足迹沙洲）、卧龙湾。</li>
+            <li><strong>观鱼台：</strong> 攀登1068级台阶，站在山巅俯瞰喀纳斯湖全貌。</li>
+            <li><strong>禾木晨雾：</strong> 清晨在禾木观景台俯瞰被薄雾笼罩的木屋村落与白桦林，是北疆风光的终极名片。</li>
+          </ul>
+        </div>
+
+        <div class="section-title"><i class="fa-solid fa-map-location-dot"></i> 游览策略 (De-bottlenecked)</div>
+        <div class="strategy-box">
+          <p><strong>喀纳斯大徒步：</strong> 乘坐区间车直达喀纳斯老村，先乘车上观鱼台。午餐后，从鸭泽湖开始，沿着木栈道一路向下徒步神仙湾 -> 月亮湾 -> 卧龙湾。这一段栈道在森林和河畔穿行，体验远超坐在大巴上走马观花。</p>
+          <p><strong>禾木过夜：</strong> 禾木的灵魂在于清晨和黄昏。我们的行程特别安排了住在村内。将大行李留在门票站的车内，只背双肩包进村，极大减轻物流负担。</p>
+        </div>
+
+        <div class="section-title"><i class="fa-solid fa-triangle-exclamation"></i> 避坑与注意事项</div>
+        <div class="warning-box">
+          <ul style="margin:0; padding-left:20px;">
+            <li><strong>保暖！保暖！保暖！</strong> 禾木清晨看日出时，气温经常逼近 0°C（即使在夏季）。必须穿上您行李箱中最厚的外套（轻薄羽绒服+冲锋衣）。</li>
+            <li>旺季区间车排队极其恐怖。通过携程等渠道购买 VIP/直通车票可以省下每天 2-3 小时的排队时间。</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    // Simple smooth scroll and active state for sidebar
+    const navLinks = document.querySelectorAll('.sidebar-nav a');
+    const sections = document.querySelectorAll('.deep-dive-card');
+
+    window.addEventListener('scroll', () => {
+      let current = '';
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        if (pageYOffset >= (sectionTop - 150)) {
+          current = section.getAttribute('id');
+        }
+      });
+
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href').includes(current)) {
+          link.classList.add('active');
+        }
+      });
+    });
+  </script>
+</body>
+</html>

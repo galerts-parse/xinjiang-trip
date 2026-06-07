@@ -148,6 +148,7 @@ function renderItinerary(data) {
         <div class="practical-alert">
           <p><strong><i class="fa-solid fa-circle-exclamation"></i> 实用提示 (Tips):</strong> ${dayData.practical}</p>
         </div>
+        <div class="spot-buttons" style="margin-top: 15px; display: flex; flex-wrap: wrap; gap: 8px;"></div>
       </div>
     `;
     
@@ -182,6 +183,25 @@ function renderItinerary(data) {
           <a href='${gaodeUrl}' target='_blank' class='gaode-btn'><i class="fa-solid fa-location-arrow"></i> Navigate with GaoDe (高德)</a>
         `);
         
+        // Add interactive pill to sidebar
+        const spotPill = document.createElement('button');
+        spotPill.style.cssText = "background: #f1f5f9; border: 1px solid #cbd5e1; border-radius: 20px; padding: 4px 10px; font-size: 12px; cursor: pointer; color: #475569; display: flex; align-items: center; gap: 5px; transition: all 0.2s;";
+        let pillIcon = '<i class="fa-solid fa-camera" style="color: #0284c7;"></i>';
+        if (spot.type === 'hotel') pillIcon = '<i class="fa-solid fa-bed" style="color: #10b981;"></i>';
+        if (spot.type === 'restaurant') pillIcon = '<i class="fa-solid fa-utensils" style="color: #f59e0b;"></i>';
+        if (spot.type === 'shopping') pillIcon = '<i class="fa-solid fa-basket-shopping" style="color: #8b5cf6;"></i>';
+        spotPill.innerHTML = `${pillIcon} ${spot.name}`;
+        
+        spotPill.addEventListener('mouseover', () => spotPill.style.background = '#e2e8f0');
+        spotPill.addEventListener('mouseout', () => spotPill.style.background = '#f1f5f9');
+        spotPill.addEventListener('click', (e) => {
+          e.stopPropagation(); // prevent clicking the day card
+          map.flyTo([renderLat, renderLng], 14, { duration: 1.5 });
+          setTimeout(() => marker.openPopup(), 1500);
+        });
+        
+        dayCard.querySelector('.spot-buttons').appendChild(spotPill);
+
         marker.on('click', () => {
           dayCard.click();
         });
