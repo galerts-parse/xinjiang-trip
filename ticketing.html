@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Day-by-Day Ticketing Matrix & Cost Breakdown</title>
+  <title>每日门票清单及费用预算</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
     body {
@@ -161,7 +161,7 @@
         font-weight: bold;
         color: #64748b;
       }
-      td:nth-of-type(1):before { content: "Day"; }
+      td:nth-of-type(1):before { content: "行程日"; }
       td:nth-of-type(2):before { content: "Attraction"; }
       td:nth-of-type(3):before { content: "Est. Cost"; }
       td:nth-of-type(4):before { content: "Strategy"; }
@@ -174,23 +174,23 @@
 <body>
 
   <div class="header">
-    <h1>Ticketing Matrix & Cost Breakdown</h1>
-    <p>Approximate costs in RMB (¥). Prices often include mandatory scenic shuttle buses (区间车) where applicable.</p>
+    <h1>每日门票清单及费用预算</h1>
+    <p>所有费用均为人民币（¥）估算。标示价格通常包含必买的景区区间车（区间车）费用。</p>
   </div>
 
   <div class="container">
-    <a href="index.html" class="back-link"><i class="fa-solid fa-arrow-left"></i> Back to Itinerary</a>
+    <a href="index.html" class="back-link"><i class="fa-solid fa-arrow-left"></i> 返回行程主页</a>
 
     <div class="checklist-box">
-      <h2><i class="fa-solid fa-clipboard-check"></i> Advance Booking Checklist</h2>
-      <p>Secure these items early to guarantee smooth entry and avoid high friction points:</p>
+      <h2><i class="fa-solid fa-clipboard-check"></i> 提前预订清单</h2>
+      <p>为确保顺利入园并避开限流瓶颈，请务必提前预订以下项目：</p>
       <ul>
-        <li><strong>Mogao Grottoes (Day 3)</strong> <span class="status-booked"><i class="fa-solid fa-check"></i> Booked!</span></li>
-        <li><strong>Gansu Provincial Museum (Day 1)</strong> - Reserve via WeChat Mini-Program (甘肃省博物馆). <span class="status-pending">Action Needed</span></li>
-        <li><strong>Encore Dunhuang Show (Day 3)</strong> - Book via Trip.com or hotel concierge. <span class="status-pending">Action Needed</span></li>
-        <li><strong>Xinjiang Regional Museum (Day 17)</strong> - Reserve via WeChat Mini-Program (新疆维吾尔自治区博物馆). <span class="status-pending">Action Needed</span></li>
-        <li><strong>Kanas Nature Reserve & Hemu (Day 14-15)</strong> - High friction points. Pre-book via Trip.com to skip lines. <span class="status-pending">Action Needed</span></li>
-        <li><strong>Nalati & Tianshan Tianchi (Day 7, Day 8)</strong> - Book via Trip.com for streamlined entry. <span class="status-pending">Action Needed</span></li>
+        <li><strong>莫高窟 (Day 3)</strong> <span class="status-booked"><i class="fa-solid fa-check"></i> 已预订！</span></li>
+        <li><strong>甘肃省博物馆 (Day 1)</strong> - 通过微信小程序（甘肃省博物馆）预约。 <span class="status-pending">待处理</span></li>
+        <li><strong>《又见敦煌》演出 (Day 3)</strong> - 通过携程预订或联系酒店管家代订。 <span class="status-pending">待处理</span></li>
+        <li><strong>新疆维吾尔自治区博物馆 (Day 17)</strong> - 通过微信小程序（新疆维吾尔自治区博物馆）预约。 <span class="status-pending">待处理</span></li>
+        <li><strong>喀纳斯景区 & 禾木 (Day 14-15)</strong> - 高峰拥堵点。请通过携程提前预订以跳过购票排队。 <span class="status-pending">待处理</span></li>
+        <li><strong>那拉提 & 天山天池 (Day 7, Day 8)</strong> - 通过携程提前预订以加快入园速度。 <span class="status-pending">待处理</span></li>
       </ul>
     </div>
 
@@ -198,237 +198,237 @@
       <table>
         <thead>
           <tr>
-            <th>Day</th>
-            <th>Location / Attraction</th>
-            <th>Est. Cost (RMB)</th>
-            <th>Acquisition Strategy for Foreigners</th>
+            <th>行程日</th>
+            <th>景点名称</th>
+            <th>预估费用</th>
+            <th>外宾购票策略</th>
           </tr>
         </thead>
         <tbody>
-          <!-- Day 1 -->
+          <!-- 行程日 1 -->
           <tr>
-            <td class="day-col" rowspan="3">Day 1</td>
-            <td class="attr-col">Maijishan Grottoes</td>
+            <td class="day-col" rowspan="3">行程日 1</td>
+            <td class="attr-col">麦积山石窟</td>
             <td class="cost-col">¥90</td>
-            <td class="strat-col">Proceed to the manual window. Standard passport processing.</td>
+            <td class="strat-col">请前往人工窗口购票。凭护照常规办理。</td>
           </tr>
           <tr>
-            <td class="attr-col">Gansu Provincial Museum</td>
-            <td class="cost-col">Free</td>
-            <td class="strat-col">Requires advance reservation. Use WeChat Mini-Program (甘肃省博物馆) -> select Passport (护照) option, or present passport at the manual window for a physical ticket.</td>
+            <td class="attr-col">甘肃省博物馆</td>
+            <td class="cost-col">免费</td>
+            <td class="strat-col">需提前预约。使用微信小程序（甘肃省博物馆）-> 选择护照（Passport）选项，或在人工窗口出示护照换取纸质票。</td>
           </tr>
           <tr>
-            <td class="attr-col">Zhongshan Bridge</td>
-            <td class="cost-col">Free</td>
-            <td class="strat-col">Public infrastructure. No ticket required.</td>
+            <td class="attr-col">中山桥</td>
+            <td class="cost-col">免费</td>
+            <td class="strat-col">城市公共基础设施，无需门票。</td>
           </tr>
 
-          <!-- Day 2 -->
+          <!-- 行程日 2 -->
           <tr>
-            <td class="day-col" rowspan="4">Day 2</td>
-            <td class="attr-col">Leitai Tomb</td>
+            <td class="day-col" rowspan="4">行程日 2</td>
+            <td class="attr-col">雷台汉墓</td>
             <td class="cost-col">¥45</td>
-            <td class="strat-col">Manual ticket window.</td>
+            <td class="strat-col">人工窗口购票。</td>
           </tr>
           <tr>
-            <td class="attr-col">Zhangye Dafo Temple</td>
+            <td class="attr-col">张掖大佛寺</td>
             <td class="cost-col">¥40</td>
-            <td class="strat-col">Manual ticket window.</td>
+            <td class="strat-col">人工窗口购票。</td>
           </tr>
           <tr>
-            <td class="attr-col">Zhangye Seven-Color Danxia</td>
-            <td class="cost-col">¥93 (incl. bus)</td>
-            <td class="strat-col">Book in advance via Trip.com or purchase at the manual window.</td>
+            <td class="attr-col">张掖七彩丹霞</td>
+            <td class="cost-col">¥93 （含区间车）</td>
+            <td class="strat-col">通过携程提前预订或在人工窗口购票。</td>
           </tr>
           <tr>
-            <td class="attr-col">Jiayuguan Pass</td>
+            <td class="attr-col">嘉峪关城楼</td>
             <td class="cost-col">¥110</td>
-            <td class="strat-col">Book via Trip.com or manual window.</td>
+            <td class="strat-col">通过携程预订或在人工窗口购票。</td>
           </tr>
 
-          <!-- Day 3 -->
+          <!-- 行程日 3 -->
           <tr>
-            <td class="day-col" rowspan="3">Day 3</td>
-            <td class="attr-col">Mogao Grottoes</td>
-            <td class="cost-col">¥238 (Class A)</td>
-            <td class="strat-col"><span style="color: #16a34a; font-weight: bold;"><i class="fa-solid fa-circle-check"></i> Already Booked!</span> Proceed directly to the entry point with your passport at the designated time.</td>
+            <td class="day-col" rowspan="3">行程日 3</td>
+            <td class="attr-col">莫高窟</td>
+            <td class="cost-col">¥238 (A类票)</td>
+            <td class="strat-col"><span style="color: #16a34a; font-weight: bold;"><i class="fa-solid fa-circle-check"></i> Already 已预订！</span> 请在指定时间凭护照直接前往检票口入场。</td>
           </tr>
           <tr>
-            <td class="attr-col">Mingsha Mountain & Crescent Lake</td>
+            <td class="attr-col">鸣沙山月牙泉</td>
             <td class="cost-col">¥110</td>
-            <td class="strat-col">Manual window. (Camel riding is an additional, separate on-site cash/QR transaction of approx. ¥100).</td>
+            <td class="strat-col">人工窗口购票。（骑骆驼需另行支付，现场扫码或现金约¥100）。</td>
           </tr>
           <tr>
-            <td class="attr-col">Encore Dunhuang Show</td>
+            <td class="attr-col">《又见敦煌》演出</td>
             <td class="cost-col">¥298 - ¥368</td>
-            <td class="strat-col">Book via Trip.com or authorize your hotel concierge to secure premium seating.</td>
+            <td class="strat-col">通过携程预订或委托酒店管家代订优质座位。</td>
           </tr>
 
-          <!-- Day 4 -->
+          <!-- 行程日 4 -->
           <tr>
-            <td class="day-col" rowspan="3">Day 4</td>
-            <td class="attr-col">Yumenguan & Han Great Wall</td>
+            <td class="day-col" rowspan="3">行程日 4</td>
+            <td class="attr-col">玉门关及汉长城遗址</td>
             <td class="cost-col">¥40</td>
-            <td class="strat-col">Manual ticket window at the site entrance.</td>
+            <td class="strat-col">景区入口人工窗口购票。</td>
           </tr>
           <tr>
-            <td class="attr-col">Yangguan Pass</td>
+            <td class="attr-col">阳关</td>
             <td class="cost-col">¥50</td>
-            <td class="strat-col">Manual ticket window.</td>
+            <td class="strat-col">人工窗口购票。</td>
           </tr>
           <tr>
-            <td class="attr-col">Yadan Ghost City</td>
-            <td class="cost-col">¥120 (incl. bus)</td>
-            <td class="strat-col">Manual ticket window. Ensure arrival before the final sunset bus departs (typically around 18:30 in summer).</td>
-          </tr>
-
-          <!-- Day 5 -->
-          <tr>
-            <td class="day-col" rowspan="2">Day 5</td>
-            <td class="attr-col">Yulin Grottoes</td>
-            <td class="cost-col">¥40</td>
-            <td class="strat-col">Manual ticket window. Unlike Mogao, advance booking is rarely required, but arrive early to secure English-speaking guides if needed.</td>
-          </tr>
-          <tr>
-            <td class="attr-col">Hami King Tomb</td>
-            <td class="cost-col">¥40</td>
-            <td class="strat-col">Manual ticket window.</td>
+            <td class="attr-col">雅丹魔鬼城</td>
+            <td class="cost-col">¥120 （含区间车）</td>
+            <td class="strat-col">人工窗口购票。 Ensure arrival before the final sunset bus departs (typically around 18:30 in summer).</td>
           </tr>
 
-          <!-- Day 6 -->
+          <!-- 行程日 5 -->
           <tr>
-            <td class="day-col" rowspan="5">Day 6</td>
-            <td class="attr-col">Karez System</td>
+            <td class="day-col" rowspan="2">行程日 5</td>
+            <td class="attr-col">榆林窟</td>
             <td class="cost-col">¥40</td>
-            <td class="strat-col">Manual ticket window.</td>
+            <td class="strat-col">人工窗口购票。 Unlike Mogao, advance booking is rarely required, but arrive early to secure English-speaking guides if needed.</td>
           </tr>
           <tr>
-            <td class="attr-col">Astana Tombs</td>
+            <td class="attr-col">哈密回王陵</td>
             <td class="cost-col">¥40</td>
-            <td class="strat-col">Manual ticket window.</td>
+            <td class="strat-col">人工窗口购票。</td>
+          </tr>
+
+          <!-- 行程日 6 -->
+          <tr>
+            <td class="day-col" rowspan="5">行程日 6</td>
+            <td class="attr-col">坎儿井</td>
+            <td class="cost-col">¥40</td>
+            <td class="strat-col">人工窗口购票。</td>
           </tr>
           <tr>
-            <td class="attr-col">Bezeklik Thousand Buddha Caves</td>
+            <td class="attr-col">阿斯塔那古墓群</td>
             <td class="cost-col">¥40</td>
-            <td class="strat-col">Manual ticket window.</td>
+            <td class="strat-col">人工窗口购票。</td>
           </tr>
           <tr>
-            <td class="attr-col">Flaming Mountains</td>
+            <td class="attr-col">柏孜克里克千佛洞</td>
             <td class="cost-col">¥40</td>
-            <td class="strat-col">Manual ticket window.</td>
+            <td class="strat-col">人工窗口购票。</td>
           </tr>
           <tr>
-            <td class="attr-col">Jiaohe Ruins</td>
+            <td class="attr-col">火焰山</td>
+            <td class="cost-col">¥40</td>
+            <td class="strat-col">人工窗口购票。</td>
+          </tr>
+          <tr>
+            <td class="attr-col">交河故城</td>
             <td class="cost-col">¥70</td>
-            <td class="strat-col">Manual ticket window.</td>
+            <td class="strat-col">人工窗口购票。</td>
           </tr>
 
-          <!-- Day 7 -->
+          <!-- 行程日 7 -->
           <tr>
-            <td class="day-col">Day 7</td>
-            <td class="attr-col">Tianshan Tianchi</td>
-            <td class="cost-col">¥155 (incl. bus)</td>
-            <td class="strat-col">Book via Trip.com or proceed to the manual window.</td>
+            <td class="day-col">行程日 7</td>
+            <td class="attr-col">天山天池</td>
+            <td class="cost-col">¥155 （含区间车）</td>
+            <td class="strat-col">通过携程预订或在人工窗口购票。</td>
           </tr>
 
-          <!-- Day 8 -->
+          <!-- 行程日 8 -->
           <tr>
-            <td class="day-col" rowspan="2">Day 8</td>
-            <td class="attr-col">Duku Highway (North Section)</td>
-            <td class="cost-col">Free</td>
-            <td class="strat-col">Public national highway (G217).</td>
+            <td class="day-col" rowspan="2">行程日 8</td>
+            <td class="attr-col">独库公路（北段）</td>
+            <td class="cost-col">免费</td>
+            <td class="strat-col">国道G217，免费开放。</td>
           </tr>
           <tr>
-            <td class="attr-col">Nalati Grassland</td>
-            <td class="cost-col">¥135 (incl. bus)</td>
-            <td class="strat-col">Book via Trip.com. The ticket is valid for 48 hours, allowing flexible entry and exit.</td>
-          </tr>
-
-          <!-- Day 9 -->
-          <tr>
-            <td class="day-col">Day 9</td>
-            <td class="attr-col">Kalajun Grassland</td>
-            <td class="cost-col">¥140 (incl. bus)</td>
-            <td class="strat-col">Manual ticket window.</td>
+            <td class="attr-col">那拉提空中草原</td>
+            <td class="cost-col">¥135 （含区间车）</td>
+            <td class="strat-col">通过携程预订。门票48小时内有效，支持多次进出。</td>
           </tr>
 
-          <!-- Day 10 -->
+          <!-- 行程日 9 -->
           <tr>
-            <td class="day-col" rowspan="2">Day 10</td>
-            <td class="attr-col">Xiata Ancient Road</td>
-            <td class="cost-col">¥80 (incl. bus)</td>
-            <td class="strat-col">Manual ticket window. (Optional electric cart inside is an additional ¥50).</td>
-          </tr>
-          <tr>
-            <td class="attr-col">Kazanqi Folk Village</td>
-            <td class="cost-col">Free entry</td>
-            <td class="strat-col">General walking is free. Tourist carriage rides/combo tickets (approx. ¥150) are purchased at the visitor center.</td>
+            <td class="day-col">行程日 9</td>
+            <td class="attr-col">喀拉峻大草原</td>
+            <td class="cost-col">¥140 （含区间车）</td>
+            <td class="strat-col">人工窗口购票。</td>
           </tr>
 
-          <!-- Day 11 -->
+          <!-- 行程日 10 -->
           <tr>
-            <td class="day-col">Day 11</td>
-            <td class="attr-col">Sayram Lake</td>
-            <td class="cost-col">¥145 (Ticket + Car)</td>
-            <td class="strat-col"><b>Strategic Execution:</b> To execute your 360-degree self-drive, you must purchase a specific "Self-Driving Pass" alongside your entry ticket at the East or South Gate manual window. Present your vehicle registration (行驶证) and passport.</td>
+            <td class="day-col" rowspan="2">行程日 10</td>
+            <td class="attr-col">夏塔古道</td>
+            <td class="cost-col">¥80 （含区间车）</td>
+            <td class="strat-col">人工窗口购票。 (Optional electric cart inside is an additional ¥50).</td>
+          </tr>
+          <tr>
+            <td class="attr-col">喀赞其民俗村</td>
+            <td class="cost-col">免费入园</td>
+            <td class="strat-col">街区漫步免费。乘坐特色马车或购买套票（约¥150）需在游客中心办理。</td>
           </tr>
 
-          <!-- Day 12 -->
+          <!-- 行程日 11 -->
           <tr>
-            <td class="day-col">Day 12</td>
-            <td class="attr-col">World Ghost City (Urho)</td>
-            <td class="cost-col">¥62 (incl. train)</td>
-            <td class="strat-col">Manual ticket window or Trip.com. The ticket includes the trackless train that loops the park.</td>
+            <td class="day-col">行程日 11</td>
+            <td class="attr-col">赛里木湖</td>
+            <td class="cost-col">¥145 （含自驾通行费）</td>
+            <td class="strat-col"><b>核心策略：</b> 为了实现360度自驾环湖，请务必在东门或南门的人工窗口购买包含“自驾车通行”的专项票，需出示车辆行驶证及护照。</td>
           </tr>
 
-          <!-- Day 13 -->
+          <!-- 行程日 12 -->
           <tr>
-            <td class="day-col">Day 13</td>
-            <td class="attr-col">Transit to Jiadengyu</td>
-            <td class="cost-col">N/A</td>
-            <td class="strat-col">Logistical transit day. No scenic tickets required.</td>
+            <td class="day-col">行程日 12</td>
+            <td class="attr-col">世界魔鬼城（乌尔禾）</td>
+            <td class="cost-col">¥62 （含小火车）</td>
+            <td class="strat-col">人工窗口或携程购票。门票已包含景区内环线无轨小火车。</td>
           </tr>
 
-          <!-- Day 14 -->
+          <!-- 行程日 13 -->
           <tr>
-            <td class="day-col">Day 14</td>
-            <td class="attr-col">Kanas Nature Reserve</td>
-            <td class="cost-col">¥230 (Ticket + Bus)</td>
-            <td class="strat-col"><b>High Friction Point.</b> Book via Trip.com or use the dedicated foreigner manual window at the Jiadengyu ticket center. Guanyu Pavilion shuttle requires a separate ¥20 ticket purchased inside the park.</td>
+            <td class="day-col">行程日 13</td>
+            <td class="attr-col">前往贾登峪</td>
+            <td class="cost-col">无</td>
+            <td class="strat-col">纯赶路日，无需购买景区门票。</td>
           </tr>
 
-          <!-- Day 15 -->
+          <!-- 行程日 14 -->
           <tr>
-            <td class="day-col">Day 15</td>
-            <td class="attr-col">Hemu Village</td>
-            <td class="cost-col">¥102 (Ticket + Bus)</td>
-            <td class="strat-col">Book via Trip.com or manual window at the Hemu ticket station.</td>
+            <td class="day-col">行程日 14</td>
+            <td class="attr-col">喀纳斯景区</td>
+            <td class="cost-col">¥230 （含区间车）</td>
+            <td class="strat-col"><b>高限流节点。</b> 通过携程预订或在贾登峪换乘中心的外宾专属窗口购票。观鱼台区间车（¥20）需在景区内另行购买。</td>
           </tr>
 
-          <!-- Day 16 -->
+          <!-- 行程日 15 -->
           <tr>
-            <td class="day-col" rowspan="2">Day 16</td>
-            <td class="attr-col">Hemu Viewing Platform</td>
-            <td class="cost-col">Free</td>
-            <td class="strat-col">Open access via the village boardwalk.</td>
+            <td class="day-col">行程日 15</td>
+            <td class="attr-col">禾木村</td>
+            <td class="cost-col">¥102 （含区间车）</td>
+            <td class="strat-col">通过携程预订或在禾木门票站人工窗口购票。</td>
+          </tr>
+
+          <!-- 行程日 16 -->
+          <tr>
+            <td class="day-col" rowspan="2">行程日 16</td>
+            <td class="attr-col">禾木观景台</td>
+            <td class="cost-col">免费</td>
+            <td class="strat-col">经村内木栈道免费开放进入。</td>
           </tr>
           <tr>
-            <td class="attr-col">Wucaitan (Colorful Beach)</td>
+            <td class="attr-col">五彩滩</td>
             <td class="cost-col">¥50</td>
-            <td class="strat-col">Manual ticket window.</td>
+            <td class="strat-col">人工窗口购票。</td>
           </tr>
 
-          <!-- Day 17 -->
+          <!-- 行程日 17 -->
           <tr>
-            <td class="day-col" rowspan="2">Day 17</td>
-            <td class="attr-col">Xinjiang Regional Museum</td>
-            <td class="cost-col">Free</td>
-            <td class="strat-col">Advance reservation required. Use WeChat Mini-Program (新疆维吾尔自治区博物馆). If the passport portal fails, proceed directly to the foreigner registration desk at the entrance with your physical passport.</td>
+            <td class="day-col" rowspan="2">行程日 17</td>
+            <td class="attr-col">新疆维吾尔自治区博物馆</td>
+            <td class="cost-col">免费</td>
+            <td class="strat-col">需提前预约。使用微信小程序（新疆维吾尔自治区博物馆）。如遇外宾护照预约系统故障，请直接携实体护照至入口处的外宾登记台办理。</td>
           </tr>
           <tr>
-            <td class="attr-col">International Grand Bazaar</td>
-            <td class="cost-col">Free</td>
-            <td class="strat-col">Open commercial zone.</td>
+            <td class="attr-col">新疆国际大巴扎</td>
+            <td class="cost-col">免费</td>
+            <td class="strat-col">开放式商业街区，免票。</td>
           </tr>
 
         </tbody>
@@ -436,8 +436,8 @@
     </div>
 
     <div class="summary-box">
-      <h3><i class="fa-solid fa-circle-info"></i> Operational Summary</h3>
-      <p>For standard sites, build a 10-minute buffer into your timeline to account for manual passport entry at ticket windows.</p>
+      <h3><i class="fa-solid fa-circle-info"></i> 操作总结</h3>
+      <p>对于常规景点，请在您的时间表中预留10分钟的缓冲时间，以便人工窗口录入护照信息。</p>
     </div>
 
   </div>
