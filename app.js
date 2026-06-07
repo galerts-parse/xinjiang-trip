@@ -264,6 +264,8 @@ if (initialRoute === 'routeD') {
   renderItinerary(itineraryDataRouteC);
 } else if (initialRoute === 'routeE') {
   renderItinerary(itineraryDataE);
+} else if (initialRoute === 'routeX') {
+  renderItinerary(itineraryDataX);
 } else {
   renderItinerary(itineraryData);
 }
@@ -278,8 +280,19 @@ routeSelector.addEventListener('change', (e) => {
     renderItinerary(itineraryDataRouteC);
   } else if (e.target.value === 'routeE') {
     renderItinerary(itineraryDataE);
+  } else if (e.target.value === 'routeX') {
+    renderItinerary(itineraryDataX);
   } else {
     renderItinerary(itineraryData);
+  }
+  
+  const tourPackageLink = document.getElementById('tour-package-link');
+  if (tourPackageLink) {
+    if (e.target.value === 'routeX') {
+      tourPackageLink.href = 'route_x_tour_package.html';
+    } else {
+      tourPackageLink.href = 'route_d_tour_package.html';
+    }
   }
 });
 
