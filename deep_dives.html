@@ -92,12 +92,12 @@
       padding: 30px;
       margin-bottom: 40px;
       box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
-      scroll-margin-top: 90px; /* IMPORTANT: Fixes anchor scroll offset */
+      scroll-margin-top: 90px;
     }
     .deep-dive-card h2 {
       margin-top: 0;
       color: #0f172a;
-      font-size: 2rem;
+      font-size: 1.8rem;
       border-bottom: 3px solid var(--secondary);
       padding-bottom: 10px;
       display: inline-block;
@@ -107,24 +107,23 @@
       align-items: center;
       gap: 10px;
       margin-top: 25px;
+      margin-bottom: 10px;
       color: #1e293b;
-      font-size: 1.25rem;
+      font-size: 1.15rem;
       font-weight: bold;
     }
     .section-title i { color: var(--secondary); }
     
-    .tour-guide-voice {
-      font-style: italic;
-      color: #475569;
-      font-size: 1.1rem;
-      line-height: 1.8;
-      border-left: 4px solid #94a3b8;
-      padding-left: 15px;
-      margin: 20px 0;
+    .execution-box {
       background: #f8fafc;
-      padding: 15px;
+      border: 1px solid #e2e8f0;
+      border-left: 4px solid var(--primary);
+      padding: 15px 20px;
       border-radius: 0 8px 8px 0;
+      margin: 15px 0;
     }
+    .execution-box ol { margin: 0; padding-left: 20px; }
+    .execution-box li { margin-bottom: 8px; }
 
     .highlight-box {
       background: #fefce8;
@@ -206,10 +205,10 @@
     /* Responsive */
     @media (max-width: 768px) {
       .layout { flex-direction: column; padding: 15px; }
-      .sidebar { display: none; } /* Hide static sidebar on mobile */
+      .sidebar { display: none; }
       .fab { display: flex; }
       .deep-dive-card { padding: 20px; }
-      .deep-dive-card h2 { font-size: 1.5rem; }
+      .deep-dive-card h2 { font-size: 1.4rem; }
       .header h1 { font-size: 1rem; }
       .header { padding: 10px 15px; }
     }
@@ -218,7 +217,7 @@
 <body>
 
   <div class="header">
-    <h1><i class="fa-solid fa-book-open"></i> Attraction Deep Dives (核心景点深度攻略)</h1>
+    <h1><i class="fa-solid fa-compass"></i> Attraction Execution Guide (实战攻略)</h1>
     <a href="index.html" class="back-btn"><i class="fa-solid fa-arrow-left"></i> 返回主页</a>
   </div>
 
@@ -263,35 +262,33 @@
       <!-- Maijishan -->
       <div id="maijishan" class="deep-dive-card">
         <h2>麦积山石窟 (Maijishan Grottoes)</h2>
-        
-        <div class="tour-guide-voice">
-          "欢迎各位探险家来到我们的第一站！想象一下，在1600多年前，古代的工匠们是如何在一块形似巨大麦垛的垂直崖壁上，如燕子筑巢般开凿出一个个石窟的？这绝不仅仅是一次简单的攀爬，这是你与后秦、北魏甚至隋唐时代跨越千年的对话。当您踏上那悬在半空中、离地百米的木栈道，往下看是葱郁的陇东林海，往上看是俯视众生的巨大佛像，那种双腿微微发软但内心无比震撼的感觉，绝对会让您铭记终生！"
+        <p style="color: #64748b; font-size: 0.95rem; margin-top: -5px;">中国四大石窟之一，开凿于142米垂直崖壁之上，以极高艺术造诣的泥塑被称为“东方雕塑陈列馆”。</p>
+
+        <div class="section-title"><i class="fa-solid fa-shoe-prints"></i> 到达与高效执行路线</div>
+        <div class="execution-box">
+          <ol>
+            <li><strong>停车与购票：</strong> 将车停在游客中心停车场。持护照在人工窗口购票（门票+往返景交车）。</li>
+            <li><strong>接驳入园：</strong> 乘坐景交车直达麦积山脚下（车程约15分钟）。</li>
+            <li><strong>攀登路线：</strong> 面向麦积山，入口在左侧。全程强制单向通行（左上右下，顺时针方向）。不可逆行。</li>
+            <li><strong>时间分配：</strong> 攀爬栈道及看窟约需 1.5 - 2 小时。全程走完回到右侧出口乘车返回。</li>
+          </ol>
         </div>
 
-        <div class="section-title"><i class="fa-solid fa-scroll"></i> 历史与文化背景</div>
-        <p>麦积山石窟是中国四大石窟之一（其余为莫高窟、龙门石窟、云冈石窟）。它不仅以其奇特的形貌（孤峰突起，状如麦垛）闻名，更以其精美绝伦的泥塑艺术被称为“东方雕塑陈列馆”。从后秦（公元384-417年）开始，历经十多个朝代的不断开凿与修缮，这里保存了数以千计栩栩如生的泥塑菩萨与佛像。</p>
-
-        <div class="section-title"><i class="fa-solid fa-star"></i> 核心看点</div>
+        <div class="section-title"><i class="fa-solid fa-bullseye"></i> 必看核心亮点</div>
         <div class="highlight-box">
           <ul style="margin:0; padding-left:20px;">
-            <li><strong>绝壁凌空栈道：</strong> 麦积山最抓人眼球的就是那纵横交错的栈道网络。142米的垂直崖壁上，最高处的石窟几乎直冲云霄。</li>
-            <li><strong>第44窟 (东方蒙娜丽莎)：</strong> 这里有一尊西魏时期的主佛像，她微微低垂的眼眸与似有若无的神秘微笑，展现了极高的艺术造诣。</li>
-            <li><strong>东崖大佛 (第13窟)：</strong> 高达16米的隋代摩崖大佛，这是麦积山的标志。站在这尊大佛脚下仰望，才能真正感受到信仰的巨大体量。</li>
+            <li><strong>东崖大佛 (第13窟)：</strong> 高达16米的隋代摩崖大佛，麦积山标志，就在攀登起点上方。</li>
+            <li><strong>东方蒙娜丽莎 (第44窟)：</strong> 必须留意的西魏造像，主佛眼眸微垂、面带神秘微笑，代表了极高的泥塑艺术水平。</li>
+            <li><strong>绝壁凌空栈道：</strong> 悬在半空中的网格状金属/木制栈道本身就是核心体验。登顶可俯瞰陇东林海。</li>
           </ul>
         </div>
 
-        <div class="section-title"><i class="fa-solid fa-map-location-dot"></i> 游览策略</div>
-        <div class="strategy-box">
-          <p><strong>光线与时机：</strong> 我们将游览安排在 Day 0 的下午 15:30 之后。这是有战术考量的。早上的麦积山背光，而下午太阳西斜，光线会柔和地打在东崖的大佛上，不仅拍照色彩饱满，而且避开了正午直射的烈日。你可以从容地拾级而上。</p>
-          <p><strong>游览路线：</strong> 乘坐景交车直达山脚后，请按顺时针方向攀登栈道。一开始是比较平缓的，但随着高度攀升，阶梯会变得非常陡峭。体力较好者一定要登顶，从最高处俯瞰四周连绵的秦岭余脉，深呼吸一口天然氧吧的空气。</p>
-        </div>
-
-        <div class="section-title"><i class="fa-solid fa-triangle-exclamation"></i> 避坑与注意事项</div>
+        <div class="section-title"><i class="fa-solid fa-shield-halved"></i> 战术与避坑指南</div>
         <div class="warning-box">
           <ul style="margin:0; padding-left:20px;">
-            <li><strong>恐高症警告：</strong> 栈道是网格状的金属底板（部分是木制），往下看是中空的！恐高的朋友千万别低头，紧贴岩壁走，目光平视远方。</li>
-            <li><strong>装备：</strong> 必须穿着防滑运动鞋，千万别穿高跟鞋或易滑的凉拖。由于阶梯陡峭，女生建议穿裤装。</li>
-            <li><strong>文物保护：</strong> 景区严禁使用无人机。进入洞窟时，请绝对禁止使用闪光灯拍照！</li>
+            <li><strong>光线战术：</strong> 我们安排在下午15:30之后游览。早上的麦积山背光，下午阳光西斜打在东崖大佛上，摄影光线最佳，同时避开正午烈日。</li>
+            <li><strong>恐高与着装：</strong> 栈道陡峭且底板有透视感。恐高者请紧贴内侧岩壁行走，切勿向下俯视。必须穿防滑运动鞋，阶梯倾斜度较大，女生强烈建议穿长裤。</li>
+            <li><strong>红线禁区：</strong> 严禁使用无人机；洞窟内绝对禁止使用闪光灯（即使不开闪光灯也不建议拍照，请用眼睛欣赏）。</li>
           </ul>
         </div>
       </div>
@@ -299,34 +296,32 @@
       <!-- Zhangye Danxia -->
       <div id="danxia" class="deep-dive-card">
         <h2>张掖七彩丹霞 (Zhangye Danxia)</h2>
-        
-        <div class="tour-guide-voice">
-          "大家常说大自然是不懂调色的，但在张掖，这句话被狠狠打脸了！当你站在观景台上，看着眼前如同被打翻的巨型调色盘一般连绵不绝的山丘，红、黄、白、绿交织在一起，你真的会怀疑自己是不是掉进了外星地貌的电影片场。张艺谋导演的《三枪拍案惊奇》就在这里取景。记住，我们今天是要来‘追光’的！"
-        </div>
-        
-        <div class="section-title"><i class="fa-solid fa-scroll"></i> 历史与地理背景</div>
-        <p>张掖七彩丹霞形成于两百万年前的白垩纪时代。这片神奇的地貌是由红色砾石、砂岩和泥岩经过长期的风化剥离和流水侵蚀，加上地壳运动的褶皱作用而形成的。不同的矿物质（如铁元素被不同程度的氧化）赋予了山体不可思议的多彩条纹。它被《中国国家地理》评为中国最美的七大丹霞之一。</p>
+        <p style="color: #64748b; font-size: 0.95rem; margin-top: -5px;">形成于200万年前，以色彩斑斓的丘陵地貌闻名，《中国国家地理》评选的最美七大丹霞之一。</p>
 
-        <div class="section-title"><i class="fa-solid fa-star"></i> 核心看点</div>
+        <div class="section-title"><i class="fa-solid fa-shoe-prints"></i> 到达与高效执行路线</div>
+        <div class="execution-box">
+          <ol>
+            <li><strong>入口选择：</strong> 强烈推荐从<strong>北门</strong>或<strong>西门</strong>进入。这两个门距离核心观景台最近，且接驳车线路最合理。</li>
+            <li><strong>游览动线：</strong> 景区强制乘坐内部环保大巴，逐站停靠。标准路线为：1号观景台 -> 5号观景台 -> 4号观景台。</li>
+            <li><strong>下车与上车：</strong> 每一站下车后自由游览，游览完毕回到同站台上车，前往下一站。必须按顺序游览，无法走回头路。</li>
+            <li><strong>时间分配：</strong> 全程游览需 2 - 2.5 小时。前面观景台快速拍照（各停留20分钟），将重心留给最后的4号观景台。</li>
+          </ol>
+        </div>
+
+        <div class="section-title"><i class="fa-solid fa-bullseye"></i> 必看核心亮点</div>
         <div class="highlight-box">
           <ul style="margin:0; padding-left:20px;">
-            <li><strong>七彩仙缘台 (1号观景台)：</strong> 景区内规模最大、视野最开阔的观景台。非常适合拍大全景。</li>
-            <li><strong>七彩虹霞台 (4号观景台)：</strong> 这里的色彩最为丰富和鲜艳。更重要的是，它是观赏日落的绝对C位。夕阳西下时，红色的山体仿佛在燃烧。</li>
+            <li><strong>七彩仙缘台 (1号台)：</strong> 规模最大，视野开阔，适合拍丹霞地貌大全景。</li>
+            <li><strong>七彩虹霞台 (4号台)：</strong> 色彩最丰富、最鲜艳。这里是观赏日落的绝对C位，也是出片率最高的地方。</li>
           </ul>
         </div>
 
-        <div class="section-title"><i class="fa-solid fa-map-location-dot"></i> 游览策略</div>
-        <div class="strategy-box">
-          <p><strong>黄金时间：</strong> 游览丹霞，光线就是一切。正午阳光强直射时，颜色会发白、暗淡。因此我们特意安排在傍晚（约 17:00 - 19:30）游览。夕阳的金光会最大程度激发出红黄色岩层的饱和度，产生‘火烧山’的奇景。</p>
-          <p><strong>路线推荐：</strong> 建议从<strong>西门</strong>或<strong>北门</strong>进入。乘坐景区的环线区间车，顺序游览 1号 -> 5号 -> 4号观景台。将最多的时间留给4号观景台，找好机位静静守候落日余晖。</p>
-        </div>
-
-        <div class="section-title"><i class="fa-solid fa-triangle-exclamation"></i> 避坑与注意事项</div>
+        <div class="section-title"><i class="fa-solid fa-shield-halved"></i> 战术与避坑指南</div>
         <div class="warning-box">
           <ul style="margin:0; padding-left:20px;">
-            <li><strong>天气决定颜值：</strong> 如果不幸遇到阴天，丹霞的颜色会非常平淡。但如果是刚下过一场雨后放晴，岩层被水洗过，色彩将达到不可思议的极致艳丽！</li>
-            <li><strong>风沙防御：</strong> 景区内没有任何植被遮挡，风沙往往很大。请备好帽子（最好有防风绳）、墨镜和防晒面罩，并保护好你的单反相机镜头。</li>
-            <li><strong>严禁踩踏：</strong> 丹霞地貌极度脆弱，一脚踩下去地表结皮就会被破坏，60年也无法恢复。绝对不允许跨过护栏进入非步道区域！</li>
+            <li><strong>追光战术 (黄金一小时)：</strong> 丹霞的颜色取决于光线。正午直射光会让颜色发白。我们安排在日落前1.5小时入园。夕阳的低角度金光会使得红色和黄色岩层达到极度饱和，产生“火烧山”奇观。</li>
+            <li><strong>天气博弈：</strong> 如果是阴天，丹霞颜色会非常暗淡。但如果碰巧刚下过雨放晴，岩层被水洗去浮土，色彩将达到不可思议的艳丽级别。</li>
+            <li><strong>防沙与环保：</strong> 景区内无任何遮挡，风沙大。佩戴帽子和墨镜，并保护好相机镜头。绝对不跨越护栏，丹霞地表结皮一踩即碎，60年无法恢复。</li>
           </ul>
         </div>
       </div>
@@ -334,70 +329,65 @@
       <!-- Mogao Grottoes -->
       <div id="mogao" class="deep-dive-card">
         <h2>莫高窟 & 鸣沙山 (Mogao Grottoes & Mingshashan)</h2>
-        
-        <div class="tour-guide-voice">
-          "欢迎来到东方艺术的最高殿堂！如果你觉得前面的石窟已经是奇迹，那莫高窟将颠覆你的认知。一千六百年前，乐尊和尚在此地忽见金光闪耀，宛如万佛显现，于是凿下了第一个石窟。当您手持冷光手电，在漆黑的洞窟中突然照亮墙上那舞动的飞天和神秘的九色鹿时，那种穿越千年的窒息感是无法用语言形容的。然后，我们将从千年的厚重中抽离，骑上骆驼，一头扎进鸣沙山的连绵沙海之中！"
-        </div>
-        
-        <div class="section-title"><i class="fa-solid fa-scroll"></i> 历史与文化背景</div>
-        <p>莫高窟（千佛洞）始建于前秦宣昭帝苻坚时期（公元366年），是世界上现存规模最大、延续时间最长、内容最丰富的佛教艺术圣地。这里不仅保存了492个开凿于绝壁上的洞窟、四万五千多平方米的壁画，还在近代震惊世界地发现了“藏经洞”（第17窟），里面出土了五万多件公元4世纪到11世纪的古代文献，直接催生了国际显学“敦煌学”。</p>
+        <p style="color: #64748b; font-size: 0.95rem; margin-top: -5px;">莫高窟是世界上现存规模最大、内容最丰富的佛教艺术地；鸣沙山月牙泉则是大自然沙泉共生的奇观。</p>
 
-        <div class="section-title"><i class="fa-solid fa-star"></i> 核心看点</div>
+        <div class="section-title"><i class="fa-solid fa-shoe-prints"></i> 到达与高效执行路线</div>
+        <div class="execution-box">
+          <ol>
+            <li><strong>莫高窟前半程 (数字中心)：</strong> 导航至“莫高窟数字展示中心”（注意：不是直接开到石窟）。外宾需提前45分钟到达人工窗口验证护照取票。入场后观看两场震撼的巨幕电影（约40分钟）。</li>
+            <li><strong>莫高窟后半程 (实体洞窟)：</strong> 电影结束后，统一乘坐景交车（约15分钟）前往莫高窟实体景区。佩戴耳机，由专业讲解员带领按特定路线参观8个洞窟（A类票）。结束后自由参观陈列馆。</li>
+            <li><strong>转场鸣沙山：</strong> 下午返回市区酒店休息。18:30之后前往鸣沙山月牙泉景区。</li>
+            <li><strong>鸣沙山动线：</strong> 进门后右手边租借防沙鞋套 -> 前往乘驼点骑骆驼（约1小时） -> 步行前往月牙泉观景 -> 爬上旁边的沙山制高点守候日落。</li>
+          </ol>
+        </div>
+
+        <div class="section-title"><i class="fa-solid fa-bullseye"></i> 必看核心亮点</div>
         <div class="highlight-box">
           <ul style="margin:0; padding-left:20px;">
-            <li><strong>九层楼 (第96窟)：</strong> 这座依山而建的红色九层阁楼是莫高窟的绝对标志。里面供奉着一尊高达35.6米的弥勒大佛。</li>
-            <li><strong>藏经洞 (第17窟)：</strong> 晚清王圆箓道士偶然敲开的一堵墙，背后隐藏了震惊世界的宝藏。站在这里，你能感受到历史的沉重与叹息。</li>
-            <li><strong>鸣沙山月牙泉：</strong> 距离莫高窟不远，这里展示了大自然鬼斧神工的沙泉共生奇观——风吹沙山响，泉在沙中藏。</li>
+            <li><strong>莫高窟九层楼 (第96窟)：</strong> 依山而建的红色九层阁楼，内供奉高达35.6米的弥勒大佛。</li>
+            <li><strong>藏经洞 (第17窟)：</strong> 出土五万多件古代文献的惊世宝藏发掘地。</li>
+            <li><strong>月牙泉日落：</strong> 坐在鸣沙山山顶的沙丘上，俯瞰月牙泉，看夕阳将整个沙漠染成金红色。</li>
           </ul>
         </div>
 
-        <div class="section-title"><i class="fa-solid fa-map-location-dot"></i> 游览策略</div>
+        <div class="section-title"><i class="fa-solid fa-shield-halved"></i> 战术与避坑指南</div>
         <div class="strategy-box">
-          <p><strong>抢A类票生死战：</strong> 参观莫高窟，<strong>必须抢A类票！必须抢A类票！</strong> A类票可以由专业讲解员带领参观8个实体洞窟，并在数字展示中心观看2部震撼的巨幕全景电影；而B类（应急票）只能走马观花看4个大窟，毫无体验感可言。A类票提前30天开售，几分钟内秒空，请务必提前设置闹钟！</p>
-          <p><strong>外宾取票秘籍：</strong> 持有外国护照的游客无法在入口直接刷证件闸机。您必须提前至少30-45分钟到达数字展示中心的人工售票窗口，出示护照原件换取纸质门票！</p>
-          <p><strong>鸣沙山日落：</strong> 白天的鸣沙山沙子滚烫，温度惊人。我们的行程特意将其安排在下午 18:30 以后。这时候气温开始下降，沙子变凉，租一匹骆驼伴着驼铃声走向沙丘高处，看着落日染红整个沙漠，完美。</p>
-        </div>
-
-        <div class="section-title"><i class="fa-solid fa-triangle-exclamation"></i> 避坑与注意事项</div>
-        <div class="warning-box">
-          <ul style="margin:0; padding-left:20px;">
-            <li><strong>莫高窟死规矩：</strong> 洞窟内部<strong>绝对、完全、彻底禁止拍照！</strong> 哪怕不打闪光灯也不行。人体呼出的二氧化碳和任何光源都会对脆弱的壁画造成不可逆的损害。请将手机放入包中，用眼睛去记录。</li>
-            <li><strong>鸣沙山防沙：</strong> 鸣沙山的沙子极细，无孔不入。如果携带了变焦单反相机，必须购买专业的防沙罩，否则一旦进沙，镜头马达直接报废。手机也建议套上防水袋。</li>
-          </ul>
+          <p><strong>A类票生死战：</strong> 参观莫高窟，<strong>必须抢A类票！</strong> A类票（可看8个窟+2部电影）提前30天开售，几分钟内秒空。B类应急票只能走马观花看4个大窟，毫无体验可言。</p>
+          <p><strong>莫高窟绝对禁忌：</strong> 洞窟内部<strong>彻底禁止拍照</strong>。人体的二氧化碳和任何光源（即使关闭闪光灯）都会对脆弱壁画造成损伤。导游手里的手电筒是唯一允许的冷光源。</p>
+          <p><strong>鸣沙山避暑战术：</strong> 白天沙漠地表温度可达60度。务必在下午18:30之后再进入鸣沙山。此时沙子变凉，气温适宜。若携带单反相机，必须购买专业防沙罩，否则极细的沙子会导致镜头马达直接报废。</p>
         </div>
       </div>
 
       <!-- Turpan -->
       <div id="turpan" class="deep-dive-card">
         <h2>吐鲁番全线 (Turpan Cluster)</h2>
-        
-        <div class="tour-guide-voice">
-          "准备好迎接极限挑战了吗？这里是全中国最热的地方——吐鲁番！别被《西游记》里孙悟空借芭蕉扇的故事吓倒，古代的西域先民们在这片火炉之地创造了令人惊叹的生存智慧。今天，我们要在地表温度可能达到70°C的极端环境下，上演一场‘地道战’。中午我们钻入地下看干尸、探暗河，傍晚再爬上悬崖古城看日落。水壶灌满，防晒霜涂厚，我们出发！"
-        </div>
-        
-        <div class="section-title"><i class="fa-solid fa-scroll"></i> 历史与文化背景</div>
-        <p>吐鲁番是古丝绸之路上的核心重镇，曾是古车师国、高昌国的王城所在。这里地处吐鲁番盆地，气候极度干旱炎热，但也正因如此，它成为了天然的历史保鲜盒。大量的文书、丝织品甚至古人的遗体都在这里历经千年而不腐。同时，为了在沙漠中生存，智慧的古人开凿了与万里长城、京杭大运河并称“中国古代三大工程”的坎儿井。</p>
+        <p style="color: #64748b; font-size: 0.95rem; margin-top: -5px;">全中国最炎热的地方，地表温度常年突破60°C，孕育了极度抗旱的坎儿井文明和保存完好的地下古墓遗迹。</p>
 
-        <div class="section-title"><i class="fa-solid fa-star"></i> 核心看点</div>
+        <div class="section-title"><i class="fa-solid fa-shoe-prints"></i> 到达与高效执行路线 (高温防御版)</div>
+        <div class="execution-box">
+          <ol>
+            <li><strong>12:00 - 14:00 (避开正午直射)：</strong> 抵达吐鲁番后，直接前往<strong>坎儿井</strong>。买票后迅速进入地下暗渠游览，利用清凉的雪山融水地下环境避暑。</li>
+            <li><strong>14:30 - 17:00 (最热时段转入地下)：</strong> 驱车前往<strong>阿斯塔那古墓群</strong>。沿着阶梯深入地下十数米的墓室参观干尸与壁画，墓室内气温相对阴凉，完美躲避地表极限高温。</li>
+            <li><strong>17:00 - 19:30 (休整期)：</strong> 回酒店办理入住、洗澡降温，或在空调车内前往火焰山外围远观（不建议买票暴晒）。</li>
+            <li><strong>19:30 - 21:00 (傍晚突击)：</strong> 气温稍降且太阳即将下山时，前往没有任何遮挡物的<strong>交河故城</strong>。乘坐区间车到中心台地，沿着核心废墟走一圈，伴随夕阳出片。</li>
+          </ol>
+        </div>
+
+        <div class="section-title"><i class="fa-solid fa-bullseye"></i> 必看核心亮点</div>
         <div class="highlight-box">
           <ul style="margin:0; padding-left:20px;">
-            <li><strong>坎儿井：</strong> 走入地下暗渠，感受冰凉的雪山融水在沙漠腹地流淌的奇迹。</li>
-            <li><strong>阿斯塔那古墓群：</strong> 这里被称为“吐鲁番的地下博物馆”。你能亲眼看到唐代的高官干尸、栩栩如生的泥俑以及著名的《伏羲女娲图》。</li>
-            <li><strong>交河故城：</strong> 世界上最大、最古老、保存最完好的生土建筑城市！它建在两河交汇的一座30米高的柳叶形悬崖上，宛如一艘停泊在历史长河中的巨舰。</li>
+            <li><strong>坎儿井地下暗渠：</strong> 见证与万里长城、京杭大运河并称“古代三大工程”的伟大水利奇迹。</li>
+            <li><strong>阿斯塔那干尸：</strong> “地下博物馆”，可亲眼目睹唐代高官干尸、极其精美的丝织品以及著名的《伏羲女娲图》。</li>
+            <li><strong>交河故城：</strong> 世界上最大、最古老、保存最完好的生土建筑城市，建在一座30米高的柳叶形悬崖上。</li>
           </ul>
         </div>
 
-        <div class="section-title"><i class="fa-solid fa-map-location-dot"></i> 游览策略 (极限高温作战)</div>
-        <div class="strategy-box">
-          <p><strong>避暑时间表：</strong> 吐鲁番夏季中午（13:00 - 17:00）完全不适合户外活动。因此，我们的行程将坎儿井和阿斯塔那古墓群安排在这个时段，完美利用地下十多米的阴凉环境避暑。绝不要在这个时段去没有遮挡的交河故城或火焰山！</p>
-          <p><strong>交河故城的余晖：</strong> 晚上 19:30 左右，气温稍降。此时前往交河故城是最佳选择。夕阳的余晖会将这些两千年的黄土废墟染成金红色，走在其间，仿佛能听到千年前丝绸之路的驼铃与厮杀声。</p>
-        </div>
-
-        <div class="section-title"><i class="fa-solid fa-triangle-exclamation"></i> 避坑与注意事项</div>
+        <div class="section-title"><i class="fa-solid fa-shield-halved"></i> 战术与避坑指南</div>
         <div class="warning-box">
           <ul style="margin:0; padding-left:20px;">
-            <li><strong>脱水警告：</strong> 这是认真的。每人每天需要准备至少 3-4 升饮用水。一旦觉得口渴就已经脱水了，请强迫自己规律性饮水。</li>
-            <li><strong>心理预期：</strong> 阿斯塔那古墓群需要走入逼仄的地下墓室，且可以直接看到未经遮盖的真实干尸遗骸。如果您对幽闭环境或遗骸有心理不适，请在地面等待。</li>
+            <li><strong>脱水警告：</strong> 在吐鲁番，一旦觉得口渴就已经严重脱水。每人每天必须强制性喝够 3-4 升水。在车里常备成箱的矿泉水。</li>
+            <li><strong>交河故城死线：</strong> 绝对不要在下午 14:00-18:00 期间前往交河故城！整个城池建在黄土高台上，完全没有任何树荫或建筑物遮挡，极易发生重度中暑甚至热射病危险。</li>
+            <li><strong>心理预期：</strong> 阿斯塔那古墓群是真实的千年古墓，墓室内直接展示未遮盖的干尸遗骸。如对幽闭环境或人类骨骸有严重心理不适，建议不要下墓。</li>
           </ul>
         </div>
       </div>
@@ -405,35 +395,34 @@
       <!-- Duku Highway -->
       <div id="duku" class="deep-dive-card">
         <h2>独库公路北段 (Duku Highway)</h2>
-        
-        <div class="tour-guide-voice">
-          "系好安全带，检查好刹车，我们将要驶入中国最顶级的自驾公路！一年只开放四个多月，一条路让你一天经历春夏秋冬。当年为了修筑这条连接南北疆的战略要道，平均每三公里就有一名解放军战士牺牲。今天，我们要挑战的是独库最险峻、最震撼的北段。窗外是万丈深渊，头顶是皑皑白雪，准备好迎接大自然的终极视觉洗礼吧！"
-        </div>
-        
-        <div class="section-title"><i class="fa-solid fa-scroll"></i> 概况</div>
-        <p>G217国道独山子至库车段（独库公路），全长561公里。它横穿整个天山山脉，将南北疆的通行距离缩短了近一半。其中北段（独山子至那拉提）地势最为险要，风景也最为壮阔，需要翻越海拔3400多米的哈希勒根达坂。它不仅是一条公路，更是一座丰碑。</p>
+        <p style="color: #64748b; font-size: 0.95rem; margin-top: -5px;">G217国道最险峻的561公里，连接南北疆的战略公路。一天历经四季，沿途悬崖绝壁、雪山冰川交错。</p>
 
-        <div class="section-title"><i class="fa-solid fa-star"></i> 核心看点</div>
+        <div class="section-title"><i class="fa-solid fa-shoe-prints"></i> 到达与高效执行路线</div>
+        <div class="execution-box">
+          <ol>
+            <li><strong>06:30 - 07:00 (抢占先机)：</strong> 在独山子市区吃完早饭，必须在早上 07:00 之前抵达“独山子零公里”起点排队进山。</li>
+            <li><strong>07:30 - 10:30 (爬升期)：</strong> 沿盘山公路持续爬升，这段路极其险峻，峡谷深邃。经过守望天山石碑，可短暂停车拍照（5分钟）。</li>
+            <li><strong>10:30 - 11:30 (冰雪期)：</strong> 抵达全线最高点——海拔3400米的<strong>哈希勒根达坂</strong>。穿越防雪长廊隧道。此时可以在安全地带停车体验七月飞雪。</li>
+            <li><strong>12:00 - 13:30 (战术午餐)：</strong> 翻过达坂后开始漫长的下坡。找一个宽阔的观景台停车，在车内食用预备好的自热米饭，同时让刹车系统自然冷却。</li>
+            <li><strong>14:00 - 15:30 (平缓期)：</strong> 抵达乔尔玛中转站。参观乔尔玛烈士陵园后，继续前行或转入唐布拉/百里画廊方向。</li>
+          </ol>
+        </div>
+
+        <div class="section-title"><i class="fa-solid fa-bullseye"></i> 必看核心亮点</div>
         <div class="highlight-box">
           <ul style="margin:0; padding-left:20px;">
-            <li><strong>百米防雪长廊：</strong> 在哈希勒根达坂附近，一条修筑在悬崖边半开放式的隧道，防雪崩的结构极具工业废土美感。</li>
-            <li><strong>哈希勒根达坂：</strong> 这里的雪终年不化。盛夏七月，你依然可以在这里打雪仗，体验真正的冰火两重天。</li>
-            <li><strong>乔尔玛烈士陵园：</strong> 位于中转站乔尔玛。为了这条公路，168名官兵长眠于此。向英雄致敬。</li>
+            <li><strong>哈希勒根达坂与防雪长廊：</strong> 穿越终年积雪的高海拔垭口，百米长的半开放式防雪隧道极具工业废土风格和视觉冲击力。</li>
+            <li><strong>乔尔玛烈士陵园：</strong> 为修筑独库公路牺牲的168名解放军官兵长眠于此，是独库精神的核心。</li>
           </ul>
         </div>
 
-        <div class="section-title"><i class="fa-solid fa-map-location-dot"></i> 穿越策略</div>
-        <div class="strategy-box">
-          <p><strong>抢占零公里：</strong> 独库公路旅游旺季极其拥堵。强烈建议在早上 07:00 前到达独山子的“零公里”起点排队进山。如果你睡懒觉被卡在旅游大巴和龟速房车后面，本来半天的路程可能需要开整整一天！</p>
-          <p><strong>战术补给：</strong> 山上没有任何像样的餐厅或补给站！必须在前一天晚上在独山子的超市买好充足的自热米饭、咖啡、红牛和饮用水。中午找一个风景绝佳的观景台，吃着自热火锅看雪山，是最高的享受。</p>
-        </div>
-
-        <div class="section-title"><i class="fa-solid fa-triangle-exclamation"></i> 避坑与驾驶警告</div>
+        <div class="section-title"><i class="fa-solid fa-shield-halved"></i> 战术与避坑指南 (生死攸关)</div>
         <div class="warning-box">
           <ul style="margin:0; padding-left:20px;">
-            <li><strong>生死时速：绝对严禁空挡或D档踩刹车长下坡！</strong> 从达坂下来的连续几十公里下坡，必须使用手动模式的低档位（L档或2档/3档），利用引擎制动（Engine Braking）。否则刹车片过热会导致刹车完全失灵，直接冲下悬崖。</li>
-            <li><strong>天气管制：</strong> 独库公路极其脆弱，一场大雨就可能导致泥石流封路。必须随时关注当地交警的公众号路况播报。</li>
-            <li><strong>恶劣的厕所：</strong> 沿途的公共厕所条件极其恶劣且数量稀少。强烈建议女生准备应急尿袋，所有人准备好湿厕纸。</li>
+            <li><strong>刹车热衰减警告：</strong> 翻过达坂后的连续几十公里下坡，<strong>绝对严禁空挡或挂D档一直踩刹车！</strong> 必须切换到手动模式使用低档位（L档或2档/3档），利用引擎制动（Engine Braking）。否则刹车片过热会导致刹车完全失灵。</li>
+            <li><strong>拥堵战术：</strong> 为什么必须早上7点进山？一旦你被卡在大型旅游大巴或外地龟速房车后面，速度将被压制在20km/h，且盘山路无法超车，原本半天的路程将被拖延至一整天。</li>
+            <li><strong>补给与如厕：</strong> 山上无正规餐厅。必须在前一天晚上在独山子超市买好自热火锅、功能饮料。沿途公共厕所条件极其恶劣且数量少，建议携带车载应急尿袋和大量湿厕纸。</li>
+            <li><strong>天气管制：</strong> 独库极易因泥石流或降雪被临时封路。出发前一晚和当天清晨必须查询交警公众号的实时路况。</li>
           </ul>
         </div>
       </div>
@@ -441,104 +430,96 @@
       <!-- Xiata Trail -->
       <div id="xiata" class="deep-dive-card">
         <h2>夏塔古道 (Xiata Trail)</h2>
-        
-        <div class="tour-guide-voice">
-          "如果你喜欢徒步，喜欢那种被巨大雪山压迫的极致震撼，那么夏塔就是为你准备的。这里曾是玄奘法师西天取经穿越天山的生死通道。当你走在原始的松林里，胖乎乎的土拨鼠在你脚边探头探脑，而正前方的木扎尔特冰川像一堵白色的巨墙一样逼视着你，那种人类在自然面前的渺小感，会让你彻底忘掉都市的烦恼。"
-        </div>
-        
-        <div class="section-title"><i class="fa-solid fa-scroll"></i> 历史与地理背景</div>
-        <p>夏塔古道，又称唐僧古道，是古代丝绸之路上最为险峻的连通南北疆的通道。它沿着夏塔河谷直入天山腹地，尽头是壮丽的木扎尔特冰川。相比于新疆其他开发成熟的景区，这里保留了更多的野性与原始。</p>
+        <p style="color: #64748b; font-size: 0.95rem; margin-top: -5px;">玄奘西行穿越天山的生死通道，直指木扎尔特冰川。极致的冷门雪峰徒步路线，保留了极高的原始野性。</p>
 
-        <div class="section-title"><i class="fa-solid fa-star"></i> 核心看点</div>
+        <div class="section-title"><i class="fa-solid fa-shoe-prints"></i> 到达与高效执行路线</div>
+        <div class="execution-box">
+          <ol>
+            <li><strong>到达门票站：</strong> 自驾车停在夏塔景区门票站外的停车场。购票并排队等候景区大巴。</li>
+            <li><strong>第一段交通 (大巴)：</strong> 乘坐区间大巴车深入河谷，车程约1小时，终点站为“温泉”。</li>
+            <li><strong>第二段交通 (电瓶车)：</strong> 在温泉站下车后，必须购买并换乘电瓶车，车程约20分钟，终点站为“将军桥”。将军桥是机动车的极限，也是徒步的真正起点。</li>
+            <li><strong>徒步执行：</strong> 从将军桥出发，沿着明显的土路/草甸步道向着冰川方向直行。走到“卡拉房子”（冰川脚下）往返约需 8-10 公里（约 3-4 小时）。体力一般者走到距离冰川觉得足够震撼的地方即可原路返回。</li>
+          </ol>
+        </div>
+
+        <div class="section-title"><i class="fa-solid fa-bullseye"></i> 必看核心亮点</div>
         <div class="highlight-box">
           <ul style="margin:0; padding-left:20px;">
-            <li><strong>木扎尔特冰川：</strong> 徒步全程，这座巨大的雪峰始终在正前方为你指路，随着你越走越近，它的体量会变得越来越惊人。</li>
-            <li><strong>野生旱獭：</strong> 在河谷草甸上，随处可见成群的野生土拨鼠。它们憨态可掬，时不时站立起来东张西望。</li>
+            <li><strong>木扎尔特雪峰：</strong> 徒步全程，巨大的白色冰川和雪峰始终像一堵巨墙一般压迫在正前方。越靠近越震撼。</li>
+            <li><strong>野生旱獭：</strong> 河谷草甸上随处可见成群的野生土拨鼠（旱獭），以及漫山遍野的高山针叶林。</li>
           </ul>
         </div>
 
-        <div class="section-title"><i class="fa-solid fa-map-location-dot"></i> 游览策略</div>
-        <div class="strategy-box">
-          <p><strong>双重区间车：</strong> 夏塔景区的纵深非常大。首先要乘坐第一段大巴车到“温泉”站（约1小时），然后换乘第二段电瓶车（约20分钟）到达“将军桥”。将军桥才是徒步的真正起点。</p>
-          <p><strong>徒步建议：</strong> 从将军桥出发，沿着步道走向冰川脚下（卡拉房子附近），往返大约需要 8-10 公里。这是一条休闲级徒步路线，风景绝佳。强烈建议不要骑马，用双脚去感受这片净土。沿途没有小卖部，请自备午餐干粮。</p>
-        </div>
-
-        <div class="section-title"><i class="fa-solid fa-triangle-exclamation"></i> 避坑与注意事项</div>
+        <div class="section-title"><i class="fa-solid fa-shield-halved"></i> 战术与避坑指南</div>
         <div class="warning-box">
           <ul style="margin:0; padding-left:20px;">
-            <li><strong>致命警告：绝对不要接触旱獭！</strong> 虽然土拨鼠看起来很可爱，但它们是鼠疫（黑死病）的主要自然宿主。绝不可以用手喂食、挑逗或抚摸它们！</li>
-            <li><strong>山区气候突变：</strong> 天山深处的气候犹如孩儿脸，前一秒晴空万里，走到冰川附近可能瞬间狂风大作甚至下起冰雹。请务必随身携带防风防水的冲锋衣。</li>
+            <li><strong>鼠疫致命警告：绝对不要接触旱獭！</strong> 旱獭是鼠疫（黑死病）的主要自然宿主。无论它们看起来多可爱，绝对不可以用手喂食、挑逗或抚摸。远观拍照即可。</li>
+            <li><strong>气候突变防御：</strong> 天山深处的气候犹如孩儿脸，山下可能晴空万里，但走到冰川附近可能瞬间狂风大作甚至下起冰雹。你的背包里必须有一件防风防水的硬壳冲锋衣。</li>
+            <li><strong>补给：</strong> 将军桥之后没有任何商店。请在入园前准备好充足的饮用水和高热量午餐干粮。</li>
+            <li><strong>骑马避坑：</strong> 景区内有牧民提供骑马服务，但价格混乱且骑马体验不佳（颠簸且无法随心拍照）。强烈建议用双脚徒步，路线平缓，完全属于休闲级别。</li>
           </ul>
         </div>
       </div>
 
       <!-- Sayram Lake -->
-      <div id="sayram" class="deep-dive-card">
+      <div id="deep-dive-card" id="sayram" class="deep-dive-card">
         <h2>赛里木湖 (Sayram Lake)</h2>
-        
-        <div class="tour-guide-voice">
-          "什么叫‘大西洋的最后一滴眼泪’？当你亲眼看到赛里木湖那令人心碎的蓝，你就会明白。西风带跨越半个地球带来的水汽，最后全部倾注在了这片天山的高山盆地中。这里不是海，却比海更蓝、更深邃。我们将亲自驾车，沿着这颗蓝色宝石环绕一圈。放下车窗，让带着雪山冷冽气息的风吹乱你的头发吧！"
-        </div>
-        
-        <div class="section-title"><i class="fa-solid fa-scroll"></i> 背景介绍</div>
-        <p>赛里木湖是新疆海拔最高（约2071米）、面积最大、风光最秀丽的高山冷水湖。湖水清澈透底，透明度极高。四周被连绵的雪山和广袤的草原环绕，是摄影师的天堂。</p>
+        <p style="color: #64748b; font-size: 0.95rem; margin-top: -5px;">“大西洋的最后一滴眼泪”，新疆海拔最高、面积最大的高山冷水湖，湖水呈极致的深蓝色。</p>
 
-        <div class="section-title"><i class="fa-solid fa-star"></i> 核心看点</div>
+        <div class="section-title"><i class="fa-solid fa-shoe-prints"></i> 到达与高效执行路线</div>
+        <div class="execution-box">
+          <ol>
+            <li><strong>入园 (买自驾票)：</strong> 必须提前购买<strong>自驾票</strong>（按车收费+按人头收费）。我们建议从<strong>东门</strong>驶入。</li>
+            <li><strong>环湖方向 (顺时针)：</strong> 进入东门后，请务必逆时针行驶（即车辆靠湖一侧行驶，也就是在地图上形成顺时针环湖）。环湖公路全长约90公里。</li>
+            <li><strong>核心停车点：</strong> 依次在“月亮湾”（S弯公路）、“点将台”（登高俯瞰全景）、“克勒涌珠”（天鹅栖息地）等官方规划的停车区停车游览。</li>
+            <li><strong>出园：</strong> 玩满 5-6 小时后，从南门或原路返回东门离开。</li>
+          </ol>
+        </div>
+
+        <div class="section-title"><i class="fa-solid fa-bullseye"></i> 必看核心亮点</div>
         <div class="highlight-box">
           <ul style="margin:0; padding-left:20px;">
-            <li><strong>S弯公路与雪山：</strong> 在湖的东侧（东门附近）有一段绝美的S型公路，背靠巍峨雪山，面朝湛蓝湖水，是拍人车合影的终极机位。</li>
-            <li><strong>点将台：</strong> 相传成吉思汗西征时曾在此点将。这是俯瞰赛里木湖全景的高点，挂满经幡，风光无限。</li>
-            <li><strong>野生天鹅：</strong> 在湖的西侧湿地区域（靠近南门），经常可以近距离观察到优雅的野生天鹅家庭。</li>
+            <li><strong>东门S弯公路：</strong> 这里背靠巍峨雪山，面朝湛蓝湖水，是拍出“汽车画报”级别的人车合影的终极机位。</li>
+            <li><strong>成吉思汗点将台：</strong> 爬上点将台，挂满经幡的高点是俯瞰赛里木湖浩瀚无垠的最佳视点。</li>
+            <li><strong>野生天鹅：</strong> 湖西侧（南门附近）的浅滩湿地，是天鹅家庭常驻区域，可以近距离同框拍照。</li>
           </ul>
         </div>
 
-        <div class="section-title"><i class="fa-solid fa-map-location-dot"></i> 自驾环湖策略</div>
+        <div class="section-title"><i class="fa-solid fa-shield-halved"></i> 战术与避坑指南</div>
         <div class="strategy-box">
-          <p><strong>顺时针环湖最优解：</strong> 强烈建议从东门进入，采用逆时针方向（即车辆靠湖一侧行驶）环湖。这样停车观景、下车拍照都无需跨越对向车道，极其安全且方便。</p>
-          <p><strong>深度体验：</strong> 赛里木湖的环湖公路全长90公里，如果想好好玩，值得留足 5-6 个小时。我们的行程已经为您锁定了东门外最近的酒店，因此您可以在景区内一直玩到日落，享受最美光影后再从容离开。</p>
-        </div>
-
-        <div class="section-title"><i class="fa-solid fa-triangle-exclamation"></i> 避坑与注意事项</div>
-        <div class="warning-box">
-          <ul style="margin:0; padding-left:20px;">
-            <li><strong>极端妖风与紫外线：</strong> 赛湖的风非常大，而且极冷！即便是夏天，也必须穿上防风冲锋衣。同时高海拔紫外线极强，硬防晒（帽子、墨镜）不可少。</li>
-            <li><strong>巨额罚款警告：</strong> 绝对、绝对不能将车开下铺装路面碾压草场！这里的生态极其脆弱，一旦碾压会被处以数千元人民币的巨额罚款。请务必停在划定的停车区。</li>
-          </ul>
+          <p><strong>靠湖行驶战术：</strong> 逆时针行驶（车辆靠湖边车道）的最大优势在于，你看到美景想停车时，右打方向盘直接进入靠湖的观景台，下车就是湖水。无需在车流中危险地跨越对向车道，安全性与效率极高。</p>
+          <p><strong>防风与防晒：</strong> 赛里木湖海拔2000多米，即使在7月，湖面吹来的风也极其刺骨，被戏称为“妖风”。无论太阳多大，只要下车必须穿上冲锋衣外套。同时硬防晒（墨镜、防风绳帽子）必不可少，否则半天就会晒伤。</p>
+          <p><strong>巨额罚款警告：</strong> <strong>绝对、绝对不能将车轮胎开下柏油路面碾压草场！</strong> 赛里木湖的生态极其脆弱，碾压草场会被无人机或巡逻车抓拍，处以数千元人民币的巨额罚款。请严格将车停在划线的柏油停车区内。</p>
         </div>
       </div>
 
       <!-- Kanas & Hemu -->
       <div id="kanas" class="deep-dive-card">
         <h2>喀纳斯 & 禾木 (Kanas & Hemu)</h2>
-        
-        <div class="tour-guide-voice">
-          "旅程的终极高潮！欢迎来到‘神的自留地’。这里有变幻莫测的喀纳斯湖，有传说中能吞噬牛马的巨大水怪，有如油画般的三湾晨雾，还有隐居在白桦林深处的图瓦人小木屋。在禾木的清晨，当你站在观景台上，看着第一缕阳光穿透晨雾，打在炊烟袅袅的木屋上，那一刻的宁静与神圣，将洗涤你所有的疲惫。"
-        </div>
-        
-        <div class="section-title"><i class="fa-solid fa-scroll"></i> 背景介绍</div>
-        <p>喀纳斯风景区位于中国与哈萨克斯坦、俄罗斯、蒙古国接壤的阿尔泰山脉深处。这里是中国唯一的西伯利亚泰加林延伸带，风貌酷似北欧或瑞士。其核心景区包括喀纳斯湖、白哈巴村和禾木村。</p>
+        <p style="color: #64748b; font-size: 0.95rem; margin-top: -5px;">被誉为“神的自留地”，中国唯一的西伯利亚泰加林延伸带，以变色湖泊、三湾晨雾和原始图瓦人木屋闻名。</p>
 
-        <div class="section-title"><i class="fa-solid fa-star"></i> 核心看点</div>
+        <div class="section-title"><i class="fa-solid fa-shoe-prints"></i> 到达与高效执行路线</div>
+        <div class="execution-box">
+          <ol>
+            <li><strong>喀纳斯大区 (Day 14)：</strong> 将车停在贾登峪门票站。乘坐一小时大巴抵达喀纳斯换乘中心。先换乘专线车登上<strong>观鱼台</strong>。午餐后，回到老村/鸭泽湖，顺着喀纳斯河木栈道，一路<strong>往下徒步</strong>经过神仙湾、月亮湾、卧龙湾。在卧龙湾乘大巴返回贾登峪离开。</li>
+            <li><strong>禾木大区 (Day 15-16)：</strong> 将车停在禾木门票站（绝对不拿大行李，只背书包进村）。乘大巴进村入住木屋。当天傍晚在河边散步看夕阳。第二天清晨<strong>6:00起床</strong>，步行爬上哈登观景台守候禾木日出晨雾。看完晨雾吃早餐后，乘车出村。</li>
+          </ol>
+        </div>
+
+        <div class="section-title"><i class="fa-solid fa-bullseye"></i> 必看核心亮点</div>
         <div class="highlight-box">
           <ul style="margin:0; padding-left:20px;">
-            <li><strong>喀纳斯三湾：</strong> 顺流而下的神仙湾（常年晨雾弥漫）、月亮湾（最美的一道反S形曲线，内有传说中嫦娥留下的足迹沙洲）和卧龙湾（形似一条卧龙）。</li>
-            <li><strong>观鱼台：</strong> 挑战1068级台阶登顶，站在山巅俯瞰如碧玉般的喀纳斯湖全貌，运气好甚至能看到湖泊变色或神秘的波纹。</li>
-            <li><strong>禾木晨雾：</strong> 禾木村落的最高精髓。清晨的薄雾、白桦林、尖顶木屋与缓缓升起的炊烟交织成绝世画卷。</li>
+            <li><strong>喀纳斯三湾徒步：</strong> 弃车徒步是喀纳斯的灵魂。漫步在河水边原始的西伯利亚落叶松林中，体验远超在大巴车上走马观花。</li>
+            <li><strong>观鱼台：</strong> 攀登1068级台阶登顶，俯瞰碧玉般的喀纳斯湖，寻找湖怪波纹。</li>
+            <li><strong>禾木晨雾：</strong> 禾木的终极名片。清晨薄雾笼罩在原始木屋和白桦林上，阳光穿透晨雾打在炊烟上，美如童话。</li>
           </ul>
         </div>
 
-        <div class="section-title"><i class="fa-solid fa-map-location-dot"></i> 游览策略 (反内卷玩法)</div>
+        <div class="section-title"><i class="fa-solid fa-shield-halved"></i> 战术与避坑指南</div>
         <div class="strategy-box">
-          <p><strong>喀纳斯神仙徒步：</strong> 乘坐区间车直达喀纳斯老村后，先乘景交车上观鱼台。下午是最精彩的部分：不要坐大巴！从鸭泽湖开始，沿着河畔的木栈道一路向下徒步（神仙湾 -> 月亮湾 -> 卧龙湾）。这段路在原始森林和湍急的喀纳斯河边穿行，没有旅行团的喧嚣，体验满分。</p>
-          <p><strong>禾木轻装阵地战：</strong> 禾木的美在于过夜。我们的行程特别安排了住在村内的木屋。核心战术：将大件行李箱留在门票站的停车场车内，只背双肩包携带一晚所需的洗漱用品和厚衣服进村！这将极大减轻您在村里木栈道上拖拽行李的痛苦。</p>
-        </div>
-
-        <div class="section-title"><i class="fa-solid fa-triangle-exclamation"></i> 避坑与注意事项</div>
-        <div class="warning-box">
-          <ul style="margin:0; padding-left:20px;">
-            <li><strong>终极御寒警告：</strong> 禾木清晨看日出时，气温经常逼近 0°C（没错，即使在七八月的盛夏！）。必须穿上您行李箱中最厚的外套（轻薄羽绒服叠穿冲锋衣）。看日出需要早起爬山，请备好手电筒。</li>
-            <li><strong>VIP票是护身符：</strong> 旺季喀纳斯的区间车排队极其恐怖。如果预算允许，请务必通过携程或官方渠道购买VIP包车或直通车服务，这能为您省下每天 2-3 小时令人绝望的排队时间，花钱买时间在这里绝对值得。</li>
-          </ul>
+          <p><strong>禾木轻装阵地战：</strong> 禾木村内禁止私家车进入，且村内全是土路、石板路或木栈道。如果拖着28寸的重型行李箱在村里找客栈，将是一场灾难。战术是：将大件行李锁在禾木门票站停车场的后备箱里，带一个双肩包，装上洗漱用品和一件最厚的御寒外套轻松进村。</p>
+          <p><strong>终极御寒警告：</strong> 禾木清晨在观景台看日出时，即使在盛夏的七月，气温也经常逼近 0°C - 5°C。等待日出需要在寒风中站立一小时以上。必须穿上您行李箱中最厚的外套（轻薄羽绒服叠穿冲锋衣），否则会冻得怀疑人生。</p>
+          <p><strong>时间克星：</strong> 旺季喀纳斯的区间车排队极其恐怖。强烈建议在携程或官方小程序上提前加价购买 <strong>VIP直通车/包车票</strong>。每天能为您省下 2-3 小时绝望的排队时间。在这里，花钱买时间是最明智的投资。</p>
         </div>
       </div>
 
@@ -548,7 +529,6 @@
   <button class="fab" id="fabMenuBtn"><i class="fa-solid fa-list"></i></button>
 
   <script>
-    // Simple smooth scroll and active state for sidebar
     const navLinks = document.querySelectorAll('.sidebar-nav a');
     const sections = document.querySelectorAll('.deep-dive-card');
 
@@ -556,7 +536,6 @@
       let current = '';
       sections.forEach(section => {
         const sectionTop = section.offsetTop;
-        const sectionHeight = section.clientHeight;
         if (pageYOffset >= (sectionTop - 150)) {
           current = section.getAttribute('id');
         }
@@ -570,7 +549,6 @@
       });
     });
 
-    // Mobile Menu Logic
     const fabBtn = document.getElementById('fabMenuBtn');
     const mobileMenu = document.getElementById('mobileMenu');
     const overlay = document.getElementById('mobileOverlay');
@@ -591,7 +569,6 @@
     closeBtn.addEventListener('click', closeMenu);
     overlay.addEventListener('click', closeMenu);
     
-    // Close menu when a link is clicked
     mobileNavLinks.forEach(link => {
       link.addEventListener('click', closeMenu);
     });
