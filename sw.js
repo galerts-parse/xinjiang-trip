@@ -1,4 +1,4 @@
-const CACHE_NAME = 'xinjiang-trip-v34';
+const CACHE_NAME = 'xinjiang-trip-v35';
 const urlsToCache = [
   './',
   './index.html',
@@ -44,9 +44,9 @@ self.addEventListener('activate', event => {
   );
 });
 
-// Network First strategy to ensure users always see the latest updates when online
+// Stale-While-Revalidate strategy for lightning fast loads
 self.addEventListener('fetch', event => {
-  // Skip cross-origin requests like API calls or dynamically injected leaflet map tiles to prevent CORS issues with cache.put
+  // Skip cross-origin requests like API calls or dynamically injected leaflet map tiles
   if (!event.request.url.startsWith(self.location.origin)) {
     event.respondWith(
       caches.match(event.request).then(response => response || fetch(event.request))
@@ -55,18 +55,20 @@ self.addEventListener('fetch', event => {
   }
 
   event.respondWith(
-    fetch(event.request, { cache: 'no-store' }) // Force fetch to ignore browser cache
-      .then(response => {
-        // If successful, update the cache with the new version
-        const responseClone = response.clone();
+    caches.match(event.request).then(cachedResponse => {
+      const fetchPromise = fetch(event.request).then(networkResponse => {
+        // Update the cache in the background
+        const responseClone = networkResponse.clone();
         caches.open(CACHE_NAME).then(cache => {
           cache.put(event.request, responseClone);
         });
-        return response;
-      })
-      .catch(() => {
-        // If network fails (offline), fallback to cache
-        return caches.match(event.request);
-      })
+        return networkResponse;
+      }).catch(() => {
+        // Network failed, do nothing as we already returned the cached response (or will fail gracefully)
+      });
+
+      // Return cached response immediately if available, otherwise wait for network
+      return cachedResponse || fetchPromise;
+    })
   );
 });
