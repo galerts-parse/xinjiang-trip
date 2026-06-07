@@ -29,7 +29,8 @@ const itineraryDataX = [
         "lat": 34.5612,
         "lng": 105.7483
       }
-    ]
+    ],
+    "weather": "⛅ 18-30°C (Warm)"
   },
   {
     "day": 1,
@@ -79,7 +80,8 @@ const itineraryDataX = [
         "lat": 37.935,
         "lng": 102.635
       }
-    ]
+    ],
+    "weather": "☀️ 15-28°C (Sunny/Dry)"
   },
   {
     "day": 2,
@@ -123,7 +125,8 @@ const itineraryDataX = [
         "lat": 40.52,
         "lng": 95.78
       }
-    ]
+    ],
+    "weather": "☀️ 16-30°C (Sunny/Dry)"
   },
   {
     "day": 3,
@@ -173,7 +176,8 @@ const itineraryDataX = [
         "lat": 40.12,
         "lng": 94.67
       }
-    ]
+    ],
+    "weather": "☀️ 20-35°C (Hot/Dry)"
   },
   {
     "day": 4,
@@ -211,7 +215,8 @@ const itineraryDataX = [
         "lat": 40.12,
         "lng": 94.67
       }
-    ]
+    ],
+    "weather": "☀️ 22-36°C (Hot/Windy)"
   },
   {
     "day": 5,
@@ -255,7 +260,8 @@ const itineraryDataX = [
         "lat": 42.8252,
         "lng": 93.523
       }
-    ]
+    ],
+    "weather": "☀️ 20-35°C (Hot)"
   },
   {
     "day": 6,
@@ -305,7 +311,8 @@ const itineraryDataX = [
         "lat": 42.9492,
         "lng": 89.1768
       }
-    ]
+    ],
+    "weather": "🔥 25-42°C (Extreme Heat)"
   },
   {
     "day": 7,
@@ -343,7 +350,8 @@ const itineraryDataX = [
         "lat": 44.335,
         "lng": 84.885
       }
-    ]
+    ],
+    "weather": "⛅ 18-32°C (Warm)"
   },
   {
     "day": 8,
@@ -381,7 +389,8 @@ const itineraryDataX = [
         "lat": 43.26,
         "lng": 84.29
       }
-    ]
+    ],
+    "weather": "❄️ 0-15°C (Cold/Mountain Passes)"
   },
   {
     "day": 9,
@@ -413,7 +422,8 @@ const itineraryDataX = [
         "lat": 43.15,
         "lng": 81.12
       }
-    ]
+    ],
+    "weather": "🌧️ 12-25°C (Cool/Possible Rain)"
   },
   {
     "day": 10,
@@ -457,7 +467,8 @@ const itineraryDataX = [
         "lat": 43.915,
         "lng": 81.335
       }
-    ]
+    ],
+    "weather": "⛅ 5-20°C (Chilly/Mountain)"
   },
   {
     "day": 11,
@@ -489,7 +500,8 @@ const itineraryDataX = [
         "lat": 44.59,
         "lng": 81.15
       }
-    ]
+    ],
+    "weather": "🌬️ 8-22°C (Very Windy/Chilly)"
   },
   {
     "day": 12,
@@ -515,7 +527,8 @@ const itineraryDataX = [
         "lat": 46.08,
         "lng": 85.32
       }
-    ]
+    ],
+    "weather": "☀️ 20-35°C (Hot/Extremely Windy)"
   },
   {
     "day": 13,
@@ -547,7 +560,8 @@ const itineraryDataX = [
         "lat": 48.4965,
         "lng": 87.1423
       }
-    ]
+    ],
+    "weather": "⛅ 12-28°C (Pleasant)"
   },
   {
     "day": 14,
@@ -573,7 +587,8 @@ const itineraryDataX = [
         "lat": 48.4965,
         "lng": 87.1423
       }
-    ]
+    ],
+    "weather": "⛅ 5-22°C (Cold Mornings/Evenings)"
   },
   {
     "day": 15,
@@ -599,7 +614,8 @@ const itineraryDataX = [
         "lat": 48.571,
         "lng": 87.436
       }
-    ]
+    ],
+    "weather": "⛅ 5-22°C (Cold Mornings/Evenings)"
   },
   {
     "day": 16,
@@ -637,7 +653,8 @@ const itineraryDataX = [
         "lat": 47.7025,
         "lng": 86.8778
       }
-    ]
+    ],
+    "weather": "☀️ 18-32°C (Warm)"
   },
   {
     "day": 17,
