@@ -231,7 +231,7 @@ const itineraryDataX = [
     "time": "约5.5小时",
     "sights": "🌟 榆林窟、🌟 哈密回王陵",
     "accommodation": "✅ 哈密伊州区七一夜市亚朵酒店 (已预订)",
-    "food": "高胡子羊肉焖饼",
+    "food": "<a href='https://m.dianping.com/shoplist/0/search?keyword=%E9%AB%98%E8%83%A1%E5%AD%90%E7%BE%8A%E8%82%89%E7%84%96%E9%A5%BC' target='_blank' style='color:#f59e0b; font-weight:bold; text-decoration:underline;'>高胡子羊肉焖饼</a>",
     "practical": "预留护照查验时间",
     "schedule": "<ul><li><b>08:00 - 10:00</b>: 驱车前往榆林窟。</li><li><b>10:00 - 12:30</b>: 游览被称为<a href='deep_dives.html#mogao' target='_blank'>莫高窟</a>“姊妹窟”的🌟 榆林窟（人少、壁画精美）。午餐享用战术干粮。</li><li><b>12:30 - 17:30</b>: 跨越省界，于星星峡检查站预留时间完成外宾护照查验。</li><li><b>18:00 - 19:30</b>: 抵达哈密，参观🌟 哈密回王陵。</li><li><b>20:00</b>: 晚餐前往🌟 <a href='https://m.dianping.com/shoplist/0/search?keyword=%E9%AB%98%E8%83%A1%E5%AD%90%E7%BE%8A%E8%82%89%E7%84%96%E9%A5%BC' target='_blank'>高胡子羊肉焖饼</a>，大快朵颐。</li></ul>",
     "spots": [
