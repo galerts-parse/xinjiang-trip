@@ -125,6 +125,7 @@ function renderItinerary(data) {
         ${dayData.weather ? `<div style="font-size: 12px; font-weight: 600; color: #f59e0b; background: #fffbeb; padding: 2px 8px; border-radius: 12px; border: 1px solid #fef3c7;">${dayData.weather}</div>` : ''}
       </div>
       <div class="day-title">${dayData.title}</div>
+      ${dayData.history ? `<div class="history-box"><i class="fa-solid fa-scroll"></i> ${dayData.history}</div>` : ''}
       <div class="info-grid">
         <div class="info-item"><i class="fa-solid fa-route"></i> ${dayData.distance}</div>
         <div class="info-item"><i class="fa-regular fa-clock"></i> ${dayData.time}</div>

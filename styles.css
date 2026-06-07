@@ -230,6 +230,27 @@ a:hover {
   margin-bottom: 6px;
 }
 
+.warning-box {
+  background-color: #fef2f2;
+  border: 1px solid #fee2e2;
+  border-left: 4px solid #ef4444;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.history-box {
+  background-color: #fdf8f6;
+  border-left: 4px solid #d97706;
+  padding: 12px;
+  border-radius: 0 8px 8px 0;
+  margin-bottom: 15px;
+  color: #475569;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+.history-box i { color: #d97706; margin-right: 5px; }
+
 .practical-alert {
   background: #fffbeb;
   border-left: 4px solid #f59e0b;
