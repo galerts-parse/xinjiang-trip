@@ -3,460 +3,618 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>2026 新疆丝路自驾环线 - Route X 专业行程单 (17 Days)</title>
+  <title>新疆绝美风光与深度人文之选 (18 Days) - Professional Tour Package</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
-    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: #334155; background-color: #f8fafc; margin: 0; padding: 0; }
-    .header { background: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.7)), url('https://images.unsplash.com/photo-1596484552834-6a58f850e0a1?auto=format&fit=crop&w=1600&q=80') center/cover; color: white; padding: 60px 20px; text-align: center; }
-    .header h1 { margin: 0 0 10px 0; font-size: 2.5rem; }
-    .header p { margin: 0; font-size: 1.2rem; opacity: 0.9; }
-    .container { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
-    .summary-card { background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); margin-bottom: 40px; }
-    .summary-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-top: 20px; }
-    .summary-item { text-align: center; }
-    .summary-item i { font-size: 24px; color: #3b82f6; margin-bottom: 10px; }
-    .summary-item strong { display: block; font-size: 1.2rem; color: #0f172a; }
-    .day-card { background: white; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); margin-bottom: 30px; overflow: hidden; page-break-inside: avoid; }
-    .day-header { background: #3b82f6; color: white; padding: 20px; display: flex; justify-content: space-between; align-items: center; }
-    .day-header h2 { margin: 0; font-size: 1.5rem; }
-    .day-date { font-weight: bold; background: rgba(255,255,255,0.2); padding: 5px 12px; border-radius: 20px; font-size: 0.9rem; }
-    .day-body { padding: 25px; }
-    .info-bar { display: flex; gap: 20px; margin-bottom: 20px; color: #64748b; font-weight: 500; border-bottom: 1px solid #e2e8f0; padding-bottom: 15px; }
-    .info-bar i { color: #3b82f6; }
-    .section-title { font-size: 1.1rem; color: #0f172a; margin: 25px 0 10px 0; display: flex; align-items: center; gap: 8px; border-bottom: 2px solid #e2e8f0; padding-bottom: 5px; }
-    .schedule-box { background: #f0fdf4; border: 1px solid #bbf7d0; padding: 20px; border-radius: 8px; margin-top: 20px; }
-    .schedule-box h3 { margin: 0 0 15px 0; color: #166534; font-size: 1.1rem; }
-    .schedule-box ul { margin: 0; padding-left: 20px; }
-    .schedule-box li { margin-bottom: 8px; }
-    
-    @media print {
-      body { background: white; }
-      .container { padding: 0; max-width: 100%; }
-      .day-card { box-shadow: none; border: 1px solid #e2e8f0; }
-      .header { padding: 40px 20px; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      color: #334155;
+      background-color: #f8fafc;
+      margin: 0;
+      padding: 0;
     }
+    .header {
+      background: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.7)), url('https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=1600&q=80') center/cover;
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .header h1 { margin: 0 0 10px 0; font-size: 2.5rem; }
+    .header p { margin: 0; font-size: 1.1rem; opacity: 0.9; }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+    .summary-card {
+      background: white;
+      border-radius: 12px;
+      padding: 25px;
+      margin-bottom: 30px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+      border-top: 4px solid #2563eb;
+    }
+    .summary-card h2 { margin-top: 0; color: #1e293b; }
+    .day-card {
+      background: white;
+      border-radius: 12px;
+      padding: 25px;
+      margin-bottom: 25px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+      border-left: 4px solid #3b82f6;
+    }
+    .day-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 15px;
+      border-bottom: 2px solid #f1f5f9;
+      padding-bottom: 10px;
+    }
+    .day-title {
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: #0f172a;
+    }
+    .day-meta {
+      display: flex;
+      gap: 15px;
+      font-size: 0.9rem;
+      color: #64748b;
+    }
+    .meta-item i { color: #3b82f6; margin-right: 5px; }
+    .details-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+      margin-bottom: 20px;
+      background: #f8fafc;
+      padding: 15px;
+      border-radius: 8px;
+    }
+    .detail-item { font-size: 0.95rem; }
+    .detail-label { font-weight: 600; color: #475569; display: block; margin-bottom: 3px; }
+    .schedule { margin-top: 20px; }
+    .schedule h4 { margin: 0 0 10px 0; color: #1e293b; }
+    .schedule ul { margin: 0; padding-left: 20px; color: #475569; }
+    .schedule li { margin-bottom: 8px; }
+    .note-box {
+      background: #eff6ff;
+      border: 1px solid #bfdbfe;
+      padding: 20px;
+      border-radius: 8px;
+      margin-bottom: 30px;
+    }
+    .note-box h3 { margin-top: 0; color: #1e3a8a; }
   </style>
 </head>
 <body>
+
   <div class="header">
-    <h1>2026 新疆丝路自驾大环线</h1>
-    <p>Route X: 绝美风光与深度人文之选 (17天16晚)</p>
+    <h1>新疆绝美风光与深度人文之选 (18 Days)</h1>
+    <p>Professional Road Trip Itinerary · 2026</p>
   </div>
 
   <div class="container">
+    <div class="note-box">
+      <h3><i class="fa-solid fa-triangle-exclamation"></i> 核心战略提示 (Core Strategy Notes)</h3>
+      <ul>
+        <li><strong>战术补给 (Tactical Provisioning):</strong> 强烈建议在后备箱始终备有2-3箱矿泉水。行程中有6次“战术午餐”（Day 4, 5, 8, 10, 11, 14/15），由于地处无人区或为了抢占游览时间，需要在车内或景区内食用自热米饭、烤包子、大馕或高能蛋白棒。</li>
+        <li><strong>独库公路北段 (Duku Highway):</strong> 穿越需早起以避开拥堵。前序在独山子的超市补给至关重要。</li>
+        <li><strong>外宾证件 (Foreigner Passports):</strong> 在所有景区请预留额外10-15分钟用于人工窗口核验护照。</li>
+      </ul>
+    </div>
     <div class="summary-card">
       <h2><i class="fa-solid fa-map"></i> 行程概览</h2>
       <p>本次行程将带您领略从河西走廊的悠久历史到北疆的绝美自然风光。精选住宿，合理安排每日车程，既有沉浸式的历史人文探索（莫高窟、榆林窟、阿斯塔那古墓），也有深入大自然的从容放松（赛里木湖环湖、喀纳斯深度游）。</p>
-      <div class="summary-grid">
-        <div class="summary-item">
-          <i class="fa-solid fa-calendar-days"></i>
-          <strong>17天16晚</strong>
-          <span>2026年6月12日 - 6月28日</span>
+    </div>
+
+
+    <div class="day-card">
+      <div class="day-header">
+        <div class="day-title">Day 0 (2026-06-11): 西安 → 天水</div>
+        <div class="day-meta">
+          <div class="meta-item"><i class="fa-solid fa-road"></i> 350km</div>
+          <div class="meta-item"><i class="fa-solid fa-clock"></i> 约4.5小时</div>
         </div>
-        <div class="summary-item">
-          <i class="fa-solid fa-car"></i>
-          <strong>全程自驾</strong>
-          <span>深度探索，灵活自由</span>
+      </div>
+      <div class="details-grid">
+        <div class="detail-item">
+          <span class="detail-label"><i class="fa-solid fa-camera"></i> 核心景点</span>
+          🌟 麦积山石窟
         </div>
-        <div class="summary-item">
-          <i class="fa-solid fa-bed"></i>
-          <strong>精选住宿</strong>
-          <span>品质酒店与特色山庄</span>
+        <div class="detail-item">
+          <span class="detail-label"><i class="fa-solid fa-bed"></i> 住宿推荐</span>
+          <span style="color: #e11d48; font-weight: 500;">⚠️ [需新订] 天水万豪福朋喜来登酒店 (靠G30高速)</span>
         </div>
+        <div class="detail-item">
+          <span class="detail-label"><i class="fa-solid fa-utensils"></i> 特色餐饮</span>
+          天水常记呱呱
+        </div>
+      </div>
+      <div class="schedule">
+        <h4><i class="fa-solid fa-list-check"></i> 时间轴排期</h4>
+        <ul><li><b>09:00 - 11:00</b>: 在西安市区提取预订的自驾车辆，并前往车管所/服务点完成临时驾驶许可（如有需要）及车辆交接。</li><li><b>11:00 - 15:30</b>: 驶上连霍高速 (G30)，驱车前往天水（包含午餐与服务区休息时间）。</li><li><b>15:30 - 18:30</b>: 游览🌟 麦积山石窟（体验142米绝壁栈道，此时光线柔和，避开正午烈日）。</li><li><b>19:00</b>: 入住酒店，为正式开启的新疆大环线养精蓄锐。</li></ul>
       </div>
     </div>
 
     <div class="day-card">
       <div class="day-header">
-        <h2>Day 1: 天水 → 兰州 → 武威</h2>
-        <span class="day-date">2026-06-12</span>
+        <div class="day-title">Day 1 (2026-06-12): 天水 → 兰州 → 武威</div>
+        <div class="day-meta">
+          <div class="meta-item"><i class="fa-solid fa-road"></i> 600km</div>
+          <div class="meta-item"><i class="fa-solid fa-clock"></i> 约7.5小时</div>
+        </div>
       </div>
-      <div class="day-body">
-        <div class="info-bar">
-          <span><i class="fa-solid fa-car"></i> 600km (约7.5小时)</span>
-          <span><i class="fa-solid fa-hotel"></i> 住宿: ⚠️ [需新订] 武威建隆大酒店</span>
+      <div class="details-grid">
+        <div class="detail-item">
+          <span class="detail-label"><i class="fa-solid fa-camera"></i> 核心景点</span>
+          🌟 甘肃省博物馆、🌟 中山桥
         </div>
-        
-        <div class="section-title"><i class="fa-solid fa-camera"></i> 核心看点</div>
-        <p>🌟 麦积山石窟、🌟 甘肃省博物馆、🌟 中山桥</p>
-        
-        <div class="section-title"><i class="fa-solid fa-utensils"></i> 特色美食</div>
-        <p>兰州牛肉面</p>
-        
-        <div class="schedule-box">
-          <h3><i class="fa-solid fa-clock"></i> 时间线与行程安排</h3>
-          <ul><li><b>08:00 - 11:30</b>: 🌟 麦积山石窟（早班登顶，体验142米绝壁栈道）。</li><li><b>11:30 - 15:30</b>: 驱车前往兰州。</li><li><b>15:30 - 17:30</b>: 参观🌟 甘肃省博物馆（青铜馆看马踏飞燕）。</li><li><b>17:30 - 19:30</b>: 漫步🌟 中山桥，享用兰州牛肉面。</li><li><b>19:30 - 23:00</b>: 夜驾驶往武威并入住。</li></ul>
+        <div class="detail-item">
+          <span class="detail-label"><i class="fa-solid fa-bed"></i> 住宿推荐</span>
+          <span style="color: #e11d48; font-weight: 500;">⚠️ [需新订] 武威建隆大酒店</span>
         </div>
+        <div class="detail-item">
+          <span class="detail-label"><i class="fa-solid fa-utensils"></i> 特色餐饮</span>
+          马子禄牛肉面、七一河手抓
+        </div>
+      </div>
+      <div class="schedule">
+        <h4><i class="fa-solid fa-list-check"></i> 时间轴排期</h4>
+        <ul><li><b>08:30 - 13:00</b>: 离开天水，沿连霍高速直奔兰州。</li><li><b>14:00 - 15:00</b>: 抵达兰州，午餐享用正宗🌟 <a href='https://m.dianping.com' target='_blank'>马子禄牛肉面(大众巷店)</a>。</li><li><b>15:30 - 17:30</b>: 参观🌟 甘肃省博物馆（重点参观青铜馆：马踏飞燕）。</li><li><b>18:00 - 19:30</b>: 漫步🌟 中山桥，晚餐于黄河边的🌟 <a href='https://m.dianping.com' target='_blank'>七一河手抓</a> 享用顶级手抓羊肉。</li><li><b>19:30 - 23:00</b>: 夜驾驶往武威。</li><li><b>23:00 - 23:30</b>: 抵达武威后，前往🌟 大润发(武威店) 采购初始车载物资（矿泉水及零食），随后入住酒店。</li></ul>
       </div>
     </div>
+
     <div class="day-card">
       <div class="day-header">
-        <h2>Day 2: 武威 → 张掖 → 嘉峪关 → 瓜州</h2>
-        <span class="day-date">2026-06-13</span>
+        <div class="day-title">Day 2 (2026-06-13): 武威 → 张掖 → 嘉峪关 → 瓜州</div>
+        <div class="day-meta">
+          <div class="meta-item"><i class="fa-solid fa-road"></i> 650km</div>
+          <div class="meta-item"><i class="fa-solid fa-clock"></i> 约8小时</div>
+        </div>
       </div>
-      <div class="day-body">
-        <div class="info-bar">
-          <span><i class="fa-solid fa-car"></i> 650km (约8小时)</span>
-          <span><i class="fa-solid fa-hotel"></i> 住宿: ⚠️ [需新订] 瓜州国风大酒店</span>
+      <div class="details-grid">
+        <div class="detail-item">
+          <span class="detail-label"><i class="fa-solid fa-camera"></i> 核心景点</span>
+          🌟 雷台汉墓、🌟 张掖大佛寺、🌟 张掖七彩丹霞、🌟 嘉峪关城楼
         </div>
-        
-        <div class="section-title"><i class="fa-solid fa-camera"></i> 核心看点</div>
-        <p>🌟 雷台汉墓、🌟 张掖大佛寺、🌟 张掖七彩丹霞、🌟 嘉峪关城楼</p>
-        
-        <div class="section-title"><i class="fa-solid fa-utensils"></i> 特色美食</div>
-        <p>简餐</p>
-        
-        <div class="schedule-box">
-          <h3><i class="fa-solid fa-clock"></i> 时间线与行程安排</h3>
-          <ul><li><b>08:00 - 09:30</b>: 🌟 雷台汉墓（马踏飞燕出土地）。</li><li><b>09:30 - 12:00</b>: 驱车前往张掖。</li><li><b>12:00 - 14:00</b>: 🌟 张掖大佛寺及简餐。</li><li><b>14:30 - 17:00</b>: 🌟 张掖七彩丹霞。</li><li><b>17:00 - 19:30</b>: 驱车前往嘉峪关。</li><li><b>19:30 - 21:00</b>: 🌟 嘉峪关城楼（夕阳下的大漠雄关）。</li><li><b>21:00 - 23:30</b>: 利用西北夏季长日照，伴着落日余晖驶往瓜州。</li></ul>
+        <div class="detail-item">
+          <span class="detail-label"><i class="fa-solid fa-bed"></i> 住宿推荐</span>
+          <span style="color: #e11d48; font-weight: 500;">⚠️ [需新订] 瓜州国风大酒店</span>
         </div>
+        <div class="detail-item">
+          <span class="detail-label"><i class="fa-solid fa-utensils"></i> 特色餐饮</span>
+          孙记炒炮
+        </div>
+      </div>
+      <div class="schedule">
+        <h4><i class="fa-solid fa-list-check"></i> 时间轴排期</h4>
+        <ul><li><b>08:00 - 09:30</b>: 🌟 雷台汉墓（马踏飞燕出土地）。</li><li><b>09:30 - 12:00</b>: 驱车前往张掖。</li><li><b>12:00 - 13:30</b>: 🌟 张掖大佛寺，午餐享用🌟 <a href='https://m.dianping.com' target='_blank'>孙记炒炮(明清街店)</a> (建议在大众点评购买套餐)。</li><li><b>14:30 - 17:00</b>: 🌟 张掖七彩丹霞。</li><li><b>17:00 - 19:30</b>: 驱车前往嘉峪关。</li><li><b>19:30 - 21:00</b>: 🌟 嘉峪关城楼（夕阳下的大漠雄关）。</li><li><b>21:00 - 23:30</b>: 伴着落日余晖驶往瓜州。</li></ul>
       </div>
     </div>
+
     <div class="day-card">
       <div class="day-header">
-        <h2>Day 3: 瓜州 → 敦煌</h2>
-        <span class="day-date">2026-06-14</span>
+        <div class="day-title">Day 3 (2026-06-14): 瓜州 → 敦煌</div>
+        <div class="day-meta">
+          <div class="meta-item"><i class="fa-solid fa-road"></i> 120km</div>
+          <div class="meta-item"><i class="fa-solid fa-clock"></i> 约1.5小时</div>
+        </div>
       </div>
-      <div class="day-body">
-        <div class="info-bar">
-          <span><i class="fa-solid fa-car"></i> 120km (约1.5小时)</span>
-          <span><i class="fa-solid fa-hotel"></i> 住宿: ⚠️ [需新订] 敦煌山庄 (强烈建议重订)</span>
+      <div class="details-grid">
+        <div class="detail-item">
+          <span class="detail-label"><i class="fa-solid fa-camera"></i> 核心景点</span>
+          🌟 莫高窟、🌟 鸣沙山月牙泉、🌟 《又见敦煌》
         </div>
-        
-        <div class="section-title"><i class="fa-solid fa-camera"></i> 核心看点</div>
-        <p>🌟 莫高窟、🌟 鸣沙山月牙泉、🌟 《又见敦煌》</p>
-        
-        <div class="section-title"><i class="fa-solid fa-utensils"></i> 特色美食</div>
-        <p>瓜州蜜瓜、驴肉黄面</p>
-        
-        <div class="schedule-box">
-          <h3><i class="fa-solid fa-clock"></i> 时间线与行程安排</h3>
-          <ul><li><b>08:30 - 09:30</b>: 瓜州路边品尝极甜蜜瓜，休整慢起。</li><li><b>09:30 - 11:00</b>: 驱车前往莫高窟数字展示中心。</li><li><b>11:30 - 15:30</b>: 🌟 莫高窟（完美踩准11:30场次门票）。</li><li><b>16:00 - 18:30</b>: 抵达酒店避暑休整。</li><li><b>18:30 - 21:00</b>: 日落时分游览🌟 鸣沙山月牙泉（骑骆驼）。</li><li><b>21:00 - 22:30</b>: 观看🌟 《又见敦煌》演出。</li></ul>
+        <div class="detail-item">
+          <span class="detail-label"><i class="fa-solid fa-bed"></i> 住宿推荐</span>
+          <span style="color: #e11d48; font-weight: 500;">⚠️ [需新订] 敦煌山庄 (强烈建议重订)</span>
         </div>
+        <div class="detail-item">
+          <span class="detail-label"><i class="fa-solid fa-utensils"></i> 特色餐饮</span>
+          顺张黄面馆
+        </div>
+      </div>
+      <div class="schedule">
+        <h4><i class="fa-solid fa-list-check"></i> 时间轴排期</h4>
+        <ul><li><b>08:30 - 09:30</b>: 瓜州路边品尝极甜蜜瓜。</li><li><b>09:30 - 11:00</b>: 驱车前往莫高窟数字展示中心。</li><li><b>11:30 - 15:30</b>: 🌟 莫高窟（完美踩准11:30场次门票）。</li><li><b>16:00 - 18:30</b>: 日落前游览🌟 鸣沙山月牙泉（气温适宜，骑骆驼）。</li><li><b>18:30 - 20:00</b>: 晚餐前往🌟 <a href='https://m.dianping.com' target='_blank'>顺张黄面馆(总店)</a> 享用驴肉黄面，为稍后的演出留出充裕时间。</li><li><b>21:00 - 22:30</b>: 观看🌟 《又见敦煌》演出。</li><li><b>22:30 - 23:00</b>: 演出结束后，就近在🌟 百佳超市 (Dunhuang Century Mart) 采购未来两日沙漠路段的“战术干粮”（大饼、真空肉、饮用水）。</li></ul>
       </div>
     </div>
+
     <div class="day-card">
       <div class="day-header">
-        <h2>Day 4: 敦煌西线</h2>
-        <span class="day-date">2026-06-15</span>
+        <div class="day-title">Day 4 (2026-06-15): 敦煌西线</div>
+        <div class="day-meta">
+          <div class="meta-item"><i class="fa-solid fa-road"></i> 180km</div>
+          <div class="meta-item"><i class="fa-solid fa-clock"></i> 约3小时</div>
+        </div>
       </div>
-      <div class="day-body">
-        <div class="info-bar">
-          <span><i class="fa-solid fa-car"></i> 180km (约3小时)</span>
-          <span><i class="fa-solid fa-hotel"></i> 住宿: ⚠️ [需新订] 敦煌山庄</span>
+      <div class="details-grid">
+        <div class="detail-item">
+          <span class="detail-label"><i class="fa-solid fa-camera"></i> 核心景点</span>
+          🌟 玉门关、🌟 汉代长城遗址、🌟 阳关、🌟 雅丹魔鬼城
         </div>
-        
-        <div class="section-title"><i class="fa-solid fa-camera"></i> 核心看点</div>
-        <p>🌟 玉门关、🌟 汉代长城遗址、🌟 阳关、🌟 雅丹魔鬼城</p>
-        
-        <div class="section-title"><i class="fa-solid fa-utensils"></i> 特色美食</div>
-        <p>无</p>
-        
-        <div class="schedule-box">
-          <h3><i class="fa-solid fa-clock"></i> 时间线与行程安排</h3>
-          <ul><li><b>09:00 - 14:00</b>: 探访大漠边关🌟 玉门关、🌟 汉代长城遗址与🌟 阳关。</li><li><b>14:00 - 17:00</b>: 驱车前往雅丹魔鬼城。</li><li><b>17:30 - 20:30</b>: 🌟 雅丹魔鬼城（乘坐末班越野车深入黑戈壁，守候极品日落）。</li></ul>
+        <div class="detail-item">
+          <span class="detail-label"><i class="fa-solid fa-bed"></i> 住宿推荐</span>
+          <span style="color: #e11d48; font-weight: 500;">⚠️ [需新订] 敦煌山庄</span>
         </div>
+        <div class="detail-item">
+          <span class="detail-label"><i class="fa-solid fa-utensils"></i> 特色餐饮</span>
+          战术干粮
+        </div>
+      </div>
+      <div class="schedule">
+        <h4><i class="fa-solid fa-list-check"></i> 时间轴排期</h4>
+        <ul><li><b>09:00 - 14:00</b>: 探访大漠边关🌟 玉门关、🌟 汉代长城遗址与🌟 阳关。午餐在景区食用预备的自热食品或战术干粮。</li><li><b>14:00 - 17:00</b>: 驱车前往雅丹魔鬼城。</li><li><b>17:30 - 20:30</b>: 🌟 雅丹魔鬼城（乘坐末班越野车深入黑戈壁，守候极品日落）。</li></ul>
       </div>
     </div>
+
     <div class="day-card">
       <div class="day-header">
-        <h2>Day 5: 敦煌 → 榆林窟 → 哈密</h2>
-        <span class="day-date">2026-06-16</span>
+        <div class="day-title">Day 5 (2026-06-16): 敦煌 → 榆林窟 → 哈密</div>
+        <div class="day-meta">
+          <div class="meta-item"><i class="fa-solid fa-road"></i> 410km</div>
+          <div class="meta-item"><i class="fa-solid fa-clock"></i> 约5.5小时</div>
+        </div>
       </div>
-      <div class="day-body">
-        <div class="info-bar">
-          <span><i class="fa-solid fa-car"></i> 410km (约5.5小时)</span>
-          <span><i class="fa-solid fa-hotel"></i> 住宿: ⚠️ [需改期] 哈密建国饭店 (原订单需改至16日)</span>
+      <div class="details-grid">
+        <div class="detail-item">
+          <span class="detail-label"><i class="fa-solid fa-camera"></i> 核心景点</span>
+          🌟 榆林窟、🌟 哈密回王陵
         </div>
-        
-        <div class="section-title"><i class="fa-solid fa-camera"></i> 核心看点</div>
-        <p>🌟 榆林窟、🌟 哈密回王陵</p>
-        
-        <div class="section-title"><i class="fa-solid fa-utensils"></i> 特色美食</div>
-        <p>大营盘羊肉焖饼</p>
-        
-        <div class="schedule-box">
-          <h3><i class="fa-solid fa-clock"></i> 时间线与行程安排</h3>
-          <ul><li><b>08:00 - 10:00</b>: 驱车前往榆林窟（跳过冗余的瓜州停留）。</li><li><b>10:00 - 12:30</b>: 游览被称为莫高窟“姊妹窟”的🌟 榆林窟（人少、壁画精美）。</li><li><b>12:30 - 17:30</b>: 跨越省界，于星星峡检查站预留时间完成外宾护照查验。</li><li><b>18:00 - 20:00</b>: 抵达哈密，参观🌟 哈密回王陵，品尝大营盘羊肉焖饼。</li></ul>
+        <div class="detail-item">
+          <span class="detail-label"><i class="fa-solid fa-bed"></i> 住宿推荐</span>
+          <span style="color: #e11d48; font-weight: 500;">✅ 哈密伊州区七一夜市亚朵酒店 (已预订)</span>
         </div>
+        <div class="detail-item">
+          <span class="detail-label"><i class="fa-solid fa-utensils"></i> 特色餐饮</span>
+          高胡子羊肉焖饼
+        </div>
+      </div>
+      <div class="schedule">
+        <h4><i class="fa-solid fa-list-check"></i> 时间轴排期</h4>
+        <ul><li><b>08:00 - 10:00</b>: 驱车前往榆林窟。</li><li><b>10:00 - 12:30</b>: 游览被称为莫高窟“姊妹窟”的🌟 榆林窟（人少、壁画精美）。午餐享用战术干粮。</li><li><b>12:30 - 17:30</b>: 跨越省界，于星星峡检查站预留时间完成外宾护照查验。</li><li><b>18:00 - 19:30</b>: 抵达哈密，参观🌟 哈密回王陵。</li><li><b>20:00</b>: 晚餐前往🌟 <a href='https://m.dianping.com' target='_blank'>高胡子羊肉焖饼</a>，大快朵颐。</li></ul>
       </div>
     </div>
+
     <div class="day-card">
       <div class="day-header">
-        <h2>Day 6: 哈密 → 吐鲁番</h2>
-        <span class="day-date">2026-06-17</span>
+        <div class="day-title">Day 6 (2026-06-17): 哈密 → 吐鲁番</div>
+        <div class="day-meta">
+          <div class="meta-item"><i class="fa-solid fa-road"></i> 400km</div>
+          <div class="meta-item"><i class="fa-solid fa-clock"></i> 约5小时</div>
+        </div>
       </div>
-      <div class="day-body">
-        <div class="info-bar">
-          <span><i class="fa-solid fa-car"></i> 400km (约5小时)</span>
-          <span><i class="fa-solid fa-hotel"></i> 住宿: ⚠️ [需改期] 吐鲁番美居酒店 (原订单需改至17日)</span>
+      <div class="details-grid">
+        <div class="detail-item">
+          <span class="detail-label"><i class="fa-solid fa-camera"></i> 核心景点</span>
+          🌟 坎儿井、🌟 阿斯塔那古墓群、🌟 柏孜克里克千佛洞、🌟 火焰山、🌟 交河故城
         </div>
-        
-        <div class="section-title"><i class="fa-solid fa-camera"></i> 核心看点</div>
-        <p>🌟 坎儿井、🌟 阿斯塔那古墓群、🌟 柏孜克里克千佛洞、🌟 火焰山、🌟 交河故城</p>
-        
-        <div class="section-title"><i class="fa-solid fa-utensils"></i> 特色美食</div>
-        <p>海尔巴格</p>
-        
-        <div class="schedule-box">
-          <h3><i class="fa-solid fa-clock"></i> 时间线与行程安排</h3>
-          <ul><li><b>08:00 - 12:00</b>: 穿越百里风区抵达吐鲁番。</li><li><b>12:00 - 14:00</b>: 🌟 坎儿井（地下避暑）。</li><li><b>14:00 - 17:00</b>: 🌟 阿斯塔那古墓群 (Astana Tombs)。古墓内部深入地下，气温相对阴凉，完美利用了地表极限高温的时段，探索保存完好的千年干尸与壁画。随后可短暂回酒店休整。</li><li><b>17:00 - 19:00</b>: 气温稍降后前往🌟 柏孜克里克千佛洞与🌟 火焰山。</li><li><b>19:00 - 21:00</b>: 🌟 交河故城（落日余晖下漫步两千年悬崖古城）。</li></ul>
+        <div class="detail-item">
+          <span class="detail-label"><i class="fa-solid fa-bed"></i> 住宿推荐</span>
+          <span style="color: #e11d48; font-weight: 500;">✅ 吐鲁番火洲美居酒店 (已预订)</span>
         </div>
+        <div class="detail-item">
+          <span class="detail-label"><i class="fa-solid fa-utensils"></i> 特色餐饮</span>
+          海尔巴格
+        </div>
+      </div>
+      <div class="schedule">
+        <h4><i class="fa-solid fa-list-check"></i> 时间轴排期</h4>
+        <ul><li><b>08:00 - 12:00</b>: 穿越百里风区抵达吐鲁番。</li><li><b>12:00 - 14:00</b>: 午餐前往吐鲁番最著名的维吾尔餐厅🌟 <a href='https://m.dianping.com' target='_blank'>海尔巴格(吐鲁番店)</a> (建议在大众点评购买代金券/下午茶套餐)，随后游览🌟 坎儿井避暑。</li><li><b>14:00 - 17:00</b>: 🌟 阿斯塔那古墓群 (Astana Tombs)。古墓内部深入地下阴凉，探索千年干尸与壁画。</li><li><b>17:00 - 19:00</b>: 气温稍降后前往🌟 柏孜克里克千佛洞与🌟 火焰山。</li><li><b>19:00 - 21:00</b>: 🌟 交河故城（落日余晖下漫步两千年悬崖古城）。</li></ul>
       </div>
     </div>
+
     <div class="day-card">
       <div class="day-header">
-        <h2>Day 7: 吐鲁番 → 天山天池 → 独山子</h2>
-        <span class="day-date">2026-06-18</span>
+        <div class="day-title">Day 7 (2026-06-18): 吐鲁番 → 天山天池 → 独山子</div>
+        <div class="day-meta">
+          <div class="meta-item"><i class="fa-solid fa-road"></i> 450km</div>
+          <div class="meta-item"><i class="fa-solid fa-clock"></i> 约6小时</div>
+        </div>
       </div>
-      <div class="day-body">
-        <div class="info-bar">
-          <span><i class="fa-solid fa-car"></i> 450km (约6小时)</span>
-          <span><i class="fa-solid fa-hotel"></i> 住宿: ⚠️ [需新订] 独山子/奎屯市区酒店</span>
+      <div class="details-grid">
+        <div class="detail-item">
+          <span class="detail-label"><i class="fa-solid fa-camera"></i> 核心景点</span>
+          🌟 天山天池
         </div>
-        
-        <div class="section-title"><i class="fa-solid fa-camera"></i> 核心看点</div>
-        <p>🌟 天山天池</p>
-        
-        <div class="section-title"><i class="fa-solid fa-utensils"></i> 特色美食</div>
-        <p>顶级新疆菜</p>
-        
-        <div class="schedule-box">
-          <h3><i class="fa-solid fa-clock"></i> 时间线与行程安排</h3>
-          <ul><li><b>07:30 - 10:30</b>: 驱车前往天池。</li><li><b>10:30 - 15:00</b>: 游览🌟 天山天池。</li><li><b>15:00 - 19:30</b>: 为提高效率，绕开拥堵的乌鲁木齐市区，全程高速直插独山子/奎屯入住，全面休整。</li></ul>
+        <div class="detail-item">
+          <span class="detail-label"><i class="fa-solid fa-bed"></i> 住宿推荐</span>
+          <span style="color: #e11d48; font-weight: 500;">⚠️ [需新订] 独山子市区优质酒店</span>
         </div>
+        <div class="detail-item">
+          <span class="detail-label"><i class="fa-solid fa-utensils"></i> 特色餐饮</span>
+          沙湾大盘鸡
+        </div>
+      </div>
+      <div class="schedule">
+        <h4><i class="fa-solid fa-list-check"></i> 时间轴排期</h4>
+        <ul><li><b>07:30 - 10:30</b>: 驱车前往天池。</li><li><b>10:30 - 15:00</b>: 游览🌟 天山天池。</li><li><b>15:00 - 19:00</b>: 绕开拥堵的乌鲁木齐市区，全程高速直插独山子。</li><li><b>19:30 - 20:00</b>: 抵达独山子后，立即前往🌟 友好超市(独山子店) 补给水、咖啡因饮料及自热米饭，为明日独库穿越做最后准备。</li><li><b>20:00</b>: 晚餐在🌟 <a href='https://m.dianping.com' target='_blank'>独山子沙湾大盘鸡</a> 饱餐一顿，碳水拉满。</li></ul>
       </div>
     </div>
+
     <div class="day-card">
       <div class="day-header">
-        <h2>Day 8: 独山子 → 独库公路 → 那拉提</h2>
-        <span class="day-date">2026-06-19</span>
+        <div class="day-title">Day 8 (2026-06-19): 独山子 → 独库公路 → 那拉提</div>
+        <div class="day-meta">
+          <div class="meta-item"><i class="fa-solid fa-road"></i> 260km</div>
+          <div class="meta-item"><i class="fa-solid fa-clock"></i> 约6小时</div>
+        </div>
       </div>
-      <div class="day-body">
-        <div class="info-bar">
-          <span><i class="fa-solid fa-car"></i> 260km (约6小时)</span>
-          <span><i class="fa-solid fa-hotel"></i> 住宿: ⚠️ [需改期] 那拉提文旅度假酒店 (原订单改至19日)</span>
+      <div class="details-grid">
+        <div class="detail-item">
+          <span class="detail-label"><i class="fa-solid fa-camera"></i> 核心景点</span>
+          🌟 独库公路北段、🌟 那拉提空中草原
         </div>
-        
-        <div class="section-title"><i class="fa-solid fa-camera"></i> 核心看点</div>
-        <p>🌟 独库公路北段、🌟 那拉提空中草原</p>
-        
-        <div class="section-title"><i class="fa-solid fa-utensils"></i> 特色美食</div>
-        <p>无</p>
-        
-        <div class="schedule-box">
-          <h3><i class="fa-solid fa-clock"></i> 时间线与行程安排</h3>
-          <ul><li><b>06:30 - 08:30</b>: 清晨极限早起避开早高峰，直奔独山子零公里起点。</li><li><b>08:30 - 16:30</b>: 硬核穿越🌟 独库公路北段 (G217)。途径防雪长廊、哈希勒根达坂，陡峭发夹弯充分检验半联动离合器控制与坡道起步技术。</li><li><b>16:30 - 19:30</b>: 傍晚抵达并驶入🌟 那拉提空中草原。</li></ul>
+        <div class="detail-item">
+          <span class="detail-label"><i class="fa-solid fa-bed"></i> 住宿推荐</span>
+          <span style="color: #e11d48; font-weight: 500;">✅ 那悦里民宿（那拉提景区店） (已预订)</span>
         </div>
+        <div class="detail-item">
+          <span class="detail-label"><i class="fa-solid fa-utensils"></i> 特色餐饮</span>
+          战术干粮
+        </div>
+      </div>
+      <div class="schedule">
+        <h4><i class="fa-solid fa-list-check"></i> 时间轴排期</h4>
+        <ul><li><b>06:30 - 08:30</b>: 清晨极限早起避开早高峰，直奔独山子零公里起点。</li><li><b>08:30 - 16:30</b>: 硬核穿越🌟 独库公路北段 (G217)。午餐在沿途观景台享用自热战术餐。</li><li><b>16:30 - 19:30</b>: 傍晚抵达并驶入🌟 那拉提空中草原。</li></ul>
       </div>
     </div>
+
     <div class="day-card">
       <div class="day-header">
-        <h2>Day 9: 那拉提 → 喀拉峻 → 昭苏</h2>
-        <span class="day-date">2026-06-20</span>
+        <div class="day-title">Day 9 (2026-06-20): 那拉提 → 喀拉峻 → 昭苏</div>
+        <div class="day-meta">
+          <div class="meta-item"><i class="fa-solid fa-road"></i> 300km</div>
+          <div class="meta-item"><i class="fa-solid fa-clock"></i> 约5小时</div>
+        </div>
       </div>
-      <div class="day-body">
-        <div class="info-bar">
-          <span><i class="fa-solid fa-car"></i> 300km (约5小时)</span>
-          <span><i class="fa-solid fa-hotel"></i> 住宿: ⚠️ [需新订] 昭苏万豪福朋喜来登酒店</span>
+      <div class="details-grid">
+        <div class="detail-item">
+          <span class="detail-label"><i class="fa-solid fa-camera"></i> 核心景点</span>
+          🌟 特克斯八卦城、🌟 喀拉峻大草原
         </div>
-        
-        <div class="section-title"><i class="fa-solid fa-camera"></i> 核心看点</div>
-        <p>🌟 特克斯八卦城、🌟 喀拉峻大草原</p>
-        
-        <div class="section-title"><i class="fa-solid fa-utensils"></i> 特色美食</div>
-        <p>原生态手抓羊肉</p>
-        
-        <div class="schedule-box">
-          <h3><i class="fa-solid fa-clock"></i> 时间线与行程安排</h3>
-          <ul><li><b>08:30 - 11:30</b>: 驱车前往喀拉峻，沿途车览🌟 特克斯八卦城。</li><li><b>11:30 - 16:30</b>: 深度游览🌟 喀拉峻大草原（震撼的3D“人体草原”）。</li><li><b>16:30 - 18:30</b>: 驱车前往昭苏。</li><li><b>18:30</b>: 抵达入住，享用原生态手抓羊肉。</li></ul>
+        <div class="detail-item">
+          <span class="detail-label"><i class="fa-solid fa-bed"></i> 住宿推荐</span>
+          <span style="color: #e11d48; font-weight: 500;">⚠️ [需新订] 昭苏万豪福朋喜来登酒店</span>
         </div>
+        <div class="detail-item">
+          <span class="detail-label"><i class="fa-solid fa-utensils"></i> 特色餐饮</span>
+          原生态手抓羊肉
+        </div>
+      </div>
+      <div class="schedule">
+        <h4><i class="fa-solid fa-list-check"></i> 时间轴排期</h4>
+        <ul><li><b>08:30 - 11:30</b>: 驱车前往喀拉峻，沿途车览🌟 特克斯八卦城。</li><li><b>11:30 - 16:30</b>: 深度游览🌟 喀拉峻大草原（震撼的3D“人体草原”）。</li><li><b>16:30 - 18:30</b>: 驱车前往昭苏。</li><li><b>18:30</b>: 抵达入住，享用原生态手抓羊肉。</li></ul>
       </div>
     </div>
+
     <div class="day-card">
       <div class="day-header">
-        <h2>Day 10: 昭苏 → 夏塔 → 伊宁</h2>
-        <span class="day-date">2026-06-21</span>
+        <div class="day-title">Day 10 (2026-06-21): 昭苏 → 夏塔 → 伊宁</div>
+        <div class="day-meta">
+          <div class="meta-item"><i class="fa-solid fa-road"></i> 250km</div>
+          <div class="meta-item"><i class="fa-solid fa-clock"></i> 约4.5小时</div>
+        </div>
       </div>
-      <div class="day-body">
-        <div class="info-bar">
-          <span><i class="fa-solid fa-car"></i> 250km (约4.5小时)</span>
-          <span><i class="fa-solid fa-hotel"></i> 住宿: ⚠️ [需新订] 伊犁大酒店</span>
+      <div class="details-grid">
+        <div class="detail-item">
+          <span class="detail-label"><i class="fa-solid fa-camera"></i> 核心景点</span>
+          🌟 夏塔古道、🌟 喀赞其民俗村
         </div>
-        
-        <div class="section-title"><i class="fa-solid fa-camera"></i> 核心看点</div>
-        <p>🌟 夏塔古道、🌟 喀赞其民俗村</p>
-        
-        <div class="section-title"><i class="fa-solid fa-utensils"></i> 特色美食</div>
-        <p>手工冰淇淋与烤包子</p>
-        
-        <div class="schedule-box">
-          <h3><i class="fa-solid fa-clock"></i> 时间线与行程安排</h3>
-          <ul><li><b>08:00 - 14:00</b>: 深入🌟 夏塔古道（重装徒步直逼木扎尔特冰川）。</li><li><b>14:00 - 17:30</b>: 翻越天山抵达伊宁。</li><li><b>17:30 - 20:30</b>: 游览🌟 喀赞其民俗村（品尝百年手工冰淇淋与烤包子）。</li></ul>
+        <div class="detail-item">
+          <span class="detail-label"><i class="fa-solid fa-bed"></i> 住宿推荐</span>
+          <span style="color: #e11d48; font-weight: 500;">✅ 双樱桃民宿(喀赞其民俗旅游区店) (已预订)</span>
         </div>
+        <div class="detail-item">
+          <span class="detail-label"><i class="fa-solid fa-utensils"></i> 特色餐饮</span>
+          百年手工冰淇淋
+        </div>
+      </div>
+      <div class="schedule">
+        <h4><i class="fa-solid fa-list-check"></i> 时间轴排期</h4>
+        <ul><li><b>08:00 - 14:00</b>: 深入🌟 夏塔古道徒步。午餐享用战术干粮。</li><li><b>14:00 - 17:30</b>: 翻越天山抵达伊宁市。</li><li><b>17:30 - 20:30</b>: 游览🌟 喀赞其民俗村。19:00前往🌟 <a href='https://m.dianping.com' target='_blank'>蓝派格</a> 享用当地顶级的百年手工冰淇淋及甜点。</li><li><b>20:30</b>: 前往🌟 天百超市(伊宁店) 大量采购新鲜出炉的维吾尔族大馕，这是后续山区极致续航的核心干粮。</li></ul>
       </div>
     </div>
+
     <div class="day-card">
       <div class="day-header">
-        <h2>Day 11: 伊宁 → 赛里木湖</h2>
-        <span class="day-date">2026-06-22</span>
+        <div class="day-title">Day 11 (2026-06-22): 伊宁 → 赛里木湖</div>
+        <div class="day-meta">
+          <div class="meta-item"><i class="fa-solid fa-road"></i> 150km</div>
+          <div class="meta-item"><i class="fa-solid fa-clock"></i> 约2小时</div>
+        </div>
       </div>
-      <div class="day-body">
-        <div class="info-bar">
-          <span><i class="fa-solid fa-car"></i> 150km (约2小时)</span>
-          <span><i class="fa-solid fa-hotel"></i> 住宿: ⚠️ [需新订] 新疆赛里木湖万豪AC酒店</span>
+      <div class="details-grid">
+        <div class="detail-item">
+          <span class="detail-label"><i class="fa-solid fa-camera"></i> 核心景点</span>
+          🌟 果子沟大桥、🌟 赛里木湖
         </div>
-        
-        <div class="section-title"><i class="fa-solid fa-camera"></i> 核心看点</div>
-        <p>🌟 果子沟大桥、🌟 赛里木湖</p>
-        
-        <div class="section-title"><i class="fa-solid fa-utensils"></i> 特色美食</div>
-        <p>赛湖高白鲑</p>
-        
-        <div class="schedule-box">
-          <h3><i class="fa-solid fa-clock"></i> 时间线与行程安排</h3>
-          <ul><li><b>09:00 - 11:00</b>: 穿越巍峨的🌟 果子沟大桥。</li><li><b>11:00 - 17:00</b>: 🌟 赛里木湖（享受长达6小时的深度时光，无压力自驾360度环湖）。</li><li><b>17:30</b>: 酒店入住，品尝赛湖高白鲑。</li></ul>
+        <div class="detail-item">
+          <span class="detail-label"><i class="fa-solid fa-bed"></i> 住宿推荐</span>
+          <span style="color: #e11d48; font-weight: 500;">⚠️ [需新订] 新疆赛里木湖万豪AC酒店</span>
         </div>
+        <div class="detail-item">
+          <span class="detail-label"><i class="fa-solid fa-utensils"></i> 特色餐饮</span>
+          赛湖高白鲑
+        </div>
+      </div>
+      <div class="schedule">
+        <h4><i class="fa-solid fa-list-check"></i> 时间轴排期</h4>
+        <ul><li><b>09:00 - 11:00</b>: 穿越巍峨的🌟 果子沟大桥。</li><li><b>11:00 - 17:00</b>: 🌟 赛里木湖（享受长达6小时的深度时光，无压力自驾360度环湖）。中午在湖边车内享用昨日购买的新鲜大馕。</li><li><b>18:30</b>: 酒店入住。强烈建议直接在🌟 万豪AC酒店餐厅 内享用稳定可靠的“赛湖冷水高白鲑”晚餐。</li></ul>
       </div>
     </div>
+
     <div class="day-card">
       <div class="day-header">
-        <h2>Day 12: 赛里木湖 → 乌尔禾</h2>
-        <span class="day-date">2026-06-23</span>
+        <div class="day-title">Day 12 (2026-06-23): 赛里木湖 → 乌尔禾</div>
+        <div class="day-meta">
+          <div class="meta-item"><i class="fa-solid fa-road"></i> 450km</div>
+          <div class="meta-item"><i class="fa-solid fa-clock"></i> 约5小时</div>
+        </div>
       </div>
-      <div class="day-body">
-        <div class="info-bar">
-          <span><i class="fa-solid fa-car"></i> 450km (约5小时)</span>
-          <span><i class="fa-solid fa-hotel"></i> 住宿: ⚠️ [需新订] 克拉玛依西部乌镇酒店</span>
+      <div class="details-grid">
+        <div class="detail-item">
+          <span class="detail-label"><i class="fa-solid fa-camera"></i> 核心景点</span>
+          🌟 世界魔鬼城
         </div>
-        
-        <div class="section-title"><i class="fa-solid fa-camera"></i> 核心看点</div>
-        <p>🌟 世界魔鬼城</p>
-        
-        <div class="section-title"><i class="fa-solid fa-utensils"></i> 特色美食</div>
-        <p>无</p>
-        
-        <div class="schedule-box">
-          <h3><i class="fa-solid fa-clock"></i> 时间线与行程安排</h3>
-          <ul><li><b>09:00 - 15:00</b>: 离开赛里木湖，长途奔袭克拉玛依乌尔禾区（全程高速450km）。</li><li><b>15:00 - 17:30</b>: 抵达入住休整。</li><li><b>18:00 - 21:00</b>: 🌟 世界魔鬼城（稳稳赶上落日时分，乘坐无轨小火车穿梭风蚀雅丹群）。</li></ul>
+        <div class="detail-item">
+          <span class="detail-label"><i class="fa-solid fa-bed"></i> 住宿推荐</span>
+          <span style="color: #e11d48; font-weight: 500;">⚠️ [需新订] 克拉玛依西部乌镇酒店</span>
         </div>
+        <div class="detail-item">
+          <span class="detail-label"><i class="fa-solid fa-utensils"></i> 特色餐饮</span>
+          简餐
+        </div>
+      </div>
+      <div class="schedule">
+        <h4><i class="fa-solid fa-list-check"></i> 时间轴排期</h4>
+        <ul><li><b>09:00 - 15:00</b>: 离开赛里木湖，长途奔袭克拉玛依乌尔禾区（全程高速450km）。</li><li><b>15:00 - 17:30</b>: 抵达入住休整。</li><li><b>18:00 - 21:00</b>: 🌟 世界魔鬼城（乘坐无轨小火车穿梭风蚀雅丹群，守候落日）。</li></ul>
       </div>
     </div>
+
     <div class="day-card">
       <div class="day-header">
-        <h2>Day 13: 乌尔禾 → 布尔津 → 贾登峪</h2>
-        <span class="day-date">2026-06-24</span>
+        <div class="day-title">Day 13 (2026-06-24): 乌尔禾 → 布尔津 → 贾登峪</div>
+        <div class="day-meta">
+          <div class="meta-item"><i class="fa-solid fa-road"></i> 250km</div>
+          <div class="meta-item"><i class="fa-solid fa-clock"></i> 约4.5小时</div>
+        </div>
       </div>
-      <div class="day-body">
-        <div class="info-bar">
-          <span><i class="fa-solid fa-car"></i> 250km (约4.5小时)</span>
-          <span><i class="fa-solid fa-hotel"></i> 住宿: ⚠️ [需新订] 贾登峪城堡酒店</span>
+      <div class="details-grid">
+        <div class="detail-item">
+          <span class="detail-label"><i class="fa-solid fa-camera"></i> 核心景点</span>
+          🌟 阿尔泰山脉
         </div>
-        
-        <div class="section-title"><i class="fa-solid fa-camera"></i> 核心看点</div>
-        <p>🌟 阿尔泰山脉</p>
-        
-        <div class="section-title"><i class="fa-solid fa-utensils"></i> 特色美食</div>
-        <p>布尔津冷水鱼</p>
-        
-        <div class="schedule-box">
-          <h3><i class="fa-solid fa-clock"></i> 时间线与行程安排</h3>
-          <ul><li><b>08:30 - 12:30</b>: 驱车前往布尔津。</li><li><b>12:30 - 14:00</b>: 抵达布尔津享用冷水鱼午餐。</li><li><b>14:00 - 17:30</b>: 挺进阿尔泰山脉深处的贾登峪。战略意图：当晚宿于喀纳斯景区大门外，彻底解除明日区间车排队的物流瓶颈。</li></ul>
+        <div class="detail-item">
+          <span class="detail-label"><i class="fa-solid fa-bed"></i> 住宿推荐</span>
+          <span style="color: #e11d48; font-weight: 500;">⚠️ [需新订] 贾登峪城堡酒店 (连住第1晚)</span>
         </div>
+        <div class="detail-item">
+          <span class="detail-label"><i class="fa-solid fa-utensils"></i> 特色餐饮</span>
+          布尔津冷水鱼
+        </div>
+      </div>
+      <div class="schedule">
+        <h4><i class="fa-solid fa-list-check"></i> 时间轴排期</h4>
+        <ul><li><b>08:30 - 12:30</b>: 驱车前往布尔津。</li><li><b>12:30 - 13:00</b>: 抵达布尔津享用午餐。</li><li><b>13:00 - 13:30</b>: 在🌟 布尔津县中心超市 紧急停留，扫货高热量巧克力、士力架、能量棒，这是喀纳斯及禾木重度徒步的核心能量源。</li><li><b>14:00 - 17:30</b>: 挺进阿尔泰山脉深处的贾登峪，彻底解除明日区间车排队的物流瓶颈。</li></ul>
       </div>
     </div>
+
     <div class="day-card">
       <div class="day-header">
-        <h2>Day 14: 贾登峪 → 喀纳斯深度游</h2>
-        <span class="day-date">2026-06-25</span>
+        <div class="day-title">Day 14 (2026-06-25): 贾登峪 → 喀纳斯深度游</div>
+        <div class="day-meta">
+          <div class="meta-item"><i class="fa-solid fa-road"></i> 60km</div>
+          <div class="meta-item"><i class="fa-solid fa-clock"></i> 约1.5小时</div>
+        </div>
       </div>
-      <div class="day-body">
-        <div class="info-bar">
-          <span><i class="fa-solid fa-car"></i> 60km (约1.5小时)</span>
-          <span><i class="fa-solid fa-hotel"></i> 住宿: ⚠️ [需加订一晚] 贾登峪城堡酒店</span>
+      <div class="details-grid">
+        <div class="detail-item">
+          <span class="detail-label"><i class="fa-solid fa-camera"></i> 核心景点</span>
+          🌟 喀纳斯湖、🌟 观鱼台、🌟 神仙湾、🌟 月亮湾、🌟 卧龙湾
         </div>
-        
-        <div class="section-title"><i class="fa-solid fa-camera"></i> 核心看点</div>
-        <p>🌟 喀纳斯湖、🌟 观鱼台、🌟 神仙湾、🌟 月亮湾、🌟 卧龙湾</p>
-        
-        <div class="section-title"><i class="fa-solid fa-utensils"></i> 特色美食</div>
-        <p>景区简餐</p>
-        
-        <div class="schedule-box">
-          <h3><i class="fa-solid fa-clock"></i> 时间线与行程安排</h3>
-          <ul><li><b>08:00 - 17:30</b>: 全天沉浸式游览🌟 喀纳斯景区。时间极度充裕，可从容攀登1068级台阶上观鱼台俯瞰全景，随后沿木栈道徒步深度穿越神仙湾、月亮湾、卧龙湾，无需顾虑赶路的时间压力。</li><li><b>17:30 - 18:30</b>: 乘坐区间车返回贾登峪。</li></ul>
+        <div class="detail-item">
+          <span class="detail-label"><i class="fa-solid fa-bed"></i> 住宿推荐</span>
+          <span style="color: #e11d48; font-weight: 500;">⚠️ [需新订] 贾登峪城堡酒店 (连住第2晚) -> 原禾木订单需取消或改期</span>
         </div>
+        <div class="detail-item">
+          <span class="detail-label"><i class="fa-solid fa-utensils"></i> 特色餐饮</span>
+          战术干粮
+        </div>
+      </div>
+      <div class="schedule">
+        <h4><i class="fa-solid fa-list-check"></i> 时间轴排期</h4>
+        <ul><li><b>08:00 - 17:30</b>: 全天沉浸式游览🌟 喀纳斯景区。午餐在徒步栈道上享用昨日采购的高能战术干粮。攀登1068级台阶上观鱼台，随后沿木栈道徒步深度穿越三湾。</li><li><b>17:30 - 18:30</b>: 乘坐区间车返回贾登峪。</li></ul>
       </div>
     </div>
+
     <div class="day-card">
       <div class="day-header">
-        <h2>Day 15: 贾登峪 → 禾木</h2>
-        <span class="day-date">2026-06-26</span>
+        <div class="day-title">Day 15 (2026-06-26): 贾登峪 → 禾木</div>
+        <div class="day-meta">
+          <div class="meta-item"><i class="fa-solid fa-road"></i> 70km</div>
+          <div class="meta-item"><i class="fa-solid fa-clock"></i> 约2小时</div>
+        </div>
       </div>
-      <div class="day-body">
-        <div class="info-bar">
-          <span><i class="fa-solid fa-car"></i> 70km (约2小时)</span>
-          <span><i class="fa-solid fa-hotel"></i> 住宿: ⚠️ [紧急改期] 禾木草原度假山庄 (原25日改至26日)</span>
+      <div class="details-grid">
+        <div class="detail-item">
+          <span class="detail-label"><i class="fa-solid fa-camera"></i> 核心景点</span>
+          🌟 禾木村、🌟 白桦林
         </div>
-        
-        <div class="section-title"><i class="fa-solid fa-camera"></i> 核心看点</div>
-        <p>🌟 禾木村、🌟 白桦林</p>
-        
-        <div class="section-title"><i class="fa-solid fa-utensils"></i> 特色美食</div>
-        <p>禾木土火锅</p>
-        
-        <div class="schedule-box">
-          <h3><i class="fa-solid fa-clock"></i> 时间线与行程安排</h3>
-          <ul><li><b>08:30 - 11:30</b>: 驱车前往禾木门票站。</li><li><b>11:30 - 12:30</b>: 大件行李留车内，仅带双肩包乘区间车进入🌟 禾木村。</li><li><b>12:30 - 21:00</b>: 办理入住。享受完整的半天与绝美黄昏，漫步白桦林与古村落，晚餐享用土火锅。</li></ul>
+        <div class="detail-item">
+          <span class="detail-label"><i class="fa-solid fa-bed"></i> 住宿推荐</span>
+          <span style="color: #e11d48; font-weight: 500;">⚠️ [需改期订] 禾木草原度假山庄 或 禾木祐禾山居</span>
         </div>
+        <div class="detail-item">
+          <span class="detail-label"><i class="fa-solid fa-utensils"></i> 特色餐饮</span>
+          禾木土火锅
+        </div>
+      </div>
+      <div class="schedule">
+        <h4><i class="fa-solid fa-list-check"></i> 时间轴排期</h4>
+        <ul><li><b>08:30 - 11:30</b>: 驱车前往禾木门票站。</li><li><b>11:30 - 12:30</b>: 大件行李留车内，仅带双肩包乘区间车进入🌟 禾木村。</li><li><b>12:30 - 21:00</b>: 办理入住。享受完整的半天与绝美黄昏，漫步白桦林与古村落。晚餐享用当地特色的土火锅。</li></ul>
       </div>
     </div>
+
     <div class="day-card">
       <div class="day-header">
-        <h2>Day 16: 禾木 → 五彩滩 → 布尔津</h2>
-        <span class="day-date">2026-06-27</span>
+        <div class="day-title">Day 16 (2026-06-27): 禾木 → 五彩滩 → 布尔津</div>
+        <div class="day-meta">
+          <div class="meta-item"><i class="fa-solid fa-road"></i> 200km</div>
+          <div class="meta-item"><i class="fa-solid fa-clock"></i> 约4小时</div>
+        </div>
       </div>
-      <div class="day-body">
-        <div class="info-bar">
-          <span><i class="fa-solid fa-car"></i> 200km (约4小时)</span>
-          <span><i class="fa-solid fa-hotel"></i> 住宿: ⚠️ [需新订] 布尔津驿龙大酒店</span>
+      <div class="details-grid">
+        <div class="detail-item">
+          <span class="detail-label"><i class="fa-solid fa-camera"></i> 核心景点</span>
+          🌟 禾木观景台、🌟 五彩滩
         </div>
-        
-        <div class="section-title"><i class="fa-solid fa-camera"></i> 核心看点</div>
-        <p>🌟 禾木观景台、🌟 五彩滩</p>
-        
-        <div class="section-title"><i class="fa-solid fa-utensils"></i> 特色美食</div>
-        <p>夜市畅饮格瓦斯</p>
-        
-        <div class="schedule-box">
-          <h3><i class="fa-solid fa-clock"></i> 时间线与行程安排</h3>
-          <ul><li><b>06:30 - 09:30</b>: 徒步至🌟 禾木观景台，俯瞰绝美晨雾与日出。</li><li><b>09:30 - 12:00</b>: 乘坐区间车出村，取车。</li><li><b>12:00 - 16:30</b>: 驱车返回布尔津，午餐并进行长线驾驶前的休整。</li><li><b>18:00 - 21:30</b>: 稳稳赶在日落时分抵达🌟 五彩滩，欣赏夕阳下色彩斑斓的丹霞与额尔齐斯河。夜市畅饮格瓦斯。</li></ul>
+        <div class="detail-item">
+          <span class="detail-label"><i class="fa-solid fa-bed"></i> 住宿推荐</span>
+          <span style="color: #e11d48; font-weight: 500;">⚠️ [需新订] 布尔津驿龙大酒店</span>
         </div>
+        <div class="detail-item">
+          <span class="detail-label"><i class="fa-solid fa-utensils"></i> 特色餐饮</span>
+          河堤夜市烧烤与格瓦斯
+        </div>
+      </div>
+      <div class="schedule">
+        <h4><i class="fa-solid fa-list-check"></i> 时间轴排期</h4>
+        <ul><li><b>06:30 - 09:30</b>: 徒步至🌟 禾木观景台，俯瞰绝美晨雾与日出。</li><li><b>09:30 - 12:00</b>: 乘坐区间车出村，取车。</li><li><b>12:00 - 16:30</b>: 驱车返回布尔津。</li><li><b>18:00 - 21:30</b>: 稳稳赶在日落时分抵达🌟 五彩滩，欣赏夕阳。</li><li><b>21:30</b>: 晚餐前往著名的🌟 <a href='https://m.dianping.com' target='_blank'>河堤夜市</a>，畅享新疆烧烤与冰镇格瓦斯。</li></ul>
       </div>
     </div>
+
     <div class="day-card">
       <div class="day-header">
-        <h2>Day 17: 布尔津 → 乌鲁木齐 → 离境</h2>
-        <span class="day-date">2026-06-28</span>
+        <div class="day-title">Day 17 (2026-06-28): 布尔津 → 乌鲁木齐 → 离境</div>
+        <div class="day-meta">
+          <div class="meta-item"><i class="fa-solid fa-road"></i> 520km</div>
+          <div class="meta-item"><i class="fa-solid fa-clock"></i> 约5.5小时</div>
+        </div>
       </div>
-      <div class="day-body">
-        <div class="info-bar">
-          <span><i class="fa-solid fa-car"></i> 520km (约5.5小时)</span>
-          <span><i class="fa-solid fa-hotel"></i> 住宿: 无</span>
+      <div class="details-grid">
+        <div class="detail-item">
+          <span class="detail-label"><i class="fa-solid fa-camera"></i> 核心景点</span>
+          🌟 S21沙漠高速、🌟 新疆博物馆、🌟 国际大巴扎
         </div>
-        
-        <div class="section-title"><i class="fa-solid fa-camera"></i> 核心看点</div>
-        <p>🌟 S21沙漠高速公路、🌟 新疆维吾尔自治区博物馆、🌟 新疆国际大巴扎</p>
-        
-        <div class="section-title"><i class="fa-solid fa-utensils"></i> 特色美食</div>
-        <p>大巴扎买伴手礼</p>
-        
-        <div class="schedule-box">
-          <h3><i class="fa-solid fa-clock"></i> 时间线与行程安排</h3>
-          <ul><li><b>08:30 - 14:00</b>: 放弃可可托海的折返路线，沿🌟 S21沙漠高速公路高效直插乌鲁木齐市区（全程约5.5小时）。</li><li><b>14:00 - 16:00</b>: 参观🌟 新疆维吾尔自治区博物馆（探秘楼兰美女干尸，完美呼应吐鲁番的阿斯塔那古墓群）。</li><li><b>16:00 - 18:00</b>: 前往🌟 新疆国际大巴扎采购伴手礼。</li><li><b>18:30</b>: 准时于地窝堡国际机场 (URC) 归还车辆。</li><li><b>21:40</b>: 搭乘航班圆满离境。</li></ul>
+        <div class="detail-item">
+          <span class="detail-label"><i class="fa-solid fa-bed"></i> 住宿推荐</span>
+          <span style="color: #e11d48; font-weight: 500;">无</span>
         </div>
+        <div class="detail-item">
+          <span class="detail-label"><i class="fa-solid fa-utensils"></i> 特色餐饮</span>
+          小尕子/丝路有约
+        </div>
+      </div>
+      <div class="schedule">
+        <h4><i class="fa-solid fa-list-check"></i> 时间轴排期</h4>
+        <ul><li><b>08:30 - 13:30</b>: 沿🌟 S21沙漠高速公路高效直插乌鲁木齐市区。</li><li><b>13:30 - 15:00</b>: 午餐选择网红地标餐厅🌟 <a href='https://m.dianping.com' target='_blank'>小尕子(明德路店)</a> 或 🌟 <a href='https://m.dianping.com' target='_blank'>丝路有约(大巴扎店)</a>。</li><li><b>15:00 - 17:00</b>: 参观🌟 新疆维吾尔自治区博物馆。<span style='color:#e11d48; font-weight:bold;'><br>【战略提示】：在看干尸时，立刻打开大众点评APP操作“在线排队”晚饭/下午茶，避开排号地狱！</span></li><li><b>17:00 - 18:00</b>: 前往🌟 新疆国际大巴扎采购伴手礼。</li><li><b>18:30</b>: 于地窝堡机场 (URC) 归还车辆。</li><li><b>21:40</b>: 搭乘航班圆满离境。</li></ul>
       </div>
     </div>
+
   </div>
 </body>
 </html>
