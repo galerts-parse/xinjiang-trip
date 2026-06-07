@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day-by-Day Ticketing Matrix & Cost Breakdown</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      color: #334155;
+      background-color: #f8fafc;
+      margin: 0;
+      padding: 0;
+    }
+    .header {
+      background: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.8)), url('https://images.unsplash.com/photo-1596484552834-6a58f850e0a1?auto=format&fit=crop&w=1600&q=80') center/cover;
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .header h1 { margin: 0 0 10px 0; font-size: 2.5rem; }
+    .header p { margin: 0; font-size: 1.1rem; opacity: 0.9; max-width: 600px; margin: 0 auto; }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+    
+    /* Checklist Box */
+    .checklist-box {
+      background: #eff6ff;
+      border: 1px solid #bfdbfe;
+      border-radius: 12px;
+      padding: 25px;
+      margin-bottom: 40px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    }
+    .checklist-box h2 {
+      margin-top: 0;
+      color: #1e3a8a;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .checklist-box ul {
+      padding-left: 20px;
+      margin-bottom: 0;
+    }
+    .checklist-box li {
+      margin-bottom: 10px;
+      font-weight: 500;
+    }
+    .status-booked {
+      color: #16a34a;
+      font-weight: bold;
+      background: #dcfce7;
+      padding: 2px 8px;
+      border-radius: 12px;
+      font-size: 0.85em;
+      margin-left: 10px;
+    }
+    .status-pending {
+      color: #ea580c;
+      font-weight: bold;
+      background: #ffedd5;
+      padding: 2px 8px;
+      border-radius: 12px;
+      font-size: 0.85em;
+      margin-left: 10px;
+    }
+
+    /* Matrix Table */
+    .table-container {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      margin-bottom: 40px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 15px 20px;
+      text-align: left;
+      border-bottom: 1px solid #e2e8f0;
+    }
+    th {
+      background-color: #f1f5f9;
+      color: #0f172a;
+      font-weight: 600;
+    }
+    tr:last-child td {
+      border-bottom: none;
+    }
+    .day-col {
+      font-weight: bold;
+      color: #3b82f6;
+      white-space: nowrap;
+      vertical-align: top;
+    }
+    .attr-col {
+      font-weight: 600;
+      color: #0f172a;
+    }
+    .cost-col {
+      color: #059669;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+    .strat-col {
+      color: #475569;
+      font-size: 0.95em;
+    }
+    
+    .back-link {
+      display: inline-block;
+      margin-bottom: 20px;
+      color: #3b82f6;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .back-link:hover {
+      text-decoration: underline;
+    }
+    
+    .summary-box {
+      background: #f8fafc;
+      border: 1px solid #cbd5e1;
+      padding: 20px;
+      border-radius: 8px;
+      margin-top: 30px;
+    }
+    
+    @media (max-width: 768px) {
+      table, thead, tbody, th, td, tr {
+        display: block;
+      }
+      thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+      }
+      tr { border-bottom: 2px solid #cbd5e1; }
+      td {
+        border: none;
+        border-bottom: 1px solid #e2e8f0;
+        position: relative;
+        padding-left: 40%;
+      }
+      td:before {
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        width: 35%;
+        padding-right: 10px;
+        white-space: nowrap;
+        font-weight: bold;
+        color: #64748b;
+      }
+      td:nth-of-type(1):before { content: "Day"; }
+      td:nth-of-type(2):before { content: "Attraction"; }
+      td:nth-of-type(3):before { content: "Est. Cost"; }
+      td:nth-of-type(4):before { content: "Strategy"; }
+      .day-col { display: none; }
+      tr td:nth-of-type(1) { background: #f1f5f9; padding-left: 20px; font-weight: bold; color: #3b82f6; display: flex; align-items: center; }
+      tr td:nth-of-type(1):before { content: ""; display: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>Ticketing Matrix & Cost Breakdown</h1>
+    <p>Approximate costs in RMB (¥). Prices often include mandatory scenic shuttle buses (区间车) where applicable.</p>
+  </div>
+
+  <div class="container">
+    <a href="index.html" class="back-link"><i class="fa-solid fa-arrow-left"></i> Back to Itinerary</a>
+
+    <div class="checklist-box">
+      <h2><i class="fa-solid fa-clipboard-check"></i> Advance Booking Checklist</h2>
+      <p>Secure these items early to guarantee smooth entry and avoid high friction points:</p>
+      <ul>
+        <li><strong>Mogao Grottoes (Day 3)</strong> <span class="status-booked"><i class="fa-solid fa-check"></i> Booked!</span></li>
+        <li><strong>Gansu Provincial Museum (Day 1)</strong> - Reserve via WeChat Mini-Program (甘肃省博物馆). <span class="status-pending">Action Needed</span></li>
+        <li><strong>Encore Dunhuang Show (Day 3)</strong> - Book via Trip.com or hotel concierge. <span class="status-pending">Action Needed</span></li>
+        <li><strong>Xinjiang Regional Museum (Day 17)</strong> - Reserve via WeChat Mini-Program (新疆维吾尔自治区博物馆). <span class="status-pending">Action Needed</span></li>
+        <li><strong>Kanas Nature Reserve & Hemu (Day 14-15)</strong> - High friction points. Pre-book via Trip.com to skip lines. <span class="status-pending">Action Needed</span></li>
+        <li><strong>Nalati & Tianshan Tianchi (Day 7, Day 8)</strong> - Book via Trip.com for streamlined entry. <span class="status-pending">Action Needed</span></li>
+      </ul>
+    </div>
+
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>Day</th>
+            <th>Location / Attraction</th>
+            <th>Est. Cost (RMB)</th>
+            <th>Acquisition Strategy for Foreigners</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Day 1 -->
+          <tr>
+            <td class="day-col" rowspan="3">Day 1</td>
+            <td class="attr-col">Maijishan Grottoes</td>
+            <td class="cost-col">¥90</td>
+            <td class="strat-col">Proceed to the manual window. Standard passport processing.</td>
+          </tr>
+          <tr>
+            <td class="attr-col">Gansu Provincial Museum</td>
+            <td class="cost-col">Free</td>
+            <td class="strat-col">Requires advance reservation. Use WeChat Mini-Program (甘肃省博物馆) -> select Passport (护照) option, or present passport at the manual window for a physical ticket.</td>
+          </tr>
+          <tr>
+            <td class="attr-col">Zhongshan Bridge</td>
+            <td class="cost-col">Free</td>
+            <td class="strat-col">Public infrastructure. No ticket required.</td>
+          </tr>
+
+          <!-- Day 2 -->
+          <tr>
+            <td class="day-col" rowspan="4">Day 2</td>
+            <td class="attr-col">Leitai Tomb</td>
+            <td class="cost-col">¥45</td>
+            <td class="strat-col">Manual ticket window.</td>
+          </tr>
+          <tr>
+            <td class="attr-col">Zhangye Dafo Temple</td>
+            <td class="cost-col">¥40</td>
+            <td class="strat-col">Manual ticket window.</td>
+          </tr>
+          <tr>
+            <td class="attr-col">Zhangye Seven-Color Danxia</td>
+            <td class="cost-col">¥93 (incl. bus)</td>
+            <td class="strat-col">Book in advance via Trip.com or purchase at the manual window.</td>
+          </tr>
+          <tr>
+            <td class="attr-col">Jiayuguan Pass</td>
+            <td class="cost-col">¥110</td>
+            <td class="strat-col">Book via Trip.com or manual window.</td>
+          </tr>
+
+          <!-- Day 3 -->
+          <tr>
+            <td class="day-col" rowspan="3">Day 3</td>
+            <td class="attr-col">Mogao Grottoes</td>
+            <td class="cost-col">¥238 (Class A)</td>
+            <td class="strat-col"><span style="color: #16a34a; font-weight: bold;"><i class="fa-solid fa-circle-check"></i> Already Booked!</span> Proceed directly to the entry point with your passport at the designated time.</td>
+          </tr>
+          <tr>
+            <td class="attr-col">Mingsha Mountain & Crescent Lake</td>
+            <td class="cost-col">¥110</td>
+            <td class="strat-col">Manual window. (Camel riding is an additional, separate on-site cash/QR transaction of approx. ¥100).</td>
+          </tr>
+          <tr>
+            <td class="attr-col">Encore Dunhuang Show</td>
+            <td class="cost-col">¥298 - ¥368</td>
+            <td class="strat-col">Book via Trip.com or authorize your hotel concierge to secure premium seating.</td>
+          </tr>
+
+          <!-- Day 4 -->
+          <tr>
+            <td class="day-col" rowspan="3">Day 4</td>
+            <td class="attr-col">Yumenguan & Han Great Wall</td>
+            <td class="cost-col">¥40</td>
+            <td class="strat-col">Manual ticket window at the site entrance.</td>
+          </tr>
+          <tr>
+            <td class="attr-col">Yangguan Pass</td>
+            <td class="cost-col">¥50</td>
+            <td class="strat-col">Manual ticket window.</td>
+          </tr>
+          <tr>
+            <td class="attr-col">Yadan Ghost City</td>
+            <td class="cost-col">¥120 (incl. bus)</td>
+            <td class="strat-col">Manual ticket window. Ensure arrival before the final sunset bus departs (typically around 18:30 in summer).</td>
+          </tr>
+
+          <!-- Day 5 -->
+          <tr>
+            <td class="day-col" rowspan="2">Day 5</td>
+            <td class="attr-col">Yulin Grottoes</td>
+            <td class="cost-col">¥40</td>
+            <td class="strat-col">Manual ticket window. Unlike Mogao, advance booking is rarely required, but arrive early to secure English-speaking guides if needed.</td>
+          </tr>
+          <tr>
+            <td class="attr-col">Hami King Tomb</td>
+            <td class="cost-col">¥40</td>
+            <td class="strat-col">Manual ticket window.</td>
+          </tr>
+
+          <!-- Day 6 -->
+          <tr>
+            <td class="day-col" rowspan="5">Day 6</td>
+            <td class="attr-col">Karez System</td>
+            <td class="cost-col">¥40</td>
+            <td class="strat-col">Manual ticket window.</td>
+          </tr>
+          <tr>
+            <td class="attr-col">Astana Tombs</td>
+            <td class="cost-col">¥40</td>
+            <td class="strat-col">Manual ticket window.</td>
+          </tr>
+          <tr>
+            <td class="attr-col">Bezeklik Thousand Buddha Caves</td>
+            <td class="cost-col">¥40</td>
+            <td class="strat-col">Manual ticket window.</td>
+          </tr>
+          <tr>
+            <td class="attr-col">Flaming Mountains</td>
+            <td class="cost-col">¥40</td>
+            <td class="strat-col">Manual ticket window.</td>
+          </tr>
+          <tr>
+            <td class="attr-col">Jiaohe Ruins</td>
+            <td class="cost-col">¥70</td>
+            <td class="strat-col">Manual ticket window.</td>
+          </tr>
+
+          <!-- Day 7 -->
+          <tr>
+            <td class="day-col">Day 7</td>
+            <td class="attr-col">Tianshan Tianchi</td>
+            <td class="cost-col">¥155 (incl. bus)</td>
+            <td class="strat-col">Book via Trip.com or proceed to the manual window.</td>
+          </tr>
+
+          <!-- Day 8 -->
+          <tr>
+            <td class="day-col" rowspan="2">Day 8</td>
+            <td class="attr-col">Duku Highway (North Section)</td>
+            <td class="cost-col">Free</td>
+            <td class="strat-col">Public national highway (G217).</td>
+          </tr>
+          <tr>
+            <td class="attr-col">Nalati Grassland</td>
+            <td class="cost-col">¥135 (incl. bus)</td>
+            <td class="strat-col">Book via Trip.com. The ticket is valid for 48 hours, allowing flexible entry and exit.</td>
+          </tr>
+
+          <!-- Day 9 -->
+          <tr>
+            <td class="day-col">Day 9</td>
+            <td class="attr-col">Kalajun Grassland</td>
+            <td class="cost-col">¥140 (incl. bus)</td>
+            <td class="strat-col">Manual ticket window.</td>
+          </tr>
+
+          <!-- Day 10 -->
+          <tr>
+            <td class="day-col" rowspan="2">Day 10</td>
+            <td class="attr-col">Xiata Ancient Road</td>
+            <td class="cost-col">¥80 (incl. bus)</td>
+            <td class="strat-col">Manual ticket window. (Optional electric cart inside is an additional ¥50).</td>
+          </tr>
+          <tr>
+            <td class="attr-col">Kazanqi Folk Village</td>
+            <td class="cost-col">Free entry</td>
+            <td class="strat-col">General walking is free. Tourist carriage rides/combo tickets (approx. ¥150) are purchased at the visitor center.</td>
+          </tr>
+
+          <!-- Day 11 -->
+          <tr>
+            <td class="day-col">Day 11</td>
+            <td class="attr-col">Sayram Lake</td>
+            <td class="cost-col">¥145 (Ticket + Car)</td>
+            <td class="strat-col"><b>Strategic Execution:</b> To execute your 360-degree self-drive, you must purchase a specific "Self-Driving Pass" alongside your entry ticket at the East or South Gate manual window. Present your vehicle registration (行驶证) and passport.</td>
+          </tr>
+
+          <!-- Day 12 -->
+          <tr>
+            <td class="day-col">Day 12</td>
+            <td class="attr-col">World Ghost City (Urho)</td>
+            <td class="cost-col">¥62 (incl. train)</td>
+            <td class="strat-col">Manual ticket window or Trip.com. The ticket includes the trackless train that loops the park.</td>
+          </tr>
+
+          <!-- Day 13 -->
+          <tr>
+            <td class="day-col">Day 13</td>
+            <td class="attr-col">Transit to Jiadengyu</td>
+            <td class="cost-col">N/A</td>
+            <td class="strat-col">Logistical transit day. No scenic tickets required.</td>
+          </tr>
+
+          <!-- Day 14 -->
+          <tr>
+            <td class="day-col">Day 14</td>
+            <td class="attr-col">Kanas Nature Reserve</td>
+            <td class="cost-col">¥230 (Ticket + Bus)</td>
+            <td class="strat-col"><b>High Friction Point.</b> Book via Trip.com or use the dedicated foreigner manual window at the Jiadengyu ticket center. Guanyu Pavilion shuttle requires a separate ¥20 ticket purchased inside the park.</td>
+          </tr>
+
+          <!-- Day 15 -->
+          <tr>
+            <td class="day-col">Day 15</td>
+            <td class="attr-col">Hemu Village</td>
+            <td class="cost-col">¥102 (Ticket + Bus)</td>
+            <td class="strat-col">Book via Trip.com or manual window at the Hemu ticket station.</td>
+          </tr>
+
+          <!-- Day 16 -->
+          <tr>
+            <td class="day-col" rowspan="2">Day 16</td>
+            <td class="attr-col">Hemu Viewing Platform</td>
+            <td class="cost-col">Free</td>
+            <td class="strat-col">Open access via the village boardwalk.</td>
+          </tr>
+          <tr>
+            <td class="attr-col">Wucaitan (Colorful Beach)</td>
+            <td class="cost-col">¥50</td>
+            <td class="strat-col">Manual ticket window.</td>
+          </tr>
+
+          <!-- Day 17 -->
+          <tr>
+            <td class="day-col" rowspan="2">Day 17</td>
+            <td class="attr-col">Xinjiang Regional Museum</td>
+            <td class="cost-col">Free</td>
+            <td class="strat-col">Advance reservation required. Use WeChat Mini-Program (新疆维吾尔自治区博物馆). If the passport portal fails, proceed directly to the foreigner registration desk at the entrance with your physical passport.</td>
+          </tr>
+          <tr>
+            <td class="attr-col">International Grand Bazaar</td>
+            <td class="cost-col">Free</td>
+            <td class="strat-col">Open commercial zone.</td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+
+    <div class="summary-box">
+      <h3><i class="fa-solid fa-circle-info"></i> Operational Summary</h3>
+      <p>For standard sites, build a 10-minute buffer into your timeline to account for manual passport entry at ticket windows.</p>
+    </div>
+
+  </div>
+
+</body>
+</html>

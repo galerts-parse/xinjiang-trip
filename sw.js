@@ -1,4 +1,4 @@
-const CACHE_NAME = 'xinjiang-trip-v19';
+const CACHE_NAME = 'xinjiang-trip-v20';
 const urlsToCache = [
   './',
   './index.html',
@@ -12,6 +12,7 @@ const urlsToCache = [
   './data_route_x.js',
   './route_d_tour_package.html',
   './route_x_tour_package.html',
+  './ticketing.html',
   './icon.png',
   'https://unpkg.com/leaflet@1.9.4/dist/leaflet.css',
   'https://unpkg.com/leaflet@1.9.4/dist/leaflet.js',
