@@ -43,6 +43,7 @@
       box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
       max-height: calc(100vh - 40px);
       overflow-y: auto;
+      padding-bottom: 60px; /* extra space so last items are reachable on iOS */
     }
     .sidebar-nav h3 { margin-top: 0; border-bottom: 2px solid #e2e8f0; padding-bottom: 10px; color: #1e293b; }
     .sidebar-nav ul { list-style: none; padding: 0; margin: 0; }
@@ -176,11 +177,11 @@
       left: 0; right: 0;
       background: white;
       border-radius: 20px 20px 0 0;
-      padding: 20px;
+      padding: 20px 20px 40px 20px; /* extra bottom padding for iOS thumb reach */
       z-index: 999;
       transition: bottom 0.3s ease-in-out;
-      box-shadow: 0 -4px 10px rgba(0,0,0,0.1);
-      max-height: 80vh;
+      box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+      max-height: 85vh;
       overflow-y: auto;
     }
     .mobile-menu.open { bottom: 0; }
@@ -957,22 +958,29 @@
         <p style="color: #64748b; font-size: 0.95rem;">请在出发前逐项核对，以下物品对您的自驾安全及体验至关重要。</p>
 
         <div class="packing-section">
-          <h4 style="color: #0f172a; border-bottom: 2px solid #e2e8f0; padding-bottom: 5px;"><i class="fa-solid fa-id-card"></i> 1. The Command Center: Documents & Digital</h4>
+          <h4 style="color: #0f172a; border-bottom: 2px solid #e2e8f0; padding-bottom: 5px;"><i class="fa-solid fa-id-card"></i> Documents & Money (证件与资金)</h4>
           <ul style="list-style-type: none; padding-left: 0;">
             <li><label><input type="checkbox" style="margin-right:8px;"> <strong>Passports:</strong> x2 (Physical copies; carry on your person at all times).</label></li>
             <li><label><input type="checkbox" style="margin-right:8px;"> <strong>Driving Credentials:</strong> Original Singapore Driving Licenses (both drivers), plus official Chinese translations/notarizations required by your rental agency.</label></li>
             <li><label><input type="checkbox" style="margin-right:8px;"> <strong>Physical Currency:</strong> ¥2,000 – ¥3,000 RMB in mixed denominations (for remote tolls, Hemu village stalls, or network dead zones).</label></li>
             <li><label><input type="checkbox" style="margin-right:8px;"> <strong>Credit Cards:</strong> x2-3 (Visa/Mastercard linked to your Alipay/WeChat Pay, plus physical cards as backup).</label></li>
+          </ul>
+        </div>
+
+        <div class="packing-section">
+          <h4 style="color: #0f172a; border-bottom: 2px solid #e2e8f0; padding-bottom: 5px;"><i class="fa-solid fa-mobile-screen-button"></i> Electronics & Navigation (数码与导航)</h4>
+          <ul style="list-style-type: none; padding-left: 0;">
             <li><label><input type="checkbox" style="margin-right:8px;"> <strong>Smartphones:</strong> Loaded with Singtel/Starhub roaming plans or eSIMs and pre-downloaded VPNs (Astrill/LetsVPN).</label></li>
             <li><label><input type="checkbox" style="margin-right:8px;"> <strong>High-Capacity Power Banks:</strong> x2 (20,000mAh minimum; phones drain rapidly when taking photos in cold weather).</label></li>
             <li><label><input type="checkbox" style="margin-right:8px;"> <strong>Universal Travel Adapters:</strong> x2 (To convert SG Type-G to China Type-A/I).</label></li>
             <li><label><input type="checkbox" style="margin-right:8px;"> <strong>Multi-Port USB Car Charger & Cables:</strong> x1 fast-charging cigarette lighter adapter + 3-4 heavy-duty cables.</label></li>
             <li><label><input type="checkbox" style="margin-right:8px;"> <strong>Magnetic/Vent Car Phone Mount:</strong> x1 (Do not rely on the rental car having one).</label></li>
+            <li><label><input type="checkbox" style="margin-right:8px;"> <strong>Insta360 Cards:</strong> Find memory cards and format before the trip.</label></li>
           </ul>
         </div>
 
         <div class="packing-section">
-          <h4 style="color: #0f172a; border-bottom: 2px solid #e2e8f0; padding-bottom: 5px;"><i class="fa-solid fa-briefcase"></i> 2. The Luggage System</h4>
+          <h4 style="color: #0f172a; border-bottom: 2px solid #e2e8f0; padding-bottom: 5px;"><i class="fa-solid fa-suitcase"></i> Luggage & Bags (行李与背包)</h4>
           <ul style="list-style-type: none; padding-left: 0;">
             <li><label><input type="checkbox" style="margin-right:8px;"> <strong>Large Suitcases:</strong> x2 (Hard-shell, 26-28 inches). These will live in the trunk for 90% of the trip.</label></li>
             <li><label><input type="checkbox" style="margin-right:8px;"> <strong>Soft-Shell Daypacks (20-30L):</strong> x2. Crucial for Day 15 (Hemu overnight stay) to avoid dragging heavy luggage over boardwalks.</label></li>
@@ -980,7 +988,7 @@
         </div>
 
         <div class="packing-section">
-          <h4 style="color: #0f172a; border-bottom: 2px solid #e2e8f0; padding-bottom: 5px;"><i class="fa-solid fa-shirt"></i> 3. Apparel: The Layering Matrix (Per Person)</h4>
+          <h4 style="color: #0f172a; border-bottom: 2px solid #e2e8f0; padding-bottom: 5px;"><i class="fa-solid fa-shirt"></i> Clothing: Layering System (衣物分层)</h4>
           <ul style="list-style-type: none; padding-left: 0;">
             <li><label><input type="checkbox" style="margin-right:8px;"> <strong>Underwear & Socks:</strong> 10-12 pairs each. Include 3-4 pairs of thick wool hiking socks for Kanas/Xiata.</label></li>
             <li><label><input type="checkbox" style="margin-right:8px;"> <strong>Thermal Base Layers (Heattech):</strong> 2 sets each (Essential for Hemu sunrises and Duku Highway passes).</label></li>
@@ -990,12 +998,12 @@
             <li><label><input type="checkbox" style="margin-right:8px;"> <strong>Outer Shell:</strong> 1 each (Gore-Tex or high-quality wind/waterproof jacket for Sayram Lake).</label></li>
             <li><label><input type="checkbox" style="margin-right:8px;"> <strong>Trousers/Pants:</strong> 2-3 pairs lightweight hiking pants; 1 pair heavier jeans/fleece-lined trousers.</label></li>
             <li><label><input type="checkbox" style="margin-right:8px;"> <strong>Sleepwear:</strong> 2 sets each.</label></li>
-            <li><label><input type="checkbox" style="margin-right:8px;"> <strong>Sun Protection Gear:</strong> 1 wide-brimmed hat each, 1 pair of UPF sun sleeves each, and polarized sunglasses.</label></li>
+            <li><label><input type="checkbox" style="margin-right:8px;"> <strong>Old Hats:</strong> Bring old hats for sun protection (don't worry about losing them).</label></li>
           </ul>
         </div>
 
         <div class="packing-section">
-          <h4 style="color: #0f172a; border-bottom: 2px solid #e2e8f0; padding-bottom: 5px;"><i class="fa-solid fa-shoe-prints"></i> 4. Footwear (Per Person)</h4>
+          <h4 style="color: #0f172a; border-bottom: 2px solid #e2e8f0; padding-bottom: 5px;"><i class="fa-solid fa-shoe-prints"></i> Footwear (鞋类)</h4>
           <ul style="list-style-type: none; padding-left: 0;">
             <li><label><input type="checkbox" style="margin-right:8px;"> <strong>Hiking Shoes/Boots:</strong> 1 pair each. Must have aggressive grip and be fully broken-in for 1068 Kanas stairs & Xiata hike.</label></li>
             <li><label><input type="checkbox" style="margin-right:8px;"> <strong>Driving/Walking Shoes:</strong> 1 pair each. Flat-soled, flexible sneakers or driving moccasins for precise clutch control.</label></li>
@@ -1004,18 +1012,25 @@
         </div>
 
         <div class="packing-section">
-          <h4 style="color: #0f172a; border-bottom: 2px solid #e2e8f0; padding-bottom: 5px;"><i class="fa-solid fa-pump-soap"></i> 5. Desert Defense & Toiletries (Shared for 2)</h4>
+          <h4 style="color: #0f172a; border-bottom: 2px solid #e2e8f0; padding-bottom: 5px;"><i class="fa-solid fa-sun"></i> Sun & Skin Protection (防晒与护肤)</h4>
           <ul style="list-style-type: none; padding-left: 0;">
-            <li><label><input type="checkbox" style="margin-right:8px;"> <strong>Heavy Duty Moisturizer:</strong> 1 large tub (e.g., CeraVe/Cetaphil). Apply thickly every night.</label></li>
             <li><label><input type="checkbox" style="margin-right:8px;"> <strong>SPF 50+ Sunscreen:</strong> 2 large bottles. You will reapply constantly.</label></li>
             <li><label><input type="checkbox" style="margin-right:8px;"> <strong>Lip Balm with SPF:</strong> x2 (The desert wind will crack your lips).</label></li>
+            <li><label><input type="checkbox" style="margin-right:8px;"> <strong>Heavy Duty Moisturizer:</strong> 1 large tub (e.g., CeraVe/Cetaphil). Apply thickly every night.</label></li>
+            <li><label><input type="checkbox" style="margin-right:8px;"> <strong>Sun Protection Gear:</strong> 1 wide-brimmed hat each, 1 pair of UPF sun sleeves each, and polarized sunglasses.</label></li>
+          </ul>
+        </div>
+
+        <div class="packing-section">
+          <h4 style="color: #0f172a; border-bottom: 2px solid #e2e8f0; padding-bottom: 5px;"><i class="fa-solid fa-pump-soap"></i> Toiletries & Hygiene (洗漱与卫生)</h4>
+          <ul style="list-style-type: none; padding-left: 0;">
             <li><label><input type="checkbox" style="margin-right:8px;"> <strong>Wet Wipes & Tissues:</strong> 5-6 large packs. Public restrooms along the highway often lack paper.</label></li>
             <li><label><input type="checkbox" style="margin-right:8px;"> <strong>Eye Drops:</strong> 2 bottles (Combats dust and driving fatigue).</label></li>
           </ul>
         </div>
 
         <div class="packing-section">
-          <h4 style="color: #0f172a; border-bottom: 2px solid #e2e8f0; padding-bottom: 5px;"><i class="fa-solid fa-kit-medical"></i> 6. Medical & First Aid (Shared)</h4>
+          <h4 style="color: #0f172a; border-bottom: 2px solid #e2e8f0; padding-bottom: 5px;"><i class="fa-solid fa-kit-medical"></i> Medical & First Aid (医疗与急救)</h4>
           <ul style="list-style-type: none; padding-left: 0;">
             <li><label><input type="checkbox" style="margin-right:8px;"> <strong>Stomach Defense:</strong> Charcoal pills/Po Chai pills, Antacids.</label></li>
             <li><label><input type="checkbox" style="margin-right:8px;"> <strong>Pain & Fever:</strong> Panadol/Ibuprofen.</label></li>
@@ -1027,16 +1042,35 @@
         </div>
 
         <div class="packing-section">
-          <h4 style="color: #0f172a; border-bottom: 2px solid #e2e8f0; padding-bottom: 5px;"><i class="fa-solid fa-mug-hot"></i> 7. Road Trip Comforts</h4>
+          <h4 style="color: #0f172a; border-bottom: 2px solid #e2e8f0; padding-bottom: 5px;"><i class="fa-solid fa-car-side"></i> Car & Dashcam (车辆与行车记录仪)</h4>
           <ul style="list-style-type: none; padding-left: 0;">
+            <li><label><input type="checkbox" style="margin-right:8px;"> <strong>Dashcam (行车记录仪):</strong> Check SD card, power cable, and mounting bracket.</label></li>
             <li><label><input type="checkbox" style="margin-right:8px;"> <strong>Driving Gloves:</strong> 1 pair for the primary driver. Prevents sweaty slippage and helps grip cold wheels.</label></li>
-            <li><label><input type="checkbox" style="margin-right:8px;"> <strong>Thermos/Insulated Flasks:</strong> x2. Chinese hotels always provide boiling water. Fill for hot tea on cold drives.</label></li>
-            <li><label><input type="checkbox" style="margin-right:8px;"> <strong>Neck Pillow/Lumbar Support:</strong> 1 set per person for the long 500km+ transit days.</label></li>
           </ul>
         </div>
 
         <div class="packing-section">
-          <h4 style="color: #0f172a; border-bottom: 2px solid #e2e8f0; padding-bottom: 5px;"><i class="fa-solid fa-clipboard-check"></i> 8. Pre-Departure Checklist (出发前清单)</h4>
+          <h4 style="color: #0f172a; border-bottom: 2px solid #e2e8f0; padding-bottom: 5px;"><i class="fa-solid fa-mug-hot"></i> Road Trip Comforts (旅途舒适用品)</h4>
+          <ul style="list-style-type: none; padding-left: 0;">
+            <li><label><input type="checkbox" style="margin-right:8px;"> <strong>Thermos/Insulated Flasks:</strong> x2. Chinese hotels always provide boiling water. Fill for hot tea on cold drives.</label></li>
+            <li><label><input type="checkbox" style="margin-right:8px;"> <strong>Neck Pillow/Lumbar Support:</strong> 1 set per person for the long 500km+ transit days.</label></li>
+            <li><label><input type="checkbox" style="margin-right:8px;"> <strong>Bring Chopsticks:</strong> 1 pair for long-haul meals on the road.</label></li>
+          </ul>
+        </div>
+
+        <div class="packing-section">
+          <h4 style="color: #0f172a; border-bottom: 2px solid #e2e8f0; padding-bottom: 5px;"><i class="fa-solid fa-mountain"></i> Hiking & Outdoor Gear (徒步与户外装备)</h4>
+          <ul style="list-style-type: none; padding-left: 0;">
+            <li><label><input type="checkbox" style="margin-right:8px;"> <strong>Hiking Sticks (登山杖):</strong> For Xiata Ancient Trail & Kanas boardwalks.</label></li>
+            <li><label><input type="checkbox" style="margin-right:8px;"> <strong>Sand Gaiters (沙套):</strong> Essential for Gobi/desert road sections.</label></li>
+            <li><label><input type="checkbox" style="margin-right:8px;"> <strong>Water Bottles (水壶/保温杯):</strong> For hydration along the route.</label></li>
+            <li><label><input type="checkbox" style="margin-right:8px;"> <strong>Rubbish Bags:</strong> Bring trash bags for car and campsite cleanliness.</label></li>
+            <li><label><input type="checkbox" style="margin-right:8px;"> <strong>Zip Lock Bags & Food Clips:</strong> 密封袋和食品夹 — keep snacks fresh and organize small items.</label></li>
+          </ul>
+        </div>
+
+        <div class="packing-section">
+          <h4 style="color: #0f172a; border-bottom: 2px solid #e2e8f0; padding-bottom: 5px;"><i class="fa-solid fa-clipboard-check"></i> Pre-Departure Checklist (出发前清单)</h4>
           <ul style="list-style-type: none; padding-left: 0;">
 
             <!-- Home & Utilities -->
@@ -1050,7 +1084,6 @@
             <!-- Digital & Media -->
             <li style="margin-bottom:12px;"><strong><i class="fa-solid fa-camera-retro" style="color:#64748b;"></i> 数码与媒体 (Digital & Media)</strong></li>
             <ul style="list-style-type: none; padding-left: 0;">
-              <li><label><input type="checkbox" style="margin-right:8px;"> <strong>Find Insta360 cards:</strong> 找到Insta360存储卡并格式化</label></li>
               <li><label><input type="checkbox" style="margin-right:8px;"> <strong>Backup Google Photos:</strong> 备份Google照片</label></li>
               <li><label><input type="checkbox" style="margin-right:8px;"> <strong>Download music:</strong> 下载离线音乐（长途驾驶用）</label></li>
             </ul>
@@ -1062,27 +1095,6 @@
               <li><label><input type="checkbox" style="margin-right:8px;"> <strong>Insurance:</strong> 确认旅行保险生效，保存保单号</label></li>
               <li><label><input type="checkbox" style="margin-right:8px;"> <strong>Call police station for licences:</strong> 联系派出所确认驾照/证件事宜</label></li>
               <li><label><input type="checkbox" style="margin-right:8px;"> <strong>边防证 (Border Permit):</strong> 办理边境通行证（喀纳斯/禾木可能需要）</label></li>
-            </ul>
-
-            <!-- Car & Driving -->
-            <li style="margin-bottom:12px;"><strong><i class="fa-solid fa-car-side" style="color:#64748b;"></i> 车辆与驾驶 (Car & Driving)</strong></li>
-            <ul style="list-style-type: none; padding-left: 0;">
-              <li><label><input type="checkbox" style="margin-right:8px;"> <strong>Car and dashcam things:</strong> 检查行车记录仪（SD卡、电源线）、车载充电器</label></li>
-            </ul>
-
-            <!-- Personal Items -->
-            <li style="margin-bottom:12px;"><strong><i class="fa-solid fa-user" style="color:#64748b;"></i> 个人物品 (Personal Items)</strong></li>
-            <ul style="list-style-type: none; padding-left: 0;">
-              <li><label><input type="checkbox" style="margin-right:8px;"> <strong>Bring chopsticks:</strong> 带一双筷子（长途用餐方便）</label></li>
-              <li><label><input type="checkbox" style="margin-right:8px;"> <strong>Old hats:</strong> 带旧帽子（防晒用，不怕丢）</label></li>
-            </ul>
-
-            <!-- Gear & Equipment -->
-            <li style="margin-bottom:12px;"><strong><i class="fa-solid fa-mountain" style="color:#64748b;"></i> 装备与器材 (Gear & Equipment)</strong></li>
-            <ul style="list-style-type: none; padding-left: 0;">
-              <li><label><input type="checkbox" style="margin-right:8px;"> <strong>Hiking sticks:</strong> 登山杖（夏塔古道/喀纳斯徒步用）</label></li>
-              <li><label><input type="checkbox" style="margin-right:8px;"> <strong>沙套 (Sand gaiters):</strong> 防沙鞋套（戈壁/沙漠路段必备）</label></li>
-              <li><label><input type="checkbox" style="margin-right:8px;"> <strong>Water bottles:</strong> 带水壶/保温杯（沿途补水）</label></li>
             </ul>
 
           </ul>
