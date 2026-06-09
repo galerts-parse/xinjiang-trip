@@ -378,11 +378,48 @@ sidebarHandle.addEventListener('touchend', (e) => {
   }, 300);
 });
 
-// PWA Service Worker Registration
+// PWA Service Worker Registration & Update Detection
+let updatePromptEl;
+
+function createUpdateBanner() {
+  const banner = document.createElement('div');
+  banner.id = 'update-banner';
+  banner.innerHTML = '<span>🔄 New version available!</span><button id="reload-btn">Reload</button>';
+  banner.style.cssText = 'position:fixed;top:0;left:0;right:0;background:#1e293b;color:white;padding:12px 20px;display:flex;justify-content:space-between;align-items:center;z-index:10000;font-size:0.9rem;border-bottom:2px solid #3b82f6;transform:translateY(-100%);transition:transform 0.3s ease;';
+  document.body.appendChild(banner);
+  
+  const btn = banner.querySelector('#reload-btn');
+  btn.style.cssText = 'background:#3b82f6;color:white;border:none;padding:6px 16px;border-radius:6px;cursor:pointer;font-weight:bold;';
+  btn.addEventListener('click', () => {
+    if (updatePromptEl) updatePromptEl.remove();
+    window.location.reload(true);
+  });
+  
+  setTimeout(() => { banner.style.transform = 'translateY(0)'; }, 100);
+  
+  return banner;
+}
+
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
     navigator.serviceWorker.register('./sw.js')
-      .then(registration => console.log('ServiceWorker registered'))
+      .then(registration => {
+        console.log('ServiceWorker registered');
+        
+        // Listen for updates
+        registration.addEventListener('updatefound', () => {
+          const newWorker = registration.installing;
+          
+          if (!newWorker) return;
+          
+          newWorker.addEventListener('statechange', () => {
+            if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
+              // New version available, show banner
+              updatePromptEl = createUpdateBanner();
+            }
+          });
+        });
+      })
       .catch(err => console.log('ServiceWorker failed: ', err));
   });
 }
